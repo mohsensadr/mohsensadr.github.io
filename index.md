@@ -24,7 +24,7 @@
         }
 
         nav {
-            background-color: #444;
+            background-color: #fff;
             padding: 0.5em 0;
             text-align: center;
         }
