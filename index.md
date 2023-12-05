@@ -24,7 +24,7 @@
         }
 
         nav {
-            background-color: #555;
+            background-color: #f4f4f4;
             padding: 0.5em 0;
             text-align: center;
         }
@@ -93,7 +93,7 @@
     </section>
 
     <footer>
-        &copy; 2023 Your Name. All rights reserved.
+        &copy; 2023 Mohsen Sadr. All rights reserved.
     </footer>
 
 </body>
