@@ -67,6 +67,28 @@
             background-color: #333;
             color: #fff;
         }
+
+        section#publications {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#publications h2 {
+            color: #333;
+        }
+
+        section#publications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section#publications li {
+            margin-bottom: 1em;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +99,7 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#contact">Contact</a>
-        <!-- Add more navigation links as needed -->
+        <a href="#publications">Publications</a>
     </nav>
 
     <section id="about">
@@ -94,6 +116,17 @@
             You can find a list of my publications on <a href="https://scholar.google.com/citations?user=YWJ0prAAAAAJ&hl=en&oi=ao">Google Scholar</a>.
         </p> 
     </section>
+
+
+<section id="publications">
+    <h2>Publications</h2>
+    <ul>
+        <li>
+            <strong>Mohsen Sadr, Nicolas Hadjiconstantinou, etc.</strong>. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>ournal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a>| <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Priprint</a> ].
+        </li>
+    </ul>
+</section>
+
 
     <section id="contact">
         <h2>Contact</h2>
