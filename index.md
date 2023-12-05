@@ -16,10 +16,11 @@
             background-image: url('IMG_0006.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
             background-size: contains; /* Adjust the background-size property as needed */
             background-position: center;
+            background-repeat: no-repeat;
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            height: 40vh;
+            height: 50vh;
         }
 
         nav {
