@@ -13,7 +13,7 @@
         }
 
         header {
-            background-image: url(IMG_0006.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-image: url('IMG_0006.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
             background-size: cover; /* Adjust the background-size property as needed */
             color: #fff;
             text-align: center;
