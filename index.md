@@ -122,7 +122,11 @@
     <h2>Publications</h2>
     <ul>
         <li>
-            <strong>Mohsen Sadr, Nicolas Hadjiconstantinou, etc.</strong>. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>ournal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a>| <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Priprint</a> ].
+            <strong>Mohsen Sadr and Nicolas G. Hadjiconstantinou </strong>. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a>| <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Priprint</a> ].
+        </li>
+        
+        <li>
+            <strong>Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji </strong>. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Elsevier</a>| <a href="https://arxiv.org/abs/2308.05580">Priprint</a> ].
         </li>
     </ul>
 </section>
