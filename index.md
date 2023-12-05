@@ -36,6 +36,7 @@
             margin: 0 0.5em;
             border-radius: 4px;
             transition: background-color 0.3s;
+            font-weight: bold;
         }
 
         nav a:hover {
