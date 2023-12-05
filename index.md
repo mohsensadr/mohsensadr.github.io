@@ -126,7 +126,7 @@
         </li>
         
         <li>
-            <strong>Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji </strong>. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Elsevier</a>| <a href="https://arxiv.org/abs/2308.05580">Priprint</a> ].
+            <strong>Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji </strong>. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a>| <a href="https://arxiv.org/abs/2308.05580">Priprint</a> ].
         </li>
     </ul>
 </section>
