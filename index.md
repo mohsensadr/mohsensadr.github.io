@@ -14,12 +14,12 @@
 
         header {
             background-image: url('IMG_0006.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-            background-size: 100% 86%; //cover; /* Adjust the background-size property as needed */
+            background-size: 86% 100%; //cover; /* Adjust the background-size property as needed */
             background-position: center;
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            height: 100vh;
+            height: 50vh;
         }
 
         nav {
