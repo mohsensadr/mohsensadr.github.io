@@ -30,7 +30,7 @@
         }
 
         nav a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
             padding: 0.5em 1em;
             margin: 0 0.5em;
