@@ -68,10 +68,10 @@
 </head>
 <body>
 
-    <header>
-        //<h1>Mohsen Sadr</h1>
-        //<p>Welcome to My Website</p>
-    </header>
+/*    <header>
+        <h1>Mohsen Sadr</h1>
+        <p>Welcome to My Website</p>
+    </header>*/
 
     <nav>
         <a href="#about">About Me</a>
