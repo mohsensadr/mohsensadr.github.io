@@ -57,6 +57,7 @@
 
         p {
             color: #555;
+            margin-bottom: 1em;
         }
 
         footer {
@@ -83,7 +84,9 @@
         <p>
             Hello, I'm Mohsen, a Postdoc at Paul Scherer Institute since July 2023. I'm responsible for upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) with the exa-scalable particle-in-cell library called <a href="https://github.com/IPPL-framework">IPPL</a>  (Independent Parallel Particle Layer) for simulating particle accelerators, plasma, and rarefied gas dynamics.
 
+
             In Dec. 2021, I joined MIT (Massachusetts Institute of Technology) and worked with Prof. Nicolas Hadjiconstantinou on developing a general-purpose variance reduction for Monte Carlo methods in kinetic theory. 
+
 
             You can find a list of my publications on <a href="https://scholar.google.com/citations?user=YWJ0prAAAAAJ&hl=en&oi=ao">Google Scholar</a>.
         </p> 
