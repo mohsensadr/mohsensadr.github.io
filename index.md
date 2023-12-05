@@ -87,7 +87,7 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>
-            You can reach me at: <a href="mailto:mohsen.sadr@psi.ch">mohsensadr@psi.ch</a>
+            You can reach me at: <a href="mailto:mohsen.sadr@psi.ch">mohsen.sadr@psi.ch</a>
         </p>
     </section>
 
