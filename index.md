@@ -14,12 +14,12 @@
 
         header {
             background-image: url('IMG_0006.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-            background-size: 50% 50%; //cover; /* Adjust the background-size property as needed */
+            //background-size: 50% 50%; //cover; /* Adjust the background-size property as needed */
             background-position: center;
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            height: 50vh;
+            height: 20vh;
         }
 
         nav {
@@ -80,7 +80,7 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hello, I'm Mohsen, a Postdoc at Paul Scherer Institute since July 2023. I'm responsible for upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) with the exa-scalable particle-in-cell library called IPPL (Independent Parallel Particle Layer) for simulating particle accelerators, plasma, and rarefied gas dynamics.
+            Hello, I'm Mohsen, a Postdoc at Paul Scherer Institute since July 2023. I'm responsible for upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) with the exa-scalable particle-in-cell library called <a href="https://github.com/IPPL-framework">IPPL</a>  (Independent Parallel Particle Layer) for simulating particle accelerators, plasma, and rarefied gas dynamics.
         </p> 
     </section>
 
