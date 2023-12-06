@@ -105,16 +105,17 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hello, I'm Mohsen, a Postdoc at Paul Scherer Institute since July 2023. I'm responsible for upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) with the exa-scalable particle-in-cell library called <a href="https://github.com/IPPL-framework">IPPL</a>  (Independent Parallel Particle Layer) for simulating particle accelerators, plasma, and rarefied gas dynamics.
+            Hello, I'm Mohsen, a Postdoc at Paul Scherer Institute, Switzerland, since July 2023. Here, I work on upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) with the exa-scalable particle-in-cell library called <a href="https://github.com/IPPL-framework">IPPL</a>  (Independent Parallel Particle Layer) for simulating particle accelerators, plasma, and rarefied gas dynamics.
         </p>
         
         <p>
-            In Dec. 2021, I joined MIT (Massachusetts Institute of Technology) and worked with Prof. Nicolas Hadjiconstantinou on developing a general-purpose variance reduction for Monte Carlo methods in kinetic theory. 
+            In Dec. 2021, I joined MIT, USA, and worked with Prof. Nicolas Hadjiconstantinou on developing a general-purpose variance reduction for Monte Carlo methods in kinetic theory. 
         </p>
 
         <p>
-            You can find a list of my publications on <a href="https://scholar.google.com/citations?user=YWJ0prAAAAAJ&hl=en&oi=ao">Google Scholar</a>.
-        </p> 
+            Before that, I worked at the Swiss Plasma Center, Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="[https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. 
+        </p>
+        
     </section>
 
 
