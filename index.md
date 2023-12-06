@@ -155,24 +155,24 @@
     <p>Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon in the physical domain $\Omega_x=[0,L]^2\times[0,1]\ \mathrm{m}^3$, where $L=5\times10^{-8}\ \mathrm{m}$, using $N_p=1.33 \times 10^{8}$ particles.  Initial temperature and number density are $T^{(0)}=120\ \mathrm{K}$ and $n^{(0)}=3\times 10^{27}\ \mathrm{m}^{-3}$, respectively. 
  </p>
     
-    <iframe width="630" height="315" src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
+    <iframe width="700" height="315" src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
 
  <p> Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon in the physical domain $\Omega_x=[0,L]^2\times[0,1]\ \mathrm{m}^3$ where $L=5\times10^{-8}\ \mathrm{m}$, using $N_p=1.25 \times 10^{8}$ particles. Initial temperature and number density are $T^{(0)}=120\ \mathrm{K}$ and $n^{(0)}=5\times 10^{27}\ \mathrm{m}^{-3}$ respectively. Formation  of droplets larger than Movie 1 can be observed here.  </p>
 
- <iframe width="630" height="315" src="spinodal_2.mp4" frameborder="0" allowfullscreen></iframe>
+ <iframe width="700" height="315" src="spinodal_2.mp4" frameborder="0" allowfullscreen></iframe>
 
  <h4>Formation of Bubbles</h4>
     
 <p> Evolution of  number density for spinodal decomposition of argon obtained from the DFP-SP model inside the domain $\Omega_x=[0,L]^2\times[0,1]\ \mathrm{m}^3$ where $L=5\times10^{-8}\ \mathrm{m}$ with initial temperature and number density $T^{(0)}=120\ \mathrm{K}$ and $n^{(0)}=8\times 10^{27}\ \mathrm{m}^{-3}$ respectively, using $N_p=1.33 \times 10^{8}$ particles. Formation of bubbles is obtained. </p>
 
 
-<iframe width="630" height="315" src="spinodal_3.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe width="700" height="315" src="spinodal_3.mp4" frameborder="0" allowfullscreen></iframe>
 
 <h4>Spinodal Decomposition in 3D</h4>
     
 <p> Three dimensional spinodal decomposition using the DFP-SP model. Evolution of number density of argon in the physical domain $\Omega_x=[0,L]^3\ \mathrm{m}^3$ where $L=5\times10^{-8}\ \mathrm{m}$ is obtained. Initial temperature $T^{(0)}=120\ \mathrm{K}$, initial number density $n^{(0)}=8\times 10^{27}\ \mathrm{m}^{-3}$ and number of particles $N_p=4.32\times10^8$ are employed. </p>
 
-    <iframe width="630" height="315" src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
+    <iframe width="700" height="315" src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
     
 </section>
 
