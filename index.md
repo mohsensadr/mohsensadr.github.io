@@ -88,6 +88,7 @@
 
         section#publications li {
             margin-bottom: 1em;
+            list-style-type: circle;
         }
     </style>
 </head>
@@ -130,8 +131,7 @@
         <li>
             2. Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>].
         </li>
-</ul>
-<ul>
+        
         <strong>Modelling Phase Transition:</strong>
         
         <li>
