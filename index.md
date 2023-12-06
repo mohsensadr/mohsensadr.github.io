@@ -121,21 +121,30 @@
 <section id="publications">
     <h2>Publications</h2>
     <ul>
-        <strong>Variance Reduction</strong>
+        <strong>Variance Reduction:</strong>
         
         <li>
-            1. <strong>Mohsen Sadr and Nicolas G. Hadjiconstantinou </strong>. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a>| <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Priprint</a> ].
+            1. <strong>Mohsen Sadr and Nicolas G. Hadjiconstantinou </strong>. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Priprint</a> ].
         </li>
 
         <li>
-        2. <strong>Mohsen Sadr and Nicolas G. Hadjiconstantinou </strong>. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a>| <a href="https://dx.doi.org/10.2139/ssrn.4353547">Priprint</a> ].
+            2. Mohsen Sadr and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Priprint</a> ].
         </li>
 
-        <strong>Modelling Phase Transition</strong>
+        <strong>Modelling Phase Transition:</strong>
         
         <li>
-            1. <strong>Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji </strong>. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a>| <a href="https://arxiv.org/abs/2308.05580">Priprint</a> ].
+            1. Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Priprint</a> ].
         </li>
+
+        <li>
+            2. Mohsen Sadr and M. Hossein Gorji. "Treatment of long-range interactions arising in the Enskog–Vlasov description of dense fluids" <em>Journal of Computational Physics</em>, 378, 129-142, 2019 [<a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05845">Priprint</a> ].
+        </li>
+
+        <li>
+            3. Mohsen Sadr and M. Hossein Gorji. "A continuous stochastic model for non-equilibrium dense gases" <em>Journal of Physics of Fluids</em>, 29, 122007, 2017 [<a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> | <a href="https://arxiv.org/abs/2308.05117">Priprint</a> ].
+        </li>
+        
     </ul>
 </section>
 
