@@ -121,11 +121,11 @@
 
 <section id="education">
     <h2>Education</h2>
-    <h3>Ph.D. in Applied Mathematics</h3>
-    <p>RWTH Aachen University, 2020 </p>
+    <h3>Ph.D. in Applied and Computational Mathematics</h3>
+    <p>RWTH Aachen University, German, 2020.</p>
     
     <h3>Master's in Simulation Science</h3>
-    <p>RWTH Aachen University, 2017</p>
+    <p>RWTH Aachen University, Germany, 2017.</p>
 </section>
 
 <section id="publications">
