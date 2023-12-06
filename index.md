@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohsen Sadr - Welcome</title>
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -136,7 +139,7 @@
 <section id="projects">
     <h2>Projects</h2>
     <h3>Phase Transition</h3>
-    <p>Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon using about $$10^8$$ particles.
+    <p>Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon using about $10^8$ particles.
  </p>
     <iframe width="630" height="315" src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
 
