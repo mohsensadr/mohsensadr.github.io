@@ -101,6 +101,7 @@
         <a href="#contact">Contact</a>
         <a href="#publications">Publications</a>
         <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
     </nav>
 
     <section id="about">
@@ -130,6 +131,12 @@
     
     <h3>Master's in Simulation Sciences</h3>
     <p>RWTH Aachen University, Germany, 2017.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <h3>Phase Transition</h3>
+    <iframe width="560" height="315" src="https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0022112021004614/resource/name/mp4Video-S0022112021004614sup001.mp4" frameborder="0" allowfullscreen></iframe>
 </section>
 
 <section id="publications">
