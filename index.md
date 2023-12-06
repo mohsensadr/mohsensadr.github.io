@@ -113,7 +113,7 @@
         </p>
 
         <p>
-            Before that, I worked at the Swiss Plasma Center, Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="[https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. 
+            Before that, I worked at the Swiss Plasma Center, Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. 
         </p>
         
     </section>
