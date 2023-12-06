@@ -136,7 +136,9 @@
 <section id="projects">
     <h2>Projects</h2>
     <h3>Phase Transition</h3>
-    <iframe width="560" height="315" src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
+    <p>Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon using about 10^8 particles.
+ </p>
+    <iframe width="460" height="315" src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
 </section>
 
 <section id="publications">
