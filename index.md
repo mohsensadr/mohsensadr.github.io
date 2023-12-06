@@ -113,10 +113,10 @@
 
     <nav>
         <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href="#publications">Publications</a>
         <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
     </nav>
 
     <section id="about">
@@ -139,14 +139,7 @@
         
     </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <h3>Ph.D. in Applied and Computational Mathematics</h3>
-    <p>RWTH Aachen University, Germany, 2020.</p>
-    
-    <h3>Master's in Simulation Sciences</h3>
-    <p>RWTH Aachen University, Germany, 2017.</p>
-</section>
+
 
 <section id="projects">
     <h2>Projects</h2>
@@ -174,6 +167,15 @@
 
     <iframe width="700" height="315" src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
     
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <h3>Ph.D. in Applied and Computational Mathematics</h3>
+    <p>RWTH Aachen University, Germany, 2020.</p>
+    
+    <h3>Master's in Simulation Sciences</h3>
+    <p>RWTH Aachen University, Germany, 2017.</p>
 </section>
 
 <section id="publications">
