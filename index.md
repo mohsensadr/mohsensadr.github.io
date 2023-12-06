@@ -100,6 +100,7 @@
         <a href="#about">About Me</a>
         <a href="#contact">Contact</a>
         <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
     </nav>
 
     <section id="about">
@@ -118,6 +119,14 @@
         
     </section>
 
+<section id="education">
+    <h2>Education</h2>
+    <h3>Ph.D. in Applied Mathematics</h3>
+    <p>RWTH Aachen University, 2020 </p>
+    
+    <h3>Master's in Simulation Science</h3>
+    <p>RWTH Aachen University, 2017</p>
+</section>
 
 <section id="publications">
     <h2>Publications</h2>
