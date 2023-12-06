@@ -121,6 +121,7 @@
 <section id="publications">
     <h2>Publications</h2>
     <ul>
+        <strong>Variance Reduction</strong>
         <li>
             <strong>Mohsen Sadr and Nicolas G. Hadjiconstantinou </strong>. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a>| <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Priprint</a> ].
         </li>
