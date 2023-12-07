@@ -54,7 +54,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            text-align: center;
+            text-align: left;
         }
 
         nav a {
@@ -72,13 +72,13 @@
         }
 
         section {
-            margin-top: 50px; 
             max-width: 800px;
             margin: 2em auto;
             padding: 1em;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px; 
         }
 
         h2 {
