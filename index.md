@@ -39,7 +39,7 @@
         }
 
         nav {
-            background-color: #f4f4f4;
+            background-color: #333;
             padding: 0.5em 0;
             text-align: center;
             position: fixed;
@@ -50,7 +50,7 @@
         }
 
         nav a {
-            color: #333;
+            color: white;
             text-decoration: none;
             padding: 0.5em 1em;
             margin: 0 0.5em;
