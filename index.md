@@ -42,6 +42,10 @@
             background-color: #f4f4f4;
             padding: 0.5em 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -59,6 +63,7 @@
         }
 
         section {
+            margin-top: 50px; 
             max-width: 800px;
             margin: 2em auto;
             padding: 1em;
