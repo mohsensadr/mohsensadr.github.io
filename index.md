@@ -47,18 +47,18 @@
         }
 
         nav {
-            background-color: #333;
+            background-color: #f4f4f4;
             padding: 0.5em 0;
             text-align: center;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            text-align: left;
+            text-align: center;
         }
 
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
             padding: 0.5em 1em;
             margin: 0 0.5em;
@@ -93,8 +93,8 @@
         footer {
             text-align: center;
             padding: 1em 0;
-            background-color: #333;
-            color: #fff;
+            background-color: #fff;
+            color: #333;
         }
 
         section#publications {
