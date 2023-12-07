@@ -47,7 +47,7 @@
         }
 
         nav {
-            background-color: #f4f4f4;
+            background-color: #fff;
             padding: 0.5em 0;
             text-align: center;
             position: fixed;
