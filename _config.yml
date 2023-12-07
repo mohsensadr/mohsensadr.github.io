@@ -7,7 +7,8 @@ sass:
 
 theme: jekyll-theme-primer
 
-plugins: jekyll-latex
+plugins:
+  - jekyll-latex
   
 github:
   private: false
