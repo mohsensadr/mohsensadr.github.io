@@ -157,8 +157,8 @@
     <h4>Coalescence of Nano Droplets</h4>
     <p>Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon in the physical domain $\Omega_x=[0,L]^2\times[0,1]\ \mathrm{m}^3$, where $L=5\times10^{-8}\ \mathrm{m}$, using $N_p=1.33 \times 10^{8}$ particles.  Initial temperature and number density are $T^{(0)}=120\ \mathrm{K}$ and $n^{(0)}=3\times 10^{27}\ \mathrm{m}^{-3}$, respectively. 
  </p>
-    
-    <iframe width="700" height="315" src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
+
+    <iframe src="spinodal_1.webm" frameborder="0" allowfullscreen></iframe>
 
  <p> Formation and coalescence of nano droplets in spinodal decomposition using the DFP-SP model. The evolution of number density is shown for argon in the physical domain $\Omega_x=[0,L]^2\times[0,1]\ \mathrm{m}^3$ where $L=5\times10^{-8}\ \mathrm{m}$, using $N_p=1.25 \times 10^{8}$ particles. Initial temperature and number density are $T^{(0)}=120\ \mathrm{K}$ and $n^{(0)}=5\times 10^{27}\ \mathrm{m}^{-3}$ respectively. Formation  of droplets larger than Movie 1 can be observed here.  </p>
 
