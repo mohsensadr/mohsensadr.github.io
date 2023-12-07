@@ -104,6 +104,16 @@
         section#publications li {
             margin-bottom: 1em;
         }
+
+        #projects {
+            /* Add any styling for the projects section here */
+        }
+
+        #projects iframe {
+            width: 100%;
+            height: auto;
+            border: 1px solid black; /* You can add a border or other styling if desired */
+        }
     </style>
 </head>
 <body>
