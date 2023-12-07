@@ -177,14 +177,16 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <h3>Phase Transition of Argon</h3>
+    <h3>Phase Transition of Argon [<a href="#FPmultiphase">1</a>]</h3>
     <h4>a) Coalescence of Nano Droplets</h4>
-    <p>Formation and coalescence of nano droplets in spinodal decomposition of Argon shown by the evolution of number density at initial temperature $120\ \mathrm{K}$ and initial number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$. 
+    <p>Formation and coalescence of nano droplets in spinodal decomposition of Argon shown by the evolution of number density at initial temperature $120\ \mathrm{K}$ and number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$. 
  </p>
 
 <div class="video-container">
     <iframe src="spinodal_1.mp4" frameborder="0" allowfullscreen></iframe>
 </div>
+
+<p>  </p>
 
 <div class="video-container">
  <iframe src="spinodal_2.mp4" frameborder="0" allowfullscreen></iframe>
@@ -192,7 +194,7 @@
 
  <h4>b) Formation of Bubbles</h4>
     
-<p> Evolution of  number density for spinodal decomposition of Argon at initial temperature $120\ \mathrm{K}$ and initial number density of $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
+<p> Evolution of  number density for spinodal decomposition of Argon at initial temperature $120\ \mathrm{K}$ and number density of $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
 
 <div class="video-container">
 <iframe src="spinodal_3.mp4" frameborder="0" allowfullscreen></iframe>
@@ -200,7 +202,7 @@
 
 <h4>c) Spinodal Decomposition in 3D</h4>
     
-<p> 3D simulation of spinodal decomposition  at the initial temperature $120\ \mathrm{K}$, initial number density $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
+<p> 3D simulation of spinodal decomposition  at the initial temperature $120\ \mathrm{K}$ and number density $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
 
 <div class="video-container">
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
@@ -232,7 +234,7 @@
         
         <strong>Modelling Phase Transition:</strong>
         
-        <li>
+        <li id="FPmultiphase">
             &bull; Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>].
         </li>
 
