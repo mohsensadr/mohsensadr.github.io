@@ -224,7 +224,7 @@
 
     <h3>Variance reduction</h3>
 
-<p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equligrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of target distribution $R( v)$ using importance sampling via
+<p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equilibrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of target distribution $R( v)$ using importance sampling via
 \begin{equation}
 \int R( v) f( v| x,t) d^3  v 
 = \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
