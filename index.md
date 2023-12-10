@@ -142,10 +142,8 @@
         }
 
         .pdf-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 100vh; /* Adjust the height as needed */
+            width: 50%; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the container */
         }
 
         .pdf-container embed {
