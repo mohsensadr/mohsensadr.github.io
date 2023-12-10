@@ -142,8 +142,8 @@
         }
 
         .pdf-container {
-            height: 50%; /* Adjust the width as needed */
-            width: 50%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the width as needed */
+            width: 100%; /* Adjust the width as needed */
             margin: 0 auto; /* Center the container */
         }
 
