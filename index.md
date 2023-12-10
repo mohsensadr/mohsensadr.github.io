@@ -139,7 +139,19 @@
              width: 100%;
              height: 100%;
              border: 1px solid black; /* You can add a border or other styling if desired */
-         }
+        }
+
+        .pdf-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 80vh; /* Adjust the height as needed */
+        }
+
+        .pdf-container embed {
+            width: 100%;
+            height: 100%;
+        }
     
     </style>
 </head>
@@ -193,6 +205,10 @@ w(\bm v|\bm x,t) = \frac{f^\mathrm{eq}(\bm v|\bm x,t)}{f(\bm v|\bm x,t)}~.
 \end{flalign}
 Here $R(\bm v)$ denotes a velocity polynomial, e.g. $R(\bm v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
+ <div class="pdf-container">
+        <embed src="n_nv10_shock3.pdf" type="application/pdf" />
+</div>
+    
 <embed src="n_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
 <embed src="U_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
 <embed src="T_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
