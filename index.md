@@ -143,6 +143,7 @@
 
         .pdf-container {
             width: 50%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the width as needed */
             margin: 0 auto; /* Center the container */
             overflow: hidden; /* Hide any overflow content */
         }
