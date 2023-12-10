@@ -176,6 +176,27 @@
 
 <section id="projects">
     <h2>Projects</h2>
+    <h3>Variance reduction</h3>
+
+<p>Using the equilibrium distribution function $f^\mathrm{eq}(\bm v|\bm x, t)$ as the control variate, one can formulate {\color{ms}\st{$R(\bm v)$} any} velocity moment of the non-equilibrium distribution {\color{ms}$R(\bm v)$} using importance sampling {\color{ms}\st{by} via}
+\begin{flalign}
+\int R(\bm v) f(\bm v|\bm x,t) d^3 \bm v 
+&= \underbrace{\int R(\bm v) \left(1-w(\bm v|\bm x,t)\right) f(\bm v|\bm x,t) d^3 \bm v}_{I_1} + \underbrace{\int R(\bm v) f^\mathrm{eq}(\bm v|\bm x,t) d^3 \bm v}_{I_2},
+\end{flalign}
+where
+\begin{flalign}
+w(\bm v|\bm x,t) = \frac{f^\mathrm{eq}(\bm v|\bm x,t)}{f(\bm v|\bm x,t)}~.
+\label{eq:weight_def}
+\end{flalign}
+Here $R(\bm v)$ denotes a velocity polynomial, e.g. $R(\bm v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
+
+<embed src="Figures/n_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="Figures/U_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="Figures/T_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="Figures/var_shock.pdf" type="application/pdf" width="100%" height="600px" />
+
+    <h3>Density Estimation</h3>
+    
     <h3>Phase Transition of Argon [<a href="#FPmultiphase">1</a>]</h3>
     <h4>a) Coalescence of Nano Droplets</h4>
     <p>Formation and coalescence of nano droplets in spinodal decomposition of Argon shown by the evolution of number density at initial temperature $120\ \mathrm{K}$ and number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$. 
