@@ -149,16 +149,10 @@
         }
 
         .pdf-container embed {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
         }
         
-        @media print {
-            .pdf-container {
-                width: 100%;
-            }
-        }
-    
     </style>
 </head>
 <body>
