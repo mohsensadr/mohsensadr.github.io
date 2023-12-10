@@ -148,7 +148,7 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Research Experience (postdocs)</a>
+        <a href="#experience">Research Experience</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
@@ -173,8 +173,6 @@
         </p>
         
     </section>
-
-
 
 <section id="projects">
     <h2>Projects</h2>
