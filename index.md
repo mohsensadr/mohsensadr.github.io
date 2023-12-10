@@ -189,29 +189,7 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <h3>Variance reduction</h3>
 
-<p>Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of the non-equilibrium distribution $R( v)$ using importance sampling via
-\begin{equation}
-\int R( v) f( v| x,t) d^3  v 
-= \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
-\end{equation}
-where
-\begin{equation}
-w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~.
-\label{eq:weight_def}
-\end{equation}
-Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
-
-<img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
-
-<img src="U_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
-
-<img src="T_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
-
-<img src="var_shock.pdf" alt="Description of the image" width="300" height="300">
-
-    <h3>Density Estimation</h3>
     
     <h3>Phase Transition of Argon [<a href="#FPmultiphase">1</a>]</h3>
     <h4>a) Coalescence of Nano Droplets</h4>
@@ -244,6 +222,33 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
 </div>
 
+    <h3>Variance reduction</h3>
+
+<p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equligrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of target distribution $R( v)$ using importance sampling via
+\begin{equation}
+\int R( v) f( v| x,t) d^3  v 
+= \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
+\end{equation}
+where
+\begin{equation}
+w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~.
+\label{eq:weight_def}
+\end{equation}
+Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
+
+
+<p> In this project, we design a consistent and least-biased evolution equation for the weight $w$ for a given Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. </p>
+
+<img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
+
+<img src="U_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
+
+<img src="T_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
+
+<img src="var_shock.pdf" alt="Description of the image" width="300" height="300">
+
+    <h3>Density Estimation</h3>
+    
 </section>
 
 <section id="experiance">
