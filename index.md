@@ -151,6 +151,12 @@
             width: 100%;
             height: 100%;
         }
+        
+        @media print {
+            body {
+                overflow: hidden;
+            }
+        }
     
     </style>
 </head>
