@@ -148,6 +148,7 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Research Experience (postdocs)</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
@@ -208,6 +209,21 @@
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
 </div>
 
+</section>
+
+<section id="experiance">
+    <h2>Research Experience</h2>
+    <h3>Postdoc at <a href="https://www.psi.ch/en">Paul Scherrer Institute</a></h3>
+    <p>Scientific Computing, Theory and Data</p>
+    <p>Switzerland, Jul. 2023 - present.</p>
+    
+    <h3>Postdoc at <a href="https://www.mit.edu">Massachusetts Institute of Technology</a> </h3>
+    <p>Department of Mechanical Engineering</p>
+    <p>USA, Dec. 2021 - Jun. 2023.</p>
+
+    <h3>Postdoc at <a href="[https://www.mit.edu](https://www.epfl.ch/en/)">EPFL</a> </h3>
+    <p><a href="https://www.epfl.ch/research/domains/swiss-plasma-center/">Swiss Plasma Center</a></p>
+    <p>Switzerland, Oct. 2020 - Nov. 2021.</p>
 </section>
 
 <section id="education">
