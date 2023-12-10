@@ -153,8 +153,8 @@
         }
         
         @media print {
-            body {
-                overflow: hidden;
+            .pdf-container {
+                width: 100%;
             }
         }
     
