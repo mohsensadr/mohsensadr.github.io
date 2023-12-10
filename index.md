@@ -150,6 +150,14 @@
             width: 100%;
             height: 100%;
         }
+
+        .equation-container {
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            overflow-wrap: break-word; /* Enable word wrapping */
+            width: 100%; /* Adjust width as needed */
+            margin: 20px 0; /* Add margin for better readability */
+        }
         
     </style>
 </head>
