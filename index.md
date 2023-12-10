@@ -161,7 +161,7 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Research Experience</a>
+        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
@@ -226,7 +226,7 @@
 
 <p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equilibrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of target distribution $R( v)$ using importance sampling via
 \begin{equation}
-\int R( v) f( v| x,t) d^3  v 
+\sloppy \int R( v) f( v| x,t) d^3  v 
 = \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
 \end{equation}
 where
@@ -252,7 +252,7 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
 </section>
 
 <section id="experiance">
-    <h2>Research Experience</h2>
+    <h2>Experience</h2>
     <h3>Postdoc at <a href="https://www.psi.ch/en">Paul Scherrer Institute</a></h3>
     <p>Scientific Computing, Theory and Data</p>
     <p>Switzerland, Jul. 2023 - present.</p>
