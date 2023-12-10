@@ -193,17 +193,17 @@
     <h2>Projects</h2>
     <h3>Variance reduction</h3>
 
-<p>Using the equilibrium distribution function $f^\mathrm{eq}(\bm v|\bm x, t)$ as the control variate, one can formulate any velocity moment of the non-equilibrium distribution $R(\bm v)$ using importance sampling via
+<p>Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of the non-equilibrium distribution $R( v)$ using importance sampling via
 \begin{equation}
-\int R(\bm v) f(\bm v|\bm x,t) d^3 \bm v 
-= \underbrace{\int R(\bm v) \left(1-w(\bm v|\bm x,t)\right) f(\bm v|\bm x,t) d^3 \bm v}_{I_1} + \underbrace{\int R(\bm v) f^\mathrm{eq}(\bm v|\bm x,t) d^3 \bm v}_{I_2},
+\int R( v) f( v| x,t) d^3  v 
+= \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
 \end{equation}
 where
 \begin{equation}
-w(\bm v|\bm x,t) = \frac{f^\mathrm{eq}(\bm v|\bm x,t)}{f(\bm v|\bm x,t)}~.
+w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~.
 \label{eq:weight_def}
 \end{equation}
-Here $R(\bm v)$ denotes a velocity polynomial, e.g. $R(\bm v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
+Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
  <div class="pdf-container">
         <embed src="n_nv10_shock3.pdf" type="application/pdf" />
