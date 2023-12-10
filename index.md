@@ -239,7 +239,7 @@
 </div>
     
 \begin{equation}
-\sloppy \int R( v) f( v| x,t) d^3  v 
+ \int R( v) f( v| x,t) d^3  v 
 = \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
 \end{equation}
 where
