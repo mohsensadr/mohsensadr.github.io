@@ -257,7 +257,6 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
 
 <img src="var_shock.pdf" alt="Description of the image" width="300" height="300">
 
-    /* <h3>Density Estimation</h3> */
     
 </section>
 
