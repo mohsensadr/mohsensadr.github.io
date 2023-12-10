@@ -145,7 +145,7 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            height: 80vh; /* Adjust the height as needed */
+            height: 100vh; /* Adjust the height as needed */
         }
 
         .pdf-container embed {
@@ -193,16 +193,16 @@
     <h2>Projects</h2>
     <h3>Variance reduction</h3>
 
-<p>Using the equilibrium distribution function $f^\mathrm{eq}(\bm v|\bm x, t)$ as the control variate, one can formulate {\color{ms}\st{$R(\bm v)$} any} velocity moment of the non-equilibrium distribution {\color{ms}$R(\bm v)$} using importance sampling {\color{ms}\st{by} via}
-\begin{flalign}
+<p>Using the equilibrium distribution function $f^\mathrm{eq}(\bm v|\bm x, t)$ as the control variate, one can formulate any velocity moment of the non-equilibrium distribution $R(\bm v)$ using importance sampling via
+\begin{equation}
 \int R(\bm v) f(\bm v|\bm x,t) d^3 \bm v 
-&= \underbrace{\int R(\bm v) \left(1-w(\bm v|\bm x,t)\right) f(\bm v|\bm x,t) d^3 \bm v}_{I_1} + \underbrace{\int R(\bm v) f^\mathrm{eq}(\bm v|\bm x,t) d^3 \bm v}_{I_2},
-\end{flalign}
+= \underbrace{\int R(\bm v) \left(1-w(\bm v|\bm x,t)\right) f(\bm v|\bm x,t) d^3 \bm v}_{I_1} + \underbrace{\int R(\bm v) f^\mathrm{eq}(\bm v|\bm x,t) d^3 \bm v}_{I_2},
+\end{equation}
 where
-\begin{flalign}
+\begin{equation}
 w(\bm v|\bm x,t) = \frac{f^\mathrm{eq}(\bm v|\bm x,t)}{f(\bm v|\bm x,t)}~.
 \label{eq:weight_def}
-\end{flalign}
+\end{equation}
 Here $R(\bm v)$ denotes a velocity polynomial, e.g. $R(\bm v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
  <div class="pdf-container">
