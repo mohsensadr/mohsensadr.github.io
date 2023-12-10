@@ -203,12 +203,11 @@ w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~.
 \end{equation}
 Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
-<embed src="n_nv10_shock3.pdf" type="application/pdf" width="100%" height="200px" />
+<img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="200">
 
-<embed src="T_nv10_shock3.pdf" type="application/pdf" width="100%" height="200px" />
+<img src="T_nv10_shock3.pdf" alt="Description of the image" width="300" height="200">
 
-<embed src="var_shock.pdf" type="application/pdf" width="100%" height="200px" />
-
+<img src="var_shock.pdf" alt="Description of the image" width="300" height="200">
 
     <h3>Density Estimation</h3>
     
