@@ -238,15 +238,12 @@
         \[ \int R(v) f(v|x,t) \, d^3 v = \int R(v) \left(1-w(v|x,t)\right) f(v|x,t) \, d^3 v + \int R(v) f^\mathrm{eq}(v|x,t) \, d^3 v \]
 </div>
     
-\begin{equation}
- \int R( v) f( v| x,t) d^3  v 
-= \int R(v) \left(1-w(v| x,t)\right) f( v| x,t) d^3 v + \int R( v) f^\mathrm{eq}( v| x,t) d^3 v,
-\end{equation}
 where
-\begin{equation}
-w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~.
-\label{eq:weight_def}
-\end{equation}
+
+<div class="equation-container">
+        \[ w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~. \]
+</div>
+
 Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
 
