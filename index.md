@@ -190,10 +190,10 @@ w(\bm v|\bm x,t) = \frac{f^\mathrm{eq}(\bm v|\bm x,t)}{f(\bm v|\bm x,t)}~.
 \end{flalign}
 Here $R(\bm v)$ denotes a velocity polynomial, e.g. $R(\bm v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
-<embed src="Figures/n_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
-<embed src="Figures/U_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
-<embed src="Figures/T_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
-<embed src="Figures/var_shock.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="n_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="U_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="T_nv10_shock3.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="var_shock.pdf" type="application/pdf" width="100%" height="600px" />
 
     <h3>Density Estimation</h3>
     
