@@ -198,8 +198,17 @@
 <section id="projects">
     <h2>Projects</h2>
 
-    
     <h3>Phase Transition of Argon [<a href="#FPmultiphase">1</a>]</h3>
+    <p>
+    In this project, we designed a stochastic process for modelling the phase transition of monatomic neutral particle with a Stochastic Differential Equation
+   <div class="equation-container">
+  \[ dV_i=  A_idt+D d  W_{t,i}\ \ \textrm{and} \\ 
+  dX_i= V_idt + {\hat{A}_i} dt \]
+</div>
+
+We set the drifts $A, \hat A$ and diffusion $D$ coefficients by matching the moments of this process with the one coming for the exact collision operator. 
+
+    </p>
     <h4>a) Coalescence of Nano Droplets</h4>
     <p>Formation and coalescence of nano droplets in spinodal decomposition of Argon shown by the evolution of number density at initial temperature $120\ \mathrm{K}$ and number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$. 
  </p>
