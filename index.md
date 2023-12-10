@@ -142,15 +142,15 @@
         }
 
         .pdf-container {
-            width: 50%; /* Adjust the width as needed */
+            width: 100%; /* Adjust the width as needed */
             height: 100%; /* Adjust the width as needed */
             margin: 0 auto; /* Center the container */
             overflow: hidden; /* Hide any overflow content */
         }
 
         .pdf-container embed {
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
         }
         
         @media print {
