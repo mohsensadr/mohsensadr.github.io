@@ -198,19 +198,19 @@
 <section id="projects">
     <h2>Projects</h2>
 
-    <h3>Phase Transition of Argon [<a href="#FPmultiphase">1</a>]</h3>
+    <h3>Phase Transition</h3>
     <p>
     In this project, we designed a stochastic process for modelling the phase transition of monatomic neutral particle with a Stochastic Differential Equation
    <div class="equation-container">
-  \[ dV_i=  A_idt+D d  W_{t,i}\ \ \textrm{and} \\ 
-  dX_i= V_idt + {\hat{A}_i} dt \]
+  \[ dV=  Adt+D d  W_{t}\ \ \textrm{and} \\ 
+  dX= V dt + {\hat{A}} dt \]
 </div>
 
-We set the drifts $A, \hat A$ and diffusion $D$ coefficients by matching the moments of this process with the one coming for the exact collision operator. 
+where $V$ and $X$ are random variables associated with particle velocity and position, and $W_t$ denotes the Wiener process. Here, we design drifts $A, \hat A$ and diffusion coefficients  $D$ to match the moments of the exact collision operator [<a href="#FPmultiphase">1</a>].
 
     </p>
     <h4>a) Coalescence of Nano Droplets</h4>
-    <p>Formation and coalescence of nano droplets in spinodal decomposition of Argon shown by the evolution of number density at initial temperature $120\ \mathrm{K}$ and number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$. 
+    <p>Here, we present the formation and coalescence of nano droplets in spinodal decomposition of Argon by showing the evolution of number density at initial temperature $120\ \mathrm{K}$ and number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$, respectively. 
  </p>
 
 <div class="video-container">
@@ -241,22 +241,22 @@ We set the drifts $A, \hat A$ and diffusion $D$ coefficients by matching the mom
 
     <h3>Variance reduction</h3>
 
-<p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equilibrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| x, t)$ as the control variate, one can formulate any velocity moment of target distribution $R( v)$ using importance sampling via
+<p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equilibrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| t)$ as the control variate, one can formulate any velocity moment $R( v)$ of target distribution $f( v| t)$ using importance sampling via
 
 <div class="equation-container">
-        \[ \int R(v) f(v|x,t) \, d^3 v = \int R(v) \left(1-w(v|x,t)\right) f(v|x,t) \, d^3 v + \int R(v) f^\mathrm{eq}(v|x,t) \, d^3 v \]
+        \[ \int R(v) f(v|t) \, d^3 v = \int R(v) \left(1-w(v|t)\right) f(v|t) \, d^3 v + \int R(v) f^\mathrm{eq}(v|t) \, d^3 v \]
 </div>
     
 where
 
 <div class="equation-container">
-        \[ w( v| x,t) = \frac{f^\mathrm{eq}(v|x, t)}{f(v|x, t)}~. \]
+        \[ w( v| t) = \frac{f^\mathrm{eq}(v| t)}{f(v| t)}~. \]
 </div>
 
 Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
 
 
-<p> In this project, we design a consistent and least-biased evolution equation for the weight $w$ for a given Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. </p>
+<p> In this project, we devised a consistent and least-biased evolution equation for the weight $w$ for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">2</a>] and [<a href="#VRFP">3</a>]. </p>
 
 <img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
 
@@ -298,11 +298,11 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
     <ul>
         <strong>Variance Reduction:</strong>
         
-        <li>
+        <li id="VRDSMC">
             &bull; Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a>].
         </li>
 
-        <li>
+        <li id="VRFP">
             &bull; Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>].
         </li>
         
