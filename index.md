@@ -244,7 +244,7 @@ where $V$ and $X$ are random variables associated with particle velocity and pos
 <p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equilibrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| t)$ as the control variate, one can formulate any velocity moment $R( v)$ of target distribution $f( v| t)$ using importance sampling via
 
 <div class="equation-container">
-        \[ \int R(v) f(v|t) \, d^3 v = \int R(v) \left(1-w(v|t)\right) f(v|t) \, d^3 v + \int R(v) f^\mathrm{eq}(v|t) \, d^3 v \]
+        \[ \int R(v) f(v|t) \, d v = \int R(v) \left(1-w(v|t)\right) f(v|t) \, d v + \int R(v) f^\mathrm{eq}(v|t) \, d v \]
 </div>
     
 where
@@ -253,7 +253,7 @@ where
         \[ w( v| t) = \frac{f^\mathrm{eq}(v| t)}{f(v| t)}~. \]
 </div>
 
-Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,2,3$. </p>
+Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,...$. </p>
 
 
 <p> In this project, we devised a consistent and least-biased evolution equation for the weight $w$ for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">2</a>] and [<a href="#VRFP">3</a>]. </p>
