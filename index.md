@@ -52,12 +52,12 @@
         nav {
             background-color: #fff;
             padding: 0.5em 0;
-            text-align: center;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
             text-align: center;
+            margin-left: 20px; /* Adjust the left margin as needed */
         }
 
         nav a {
