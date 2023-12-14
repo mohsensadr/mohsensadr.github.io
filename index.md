@@ -167,6 +167,7 @@
 </header>
 
     <nav>
+        <a href="CV.pdf" download>CV</a>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -174,7 +175,6 @@
         <a href="#publications">Publications</a>
         <a href="#referee">Review Contribution</a>
         <a href="#contact">Contact</a>
-        <a href="CV.pdf" download>CV</a>
     </nav>
 
     <section id="about">
