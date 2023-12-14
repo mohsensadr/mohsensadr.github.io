@@ -371,15 +371,15 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
         </p>
         
         <li>
-            &bull <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a>
+             <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a>
         </li>
 
         <li>
-            &bull <a href="https://link.springer.com/journal/11012">Meccanica</a>
+             <a href="https://link.springer.com/journal/11012">Meccanica</a>
         </li>
         
         <li>
-            &bull <a href="https://www.mdpi.com/journal/photonics">Photonics</a>
+            <a href="https://www.mdpi.com/journal/photonics">Photonics</a>
         </li>
     </section>
     
