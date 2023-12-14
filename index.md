@@ -367,7 +367,7 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
         <h2>Referee work</h2>
 
         <p>
-        I am an active reviewer for the fowllowing Journals:
+        I am an active referee of the following peer-reviewed journals:
         </p>
         
         <li>
