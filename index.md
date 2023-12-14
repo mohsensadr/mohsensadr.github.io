@@ -57,7 +57,7 @@
             top: 0;
             z-index: 1000;
             text-align: center;
-            margin-left: -10px; /* Adjust the left margin as needed */
+            margin-left: -20px; /* Adjust the left margin as needed */
         }
 
         nav a {
