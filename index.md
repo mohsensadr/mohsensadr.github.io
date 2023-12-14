@@ -172,6 +172,7 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
+        <a href="#referee">Referee</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -362,6 +363,29 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
     </ul>
 </section>
 
+<section id="referee">
+        <h2>Referee work</h2>
+
+        <p>
+        I am an active reviewer for the fowllowing Journals:
+        <\p>
+        
+        <li>
+            &bull [<a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a>]
+        </li>
+
+        <li>
+            &bull [<a href="https://link.springer.com/journal/11012">Meccanica</a>]
+        </li>
+        
+        <li>
+            &bull [<a href="https://www.mdpi.com/journal/photonics">Photonics</a>]
+        </li>
+
+        
+        
+    </section>
+    
     <section id="contact">
         <h2>Contact</h2>
         <p>
