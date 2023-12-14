@@ -172,7 +172,7 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
-        <a href="#referee">Referee</a>
+        <a href="#referee">Review Contribution</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -364,7 +364,7 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
 </section>
 
 <section id="referee">
-        <h2>Referee work</h2>
+        <h2>Review Contribution</h2>
 
         <p>
         I am an active referee of the following peer-reviewed journals:
