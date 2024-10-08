@@ -325,11 +325,11 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
         <strong>Density Estimation:</strong>
 
         <li>
-            &bull; Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research (in review)</em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
+            &bull; Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research </em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
         </li>
 
         <li>
-            &bull; Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics (in review)</em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
+            &bull; Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics </em>, 2024 [<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
         </li>
 
         <li>
@@ -376,6 +376,10 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
         </li>
 
         <li>
+             <a href="https://iclr.cc">International Conference on Learning Representations (ICLR)</a>
+        </li>
+        
+        <li>
              <a href="https://link.springer.com/journal/11012">Meccanica</a>
         </li>
         
@@ -392,7 +396,7 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
     </section>
 
     <footer>
-        &copy; 2023 Mohsen Sadr. All rights reserved.
+        &copy; 2024 Mohsen Sadr. All rights reserved.
     </footer>
 
 </body>
