@@ -378,6 +378,10 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
         <li>
              <a href="https://iclr.cc">International Conference on Learning Representations (ICLR)</a>
         </li>
+
+        <li>
+             <a href="https://pubs.aip.org/aip/pof?gad_source=1&gbraid=0AAAAADgwGbzh-SiC9i39ahsUKgozB8sDJ&gclid=Cj0KCQjw1Yy5BhD-ARIsAI0RbXaaBDmB03R1ixhcDVy_1zWYKVKB8Ik_sG-5GmENfxe75-kplx7P0z8aAgYUEALw_wcB">Physics of Fluids (POF)</a>
+        </li>
         
         <li>
              <a href="https://link.springer.com/journal/11012">Meccanica</a>
