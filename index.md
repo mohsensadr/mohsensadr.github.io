@@ -168,6 +168,9 @@
 
     <nav>
         <a href="CV.pdf" download>CV</a>
+        <a href="https://github.com/mohsensadr" target="_blank" title="GitHub">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width:24px; height:24px; vertical-align:middle; margin-right:8px;"> GitHub
+    </a>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
