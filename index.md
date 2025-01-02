@@ -268,7 +268,7 @@
 
         <li id="OCD">
         2. Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. "Optimal transportation by orthogonal
-coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a>].
+coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a> | <a href="https://github.com/mohsensadr/OCD">Code</a>].
         </li>
 
          <li id="WE">
