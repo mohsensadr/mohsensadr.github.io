@@ -197,21 +197,21 @@
     
     <h3>Optimal Transport</h3>
     
-    <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], moment-based methods [<a href="#WE">3</a>]. <p>
+    <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], moment-based methods [<a href="#WE">3</a>]. As a showcase, here we show the ouptut of generative model learned using the optimal map between normal and 4 other marginals. </p>
      
-     <img src="5marginals.png" alt="5 marginals" width="900" height="300">
+     <img src="5marginals.png" alt="5 marginals" width="800" height="300">
      
     <h3>Variance Reduction</h3>
 
 <p>One of the main challenges in interpreting solution to statistical models is noise in prediction. We have developed a general-pupose varince reduction method for sotchastic processes where the target density is around an equilibrium/control-variate denisty. In this project, we devised a consistent and least-biased evolution equation for the importance weights for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
 
-<img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
+<img src="n_nv10_shock3.pdf" alt="Description of the image" width="200" height="200">
 
-<img src="U_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
+<img src="U_nv10_shock3.pdf" alt="Description of the image" width="200" height="200">
 
-<img src="T_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
+<img src="T_nv10_shock3.pdf" alt="Description of the image" width="200" height="200">
 
-<img src="var_shock.pdf" alt="Description of the image" width="300" height="300">
+<img src="var_shock.pdf" alt="Description of the image" width="200" height="200">
 
     <h3>Phase Transition</h3>
     
@@ -255,10 +255,12 @@
 
         <li id="colOT">
         1. Mohsen Sadr and Hossein Gorji. "Collision-based dynamics for multi-marginal optimal transport". 2024 [<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>].
+        </li>
 
         <li id="OCD">
         2. Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. "Optimal transportation by orthogonal
 coupling dynamics". 2024. [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a>].
+        </li>
 
          <li id="WE">
         3. Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics </em>, 2024 [<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
@@ -330,7 +332,7 @@ coupling dynamics". 2024. [<a href="https://doi.org/10.48550/arXiv.2410.08060">P
         <h2>Review Contribution</h2>
 
         <p>
-        I am an active referee of the following peer-reviewed journals:
+        I am an active referee of the following peer-reviewed journals/conferences:
         </p>
         
         <li>
