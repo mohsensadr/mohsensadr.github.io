@@ -39,14 +39,14 @@
         }
 
         header {
-            background-image: url('IMG_0006.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-            background-size: contains; /* Adjust the background-size property as needed */
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            height: 50vh;
+            background-image: url('IMG_0006.jpg'); /* Replace 'IMG_0006.jpg' with the actual path to your image */
+            background-size: auto 50%; /* Adjusts the height of the background image to 50% of its container */
+            background-position: center; /* Centers the image within the header */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color: #fff; /* Text color */
+            text-align: center; /* Centers the text */
+            padding: 1em 0; /* Padding for spacing */
+            height: 50vh; /* Sets the header's height to 50% of the viewport height */
         }
 
         nav {
