@@ -40,7 +40,7 @@
 
         header {
             background-image: url('IMG_0006.jpg'); /* Replace 'IMG_0006.jpg' with the actual path to your image */
-            background-size: auto 50%; /* Adjusts the height of the background image to 50% of its container */
+            background-size: contains; /* Adjusts the height of the background image to 50% of its container */
             background-position: center; /* Centers the image within the header */
             background-repeat: no-repeat; /* Prevents the image from repeating */
             color: #fff; /* Text color */
