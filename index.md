@@ -199,7 +199,7 @@
     
     <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], moment-based methods [<a href="#WE">3</a>]. <p>
      
-     <img src="5marginals.png" alt="5 marginals" width="300" height="300">
+     <img src="5marginals.png" alt="5 marginals" width="900" height="300">
      
     <h3>Variance Reduction</h3>
 
