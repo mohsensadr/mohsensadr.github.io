@@ -197,7 +197,7 @@
     
     <h3>Optimal Transport</h3>
     
-    <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [1], orthogonal coupling dynamics [2], moment-based methods [3]. <p>
+    <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], moment-based methods [<a href="#WE">3</a>]. <p>
      
      <img src="5marginals.png" alt="5 marginals" width="300" height="300">
      
@@ -215,7 +215,7 @@
 
     <h3>Phase Transition</h3>
     <p>
-    In this line of research, we designed a stochastic process for modelling the phase transition of monatomic particle that follows the exact kinetic equation up in distribution up to desired moments with the computational complexity that is linear with number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP"8</a>]. As a showcase, here we present a simulation of Argon's density going through the spinodal decomposition. </p>
+    In this line of research, we designed a stochastic process for modelling the phase transition of monatomic particle that follows the exact kinetic equation up in distribution up to desired moments with the computational complexity that is linear with number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP"8></a>]. As a showcase, here we present a simulation of Argon's density going through the spinodal decomposition. </p>
 
 <div class="video-container">
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
@@ -254,12 +254,14 @@
 
         <strong>Optimal Transport:</strong>
 
+        <li id="colOT">
         1. Mohsen Sadr and Hossein Gorji. "Collision-based dynamics for multi-marginal optimal transport". 2024 [<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>].
-        
+
+        <li id="OCD">
         2. Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. "Optimal transportation by orthogonal
 coupling dynamics". 2024. [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a>].
 
-        <li>
+         <li id="WE">
         3. Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics </em>, 2024 [<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
         </li>
         
