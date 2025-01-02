@@ -196,6 +196,7 @@
     <h2>Projects</h2>
     
     <h3>Optimal Transport</h3>
+    
     <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [1], orthogonal coupling dynamics [2], moment-based methods [3]. <p>
      
      <img src="5marginals.png" alt="5 marginals" width="300" height="300">
