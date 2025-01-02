@@ -199,19 +199,19 @@
     
     <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], moment-based methods [<a href="#WE">3</a>]. As a showcase, here we show the ouptut of generative model learned using the optimal map between normal and 4 other marginals. </p>
      
-     <img src="5marginals.png" alt="5 marginals" width="800" height="300">
+     <img src="5marginals.png" alt="Visualization of optimal transport for 5 marginals" class="responsive-img">
      
     <h3>Variance Reduction</h3>
 
 <p>One of the main challenges in interpreting solution to statistical models is noise in prediction. We have developed a general-pupose varince reduction method for sotchastic processes where the target density is around an equilibrium/control-variate denisty. In this project, we devised a consistent and least-biased evolution equation for the importance weights for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
 
-<img src="n_nv10_shock3.pdf" alt="Description of the image" width="250" height="250">
+<img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
 
-<img src="U_nv10_shock3.pdf" alt="Description of the image" width="250" height="250">
+<img src="U_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
 
-<img src="T_nv10_shock3.pdf" alt="Description of the image" width="250" height="250">
+<img src="T_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
 
-<img src="var_shock.pdf" alt="Description of the image" width="250" height="250">
+<img src="var_shock.pdf" alt="Description of the image" width="300" height="300">
 
     <h3>Phase Transition</h3>
     
