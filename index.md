@@ -197,40 +197,7 @@
 
     <h3>Phase Transition</h3>
     <p>
-    In this project, we designed a stochastic process for modelling the phase transition of monatomic neutral particle with a Stochastic Differential Equation
-   <div class="equation-container">
-  \[ dV=  Adt+D d  W_{t}\ \ \textrm{and} \\ 
-  dX= V dt + {\hat{A}} dt \]
-</div>
-
-where $V$ and $X$ are random variables associated with particle velocity and position, and $W_t$ denotes the Wiener process. Here, we design drifts $A, \hat A$ and diffusion coefficients  $D$ to match the moments of the exact collision operator [<a href="#FPmultiphase">1</a>].
-
-    </p>
-    <h4>a) Coalescence of Nano Droplets</h4>
-    <p>Here, we present the formation and coalescence of nano droplets in spinodal decomposition of Argon by showing the evolution of number density at initial temperature $120\ \mathrm{K}$ and number density of $3\times 10^{27}$ and $5\times 10^{27}\ \mathrm{m}^{-3}$, respectively. 
- </p>
-
-<div class="video-container">
-    <iframe src="spinodal_1.mp4" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<p>  </p>
-
-<div class="video-container">
- <iframe src="spinodal_2.mp4" frameborder="0" allowfullscreen></iframe>
-</div>
-
- <h4>b) Formation of Bubbles</h4>
-    
-<p> Evolution of  number density for spinodal decomposition of Argon at initial temperature $120\ \mathrm{K}$ and number density of $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
-
-<div class="video-container">
-<iframe src="spinodal_3.mp4" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<h4>c) Spinodal Decomposition in 3D</h4>
-    
-<p> 3D simulation of spinodal decomposition  at the initial temperature $120\ \mathrm{K}$ and number density $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
+    In this line of research, we designed a stochastic process for modelling the phase transition of monatomic particle that follows the exact kinetic equation up in distribution up to desired moments with the computational complexity that is linear with number of particles. For details on the developed method, see [<a href="#FPmultiphase">1</a>, <a href="#LongRange">2</a>, <a href="#DFP">3</a>]. As a showcase, here we present a simulation of Argon's spinodal decomposition  at the initial temperature $120\ \mathrm{K}$ and number density $8\times 10^{27}\ \mathrm{m}^{-3}$. </p>
 
 <div class="video-container">
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
@@ -238,22 +205,7 @@ where $V$ and $X$ are random variables associated with particle velocity and pos
 
     <h3>Variance reduction</h3>
 
-<p>One of the main challenges in interpreting solution to statistical models is noise (or variance) in prediction. We develope a general-pupose varince reduction method for sotchastic processes where the target pdf is around an equilibrium/control-variate denisty. Using the equilibrium distribution function $f^\mathrm{eq}( v| t)$ as the control variate, one can formulate any velocity moment $R( v)$ of target distribution $f( v| t)$ using importance sampling via
-
-<div class="equation-container">
-        \[ \int R(v) f(v|t) \, d v = \int R(v) \left(1-w(v|t)\right) f(v|t) \, d v + \int R(v) f^\mathrm{eq}(v|t) \, d v \]
-</div>
-    
-where
-
-<div class="equation-container">
-        \[ w( v| t) = \frac{f^\mathrm{eq}(v| t)}{f(v| t)}~. \]
-</div>
-
-Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ for $i,j=1,...$. </p>
-
-
-<p> In this project, we devised a consistent and least-biased evolution equation for the weight $w$ for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">2</a>] and [<a href="#VRFP">3</a>]. </p>
+<p>One of the main challenges in interpreting solution to statistical models is noise in prediction. We have developed a general-pupose varince reduction method for sotchastic processes where the target density is around an equilibrium/control-variate denisty. In this project, we devised a consistent and least-biased evolution equation for the importance weights for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
 
 <img src="n_nv10_shock3.pdf" alt="Description of the image" width="300" height="300">
 
@@ -293,66 +245,67 @@ Here $R(v)$ denotes a velocity polynomial, e.g. $R(v) \in \{1,v_i,v_iv_j...\}$ f
 <section id="publications">
     <h2>Publications</h2>
     <ul>
-        <strong>Variance Reduction:</strong>
-        
-        <li id="VRDSMC">
-            &bull; Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a>].
-        </li>
-
-        <li id="VRFP">
-            &bull; Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>].
-        </li>
         
         <strong>Modelling Phase Transition:</strong>
         
         <li id="FPmultiphase">
-            &bull; Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>].
+            &1. Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>].
         </li>
 
-        <li>
-            &bull; Mohsen Sadr, and M. Hossein Gorji. "Treatment of long-range interactions arising in the Enskog–Vlasov description of dense fluids" <em>Journal of Computational Physics</em>, 378, 129-142, 2019 [<a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05845">Preprint</a>].
+        <li id="LongRange">
+            &2. Mohsen Sadr, and M. Hossein Gorji. "Treatment of long-range interactions arising in the Enskog–Vlasov description of dense fluids" <em>Journal of Computational Physics</em>, 378, 129-142, 2019 [<a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05845">Preprint</a>].
         </li>
 
-        <li>
-            &bull; Mohsen Sadr, and M. Hossein Gorji. "A continuous stochastic model for non-equilibrium dense gases" <em>Journal of Physics of Fluids</em>, 29, 122007, 2017 [<a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> | <a href="https://arxiv.org/abs/2308.05117">Preprint</a>].
+        <li id="DFP">
+            &3. Mohsen Sadr, and M. Hossein Gorji. "A continuous stochastic model for non-equilibrium dense gases" <em>Journal of Physics of Fluids</em>, 29, 122007, 2017 [<a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> | <a href="https://arxiv.org/abs/2308.05117">Preprint</a>].
         </li>
 
+        <strong>Variance Reduction:</strong>
+        
+        <li id="VRDSMC">
+            &4. Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a>].
+        </li>
+
+        <li id="VRFP">
+            &5. Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>].
+        </li>
+        
         <strong>Density Estimation:</strong>
 
         <li>
-            &bull; Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research </em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
+            &6. Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research </em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
         </li>
 
         <li>
-            &bull; Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics </em>, 2024 [<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
+            &7. Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics </em>, 2024 [<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a>].
         </li>
 
         <li>
-            &bull; Mohsen Sadr,  Manuel Torrilhon, and M. Hossein Gorji. "Gaussian Process Regression for Maximum Entropy Distribution" <em>Journal of Computational Physics</em>, 418, 109644, 2020 [<a href="https://doi.org/10.1016/j.jcp.2020.109644">Elsevier</a> | <a href="https://arxiv.org/abs/2308.06149">Preprint</a>].
+            &8. Mohsen Sadr,  Manuel Torrilhon, and M. Hossein Gorji. "Gaussian Process Regression for Maximum Entropy Distribution" <em>Journal of Computational Physics</em>, 418, 109644, 2020 [<a href="https://doi.org/10.1016/j.jcp.2020.109644">Elsevier</a> | <a href="https://arxiv.org/abs/2308.06149">Preprint</a>].
         </li>
 
         <strong>Approximating Collision Operator:</strong>
 
         <li>
-            &bull; Fabian Mies, Mohsen Sadr, and Manuel Torrilhon. "An efficient jump-diffusion approximation of the Boltzmann equation" <em>Journal of Computational Physics</em>, 490, 112308, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112308">Elsevier</a> | <a href="https://arxiv.org/abs/2112.08362">Preprint</a>].
+            &9. Fabian Mies, Mohsen Sadr, and Manuel Torrilhon. "An efficient jump-diffusion approximation of the Boltzmann equation" <em>Journal of Computational Physics</em>, 490, 112308, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112308">Elsevier</a> | <a href="https://arxiv.org/abs/2112.08362">Preprint</a>].
         </li>
 
         <li>
-            &bull; Mohsen Sadr, Qian Wang, and M. Hossein Gorji. "Coupling kinetic and continuum using data-driven maximum entropy distribution" <em>Journal of Computational Physics</em>, 444, 110542, 2021 [<a href="https://doi.org/10.1016/j.jcp.2021.110542">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05672">Preprint</a>].
+            &10. Mohsen Sadr, Qian Wang, and M. Hossein Gorji. "Coupling kinetic and continuum using data-driven maximum entropy distribution" <em>Journal of Computational Physics</em>, 444, 110542, 2021 [<a href="https://doi.org/10.1016/j.jcp.2021.110542">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05672">Preprint</a>].
         </li>
 
         <strong>Simulation of Plasma/Fluid:</strong>
         
         <li>
-        &bull; Mohsen Sadr, Alexey Mishchenko, Thomas Hayward-Schneider, Axel Koenies, Alberto Bottino, Alessandro Biancalani, Peter Donnel, Emmanuel Lanti, and Laurent Villard. "Linear and nonlinear excitation of TAE modes by external electromagnetic perturbations using ORB5" <em>Plasma Physics and Controlled Fusion</em>, 64, 085010, 2022 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing Ltd (open access)</a>].
+        &11. Mohsen Sadr, Alexey Mishchenko, Thomas Hayward-Schneider, Axel Koenies, Alberto Bottino, Alessandro Biancalani, Peter Donnel, Emmanuel Lanti, and Laurent Villard. "Linear and nonlinear excitation of TAE modes by external electromagnetic perturbations using ORB5" <em>Plasma Physics and Controlled Fusion</em>, 64, 085010, 2022 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing Ltd (open access)</a>].
         </li>
 
         <li>
-        &bull; P Donnel, J Cazabonne, L Villard, S Brunner, S Coda, J Decker, M Murugappan, and M Sadr. "Quasilinear treatment of wave–particle interactions in the electron cyclotron range and its implementation in a gyrokinetic code" <em>Plasma Physics and Controlled Fusion</em>, 63, 064001, 2021 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/abf53f">IOP Publishing Ltd (open access)</a>].
+        &12. P Donnel, J Cazabonne, L Villard, S Brunner, S Coda, J Decker, M Murugappan, and M Sadr. "Quasilinear treatment of wave–particle interactions in the electron cyclotron range and its implementation in a gyrokinetic code" <em>Plasma Physics and Controlled Fusion</em>, 63, 064001, 2021 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/abf53f">IOP Publishing Ltd (open access)</a>].
         </li>
         
         <li>
-        &bull; Sima Farazi, Mohsen Sadr, Seongwon Kang, Martin Schiemann, Nikita Vorobiev, Viktor Scherer, Heinz Pitsch. "Resolved simulations of single char particle combustion in a laminar flow field" <em>Fuel</em>, 201, 15-28, 2017 [<a href="https://doi.org/10.1016/j.fuel.2016.11.011">Elsevier</a>].
+        &13. Sima Farazi, Mohsen Sadr, Seongwon Kang, Martin Schiemann, Nikita Vorobiev, Viktor Scherer, Heinz Pitsch. "Resolved simulations of single char particle combustion in a laminar flow field" <em>Fuel</em>, 201, 15-28, 2017 [<a href="https://doi.org/10.1016/j.fuel.2016.11.011">Elsevier</a>].
         </li>
         
         
