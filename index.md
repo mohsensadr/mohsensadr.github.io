@@ -302,12 +302,11 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         <strong>Data-Driven Modelling:</strong>
         
         <li>
-        9. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method"
-2024 [<a href="https://doi.org/10.48550/arXiv.2401.17177">Preprint</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>]
+        9. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method", 2024 [<a href="https://doi.org/10.48550/arXiv.2401.17177">Preprint</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>].
         </li>
 
         <li>
-        10. Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research </em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>].
+        10. Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research</em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>].
         </li>
 
         <li>
