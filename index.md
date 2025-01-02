@@ -205,13 +205,13 @@
 
 <p>One of the main challenges in interpreting solution to statistical models is noise in prediction. We have developed a general-pupose varince reduction method for sotchastic processes where the target density is around an equilibrium/control-variate denisty. In this project, we devised a consistent and least-biased evolution equation for the importance weights for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
 
-<img src="n_nv10_shock3.pdf" alt="Description of the image" width="200" height="200">
+<img src="n_nv10_shock3.pdf" alt="Description of the image" width="250" height="250">
 
-<img src="U_nv10_shock3.pdf" alt="Description of the image" width="200" height="200">
+<img src="U_nv10_shock3.pdf" alt="Description of the image" width="250" height="250">
 
-<img src="T_nv10_shock3.pdf" alt="Description of the image" width="200" height="200">
+<img src="T_nv10_shock3.pdf" alt="Description of the image" width="250" height="250">
 
-<img src="var_shock.pdf" alt="Description of the image" width="200" height="200">
+<img src="var_shock.pdf" alt="Description of the image" width="250" height="250">
 
     <h3>Phase Transition</h3>
     
@@ -254,12 +254,12 @@
         <strong>Optimal Transport:</strong>
 
         <li id="colOT">
-        1. Mohsen Sadr and Hossein Gorji. "Collision-based dynamics for multi-marginal optimal transport". 2024 [<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>].
+        1. Mohsen Sadr and Hossein Gorji. "Collision-based dynamics for multi-marginal optimal transport" 2024 [<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>].
         </li>
 
         <li id="OCD">
         2. Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. "Optimal transportation by orthogonal
-coupling dynamics". 2024. [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a>].
+coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a>].
         </li>
 
          <li id="WE">
