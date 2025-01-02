@@ -206,16 +206,16 @@
 <p>One of the main challenges in interpreting solution to statistical models is noise in prediction. We have developed a general-pupose varince reduction method for sotchastic processes where the target density is around an equilibrium/control-variate denisty. In this project, we devised a consistent and least-biased evolution equation for the importance weights for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <div style="flex: 0 0 50%; max-width: 50%; box-sizing: border-box;">
+    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
         <img src="n_nv10_shock3.png" alt="Number density for Sod-Shock tube test case" style="width: 100%; height: auto; display: block;">
     </div>
-    <div style="flex: 0 0 50%; max-width: 50%; box-sizing: border-box;">
+    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
         <img src="U_nv10_shock3.png" alt="Bulk velocity for Sod-Shock tube test case" style="width: 100%; height: auto; display: block;">
     </div>
-    <div style="flex: 0 0 50%; max-width: 50%; box-sizing: border-box;">
+    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
         <img src="T_nv10_shock3.png" alt="Temperature for Sod-Shock tube test case" style="width: 100%; height: auto; display: block;">
     </div>
-    <div style="flex: 0 0 50%; max-width: 50%; box-sizing: border-box;">
+    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
         <img src="var_shock.png" alt="Noise variation vs signal for variance reduction" style="width: 100%; height: auto; display: block;">
     </div>
 </div>
