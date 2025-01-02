@@ -215,7 +215,7 @@
 
     <h3>Phase Transition</h3>
     <p>
-    In this line of research, we designed a stochastic process for modelling the phase transition of monatomic particle that follows the exact kinetic equation up in distribution up to desired moments with the computational complexity that is linear with number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP"8></a>]. As a showcase, here we present a simulation of Argon's density going through the spinodal decomposition. </p>
+    In this line of research, we designed a stochastic process for modelling the phase transition of monatomic particle that follows the exact kinetic equation up in distribution up to desired moments with the computational complexity that is linear with number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. As a showcase, here we present a simulation of Argon's density going through the spinodal decomposition. </p>
 
 <div class="video-container">
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
