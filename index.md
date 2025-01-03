@@ -51,28 +51,37 @@
 
         nav {
             background-color: #fff;
-            padding: 0.5em 0;
+            padding: 1em 0;
             position: fixed;
-            width: 100%;
             top: 0;
-            text-align: center;
+            left: 0;
+            width: 100%; /* Full-width spanning the entire page */
+            display: flex; /* Use flexbox for alignment */
+            justify-content: center; /* Center the content horizontally */
+            flex-wrap: wrap; /* Ensure items wrap to the next line if needed */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
-
+        
         nav a {
-            display: inline-block; /* Ensures links line up horizontally */
             color: #333;
             text-decoration: none;
             padding: 0.5em 1em;
             margin: 0 0.5em;
             border-radius: 4px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
             font-weight: bold;
         }
-
+        
         nav a:hover {
-            background-color: #555;
+            background-color: #eee;
+        }
+        
+        nav img {
+            vertical-align: middle;
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
         }
 
         section {
