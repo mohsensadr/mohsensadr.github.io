@@ -419,5 +419,11 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         });
     </script>
 
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0); // Scroll to the top of the page
+        }
+    </script>
+
 </body>
 </html>
