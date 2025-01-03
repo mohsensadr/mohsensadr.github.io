@@ -23,33 +23,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.13/katex.min.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.13/katex.min.js"></script>
 
+       <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
     <style>
-        * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-        }
-        
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            padding-top: 70px; /* Add this to ensure space for the fixed nav bar */
         }
-    
+
         header {
             background-image: url('IMG_0006.jpg'); /* Replace 'IMG_0006.jpg' with the actual path to your image */
-            background-size: cover; /* Ensures the image fully covers the header */
+            background-size: contains; /* Adjusts the height of the background image to 50% of its container */
             background-position: center; /* Centers the image within the header */
             background-repeat: no-repeat; /* Prevents the image from repeating */
             color: #fff; /* Text color */
             text-align: center; /* Centers the text */
-            padding: 2em 0; /* Padding for spacing */
+            padding: 1em 0; /* Padding for spacing */
             height: 50vh; /* Sets the header's height to 50% of the viewport height */
-            margin-top: 70px; /* Ensure space for the fixed navbar */
         }
-    
+
         nav {
             background-color: #fff;
             padding: 1em 0;
@@ -86,7 +85,7 @@
             width: 24px;
             height: 24px;
         }
-    
+
         section {
             max-width: 800px;
             margin: 6em auto 2em; /* Adds spacing below the fixed nav */
@@ -94,23 +93,84 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px; 
         }
-    
+
         h2 {
             color: #333;
         }
-    
+
         p {
             color: #555;
             margin-bottom: 1em;
         }
-    
+
         footer {
             text-align: center;
             padding: 1em 0;
             background-color: #fff;
             color: #333;
         }
+
+        section#publications {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#publications h2 {
+            color: #333;
+        }
+
+        section#publications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section#publications li {
+            margin-bottom: 1em;
+        }
+
+        #projects {
+            /* Add any styling for the projects section here */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+        }
+
+        .video-container iframe {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             border: 1px solid black; /* You can add a border or other styling if desired */
+        }
+
+        .pdf-container {
+            width: 100%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the width as needed */
+        }
+
+        .pdf-container embed {
+            width: 100%;
+            height: 100%;
+        }
+
+        .equation-container {
+            white-space: nowrap; /* Prevent line breaks */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            overflow-wrap: break-word; /* Enable word wrapping */
+            width: 100%; /* Adjust width as needed */
+            margin: 20px 0; /* Add margin for better readability */
+        }
+        
     </style>
 
 </head>
