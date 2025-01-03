@@ -187,7 +187,7 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            My name is Mohsen. Currently, I am working on optimal transport problem as a researcher at the <a href="https://www.psi.ch/en">Paul Scherrer Institute</a>, Switzerland, since July of 2023. Here, I am also involved in upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable for simulating particle accelerators, plasma, and rarefied gas dynamics. In Dec. 2021, I joined <a href="https://www.mit.edu">MIT</a>, USA, and worked with Prof. Nicolas Hadjiconstantinou on developing a general-purpose variance reduction for Monte Carlo methods in kinetic theory. Before that, I worked with Prof. Laurent Villard at the <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/">Swiss Plasma Center</a>, Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I carried out my doctoral studies at RWTH Aachen University, Germany, under the supervision of Prof. Manuel Torrilhon and Dr. Hossein Gorji. My dissertation was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition in kinetic theory.
+            My name is Mohsen. Currently, I am working on the optimal transport problem as a researcher at the <a href="https://www.psi.ch/en">Paul Scherrer Institute</a>, Switzerland, since July of 2023. Here, I am also involved in upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable for simulating particle accelerators, plasma, and rarefied gas dynamics. In Dec. 2021, I joined <a href="https://www.mit.edu">MIT</a>, USA, and worked with Prof. Nicolas Hadjiconstantinou on developing a general-purpose variance-reduced Monte Carlo method for kinetic equations. Before that, I worked with Prof. Laurent Villard at the <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/">Swiss Plasma Center</a>, Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I carried out my doctoral studies at RWTH Aachen University, Germany, under the supervision of Prof. Manuel Torrilhon and Dr. Hossein Gorji. My dissertation was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition descriptions in kinetic theory.
         </p>
         
     </section>
@@ -195,15 +195,15 @@
 <section id="projects">
     <h2>Projects</h2>
     
-    <h3>Optimal Transport</h3>
+    <h3>Optimal Transport Problem</h3>
     
-    <p> Finding the optimal map/plan between marginals are one of the most attractive problems in applied mathematics with application in data-driven modelling and Machine Learning. I am very much interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], moment-based methods [<a href="#WE">3</a>]. As a showcase, here we show the ouptut of generative model learned using the optimal map between normal and 4 other marginals. </p>
+    <p> Finding the optimal map/plan between marginals is one of the most attractive problems in applied mathematics with applications in data-driven modeling and Machine Learning. I am interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], and moment-based methods [<a href="#WE">3</a>]. As a showcase, here I show the output of a generative model trained using the optimal map between the normal and four other marginals. </p>
      
      <img src="5marginals.png" alt="Visualization of optimal transport for 5 marginals" class="responsive-img">
      
-    <h3>Variance Reduction</h3>
+    <h3>Variance Reduction Method</h3>
 
-<p>One of the main challenges in interpreting solution to statistical models is noise in prediction. We have developed a general-pupose varince reduction method for sotchastic processes where the target density is around an equilibrium/control-variate denisty. In this project, we devised a consistent and least-biased evolution equation for the importance weights for Boltzmann collision operator as well as a general Fokker-Planck type equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
+<p>One of the main challenges in interpreting the solution of statistical models is noise. We have developed a general-purpose and entropy-based variance reduction method for stochastic processes where the target density is around an equilibrium/control-variate density. In this project, we devised a consistent and least-biased evolution equation for the importance weights of the Boltzmann and Fokker-Planck equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRDSMC">4</a>] and [<a href="#VRFP">5</a>]. </p>
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
@@ -222,9 +222,9 @@
 
 
 
-    <h3>Phase Transition</h3>
+    <h3>Monte Carlo Solution to Phase Transition</h3>
     
-    <p> In this line of research, we designed a stochastic process for modelling the phase transition of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. As a showcase, here we present a simulation of Argon's density going through the spinodal decomposition. </p>
+    <p> In this line of research, we designed a stochastic process for modeling the phase transition of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented </p>
 
 <div class="video-container">
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
