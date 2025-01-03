@@ -404,7 +404,10 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         const nav = document.querySelector('nav');
     
         window.addEventListener('scroll', () => {
-            if (window.scrollY > lastScrollY) {
+            if (window.scrollY === 0) {
+                // User is at the top of the page, always show the navigation bar
+                nav.style.transform = 'translateY(0)';
+            } else if (window.scrollY > lastScrollY) {
                 // User is scrolling down, hide the navigation bar
                 nav.style.transform = 'translateY(-100%)';
             } else {
