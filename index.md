@@ -55,12 +55,13 @@
             position: fixed;
             width: 100%;
             top: 0;
-            z-index: 1000;
             text-align: center;
-            margin-left: -20px; /* Adjust the left margin as needed */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         nav a {
+            display: inline-block; /* Ensures links line up horizontally */
             color: #333;
             text-decoration: none;
             padding: 0.5em 1em;
@@ -76,7 +77,7 @@
 
         section {
             max-width: 800px;
-            margin: 2em auto;
+            margin: 6em auto 2em; /* Adds spacing below the fixed nav */
             padding: 1em;
             background-color: #fff;
             border-radius: 8px;
