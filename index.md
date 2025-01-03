@@ -180,7 +180,7 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
-        <a href="#referee">Review Contribution</a>
+        <a href="#referee">Review</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -343,7 +343,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 </section>
 
 <section id="referee">
-        <h2>Review Contribution</h2>
+        <h2>Review</h2>
 
         <p>
         I am an active referee of the following peer-reviewed journals/conferences:
