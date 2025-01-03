@@ -61,6 +61,8 @@
             flex-wrap: wrap; /* Ensure items wrap to the next line if needed */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+            transform: translateY(0); /* Initial position */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
         }
         
         nav a {
@@ -396,6 +398,22 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
     <footer>
         &copy; 2024 Mohsen Sadr. All rights reserved.
     </footer>
+
+    <script>
+        let lastScrollY = window.scrollY;
+        const nav = document.querySelector('nav');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                // User is scrolling down, hide the navigation bar
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // User is scrolling up, show the navigation bar
+                nav.style.transform = 'translateY(0)';
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
 
 </body>
 </html>
