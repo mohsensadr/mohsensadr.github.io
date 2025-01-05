@@ -47,6 +47,7 @@
             text-align: center; /* Centers the text */
             padding: 1em 0; /* Padding for spacing */
             height: 50vh; /* Sets the header's height to 50% of the viewport height */
+            margin-top: 60px;
         }
 
         nav {
@@ -63,6 +64,7 @@
             z-index: 1000;
             transform: translateY(0); /* Initial position */
             transition: transform 0.3s ease-in-out; /* Smooth transition */
+            height: 60px;
         }
         
         nav a {
