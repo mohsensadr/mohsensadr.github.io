@@ -252,7 +252,7 @@
      
      <img src="excitation_alfven_mode_confined_plasma.png" alt="Visualization of excited Alfven modes" class="responsive-img">
 
-    <h3>Statistical Modelling with Monte Carlo Solution for Molecular Interactions</h3>
+    <h3>Statistical Modelling for Molecular Dynamics</h3>
     
     <p> In this line of research, we designed a stochastic process for modeling short and long-range interactions of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. These methods have been implemented in a particle-in-cell code called <a href="https://github.com/piclas-framework/piclas">PICLas</a>. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented.</p>
 
