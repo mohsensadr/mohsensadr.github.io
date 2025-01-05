@@ -39,17 +39,6 @@
             padding-top: calc(var(--nav-height)); /* Dynamic adjustment */
         }
 
-        header {
-            background-image: url('IMG_0006.jpg'); /* Replace 'IMG_0006.jpg' with the actual path to your image */
-            background-size: contains; /* Adjusts the height of the background image to 50% of its container */
-            background-position: center; /* Centers the image within the header */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            color: #fff; /* Text color */
-            text-align: center; /* Centers the text */
-            padding: 1em 0; /* Padding for spacing */
-            height: 50vh; /* Sets the header's height to 50% of the viewport height */
-        }
-
         nav {
             background-color: #fff;
             padding: 1em 0;
@@ -64,6 +53,18 @@
             z-index: 1000;
             transform: translateY(0); /* Initial position */
             transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        header {
+            background-image: url('IMG_0006.jpg'); /* Replace 'IMG_0006.jpg' with the actual path to your image */
+            background-size: contains; /* Adjusts the height of the background image to 50% of its container */
+            background-position: center; /* Centers the image within the header */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color: #fff; /* Text color */
+            text-align: center; /* Centers the text */
+            padding: 1em 0; /* Padding for spacing */
+            height: 50vh; /* Sets the header's height to 50% of the viewport height */
+            margin-bottom: var(--nav-height);
         }
         
         nav a {
