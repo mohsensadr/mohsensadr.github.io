@@ -64,7 +64,6 @@
             z-index: 1000;
             transform: translateY(0); /* Initial position */
             transition: transform 0.3s ease-in-out; /* Smooth transition */
-            height: 60px;
         }
         
         nav a {
