@@ -213,7 +213,7 @@
         <h2>About Me</h2>
         <p> My name is Mohsen. I am an applied mathematician with experience in data-driven/statistical modeling, Monte Carlo methods, density estimation, particle method, variance reduction, and optimal transport, with applications in rarefied gas and plasma dynamics as well as generative AI.</p>
 
-             <p> Since July of 2023, I have been working on the optimal transport problem as a researcher at the <a href="https://www.psi.ch/en">Paul Scherrer Institute</a>, in Switzerland. Here, I am also involved in upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable for simulating particle accelerators, plasma, and rarefied gas dynamics. In Dec. 2021, I joined <a href="https://www.mit.edu">MIT</a>, USA, and worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on developing a general-purpose variance-reduced Monte Carlo method for kinetic equations. Before that, I worked with <strong>Prof. Laurent Villard</strong> at the <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/">Swiss Plasma Center</a>, Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I carried out my doctoral studies at RWTH Aachen University, Germany, under the supervision of <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>. My <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition descriptions in kinetic theory.
+             <p> Since July of 2023, I have been working on the optimal transport problem as a researcher at the Paul Scherrer Institute (ETH domain), in Switzerland. Here, I am also involved in upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable for simulating particle accelerators, plasma, and rarefied gas dynamics. In Dec. 2021, I joined MIT, USA, and worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on developing a general-purpose variance-reduced Monte Carlo method for kinetic equations. Before that, I worked with <strong>Prof. Laurent Villard</strong> at the Swiss Plasma Center (EPFL), Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I carried out my doctoral studies at RWTH Aachen University, Germany, under the supervision of <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>. My <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition descriptions in kinetic theory.
         </p>
         
     </section>
@@ -258,28 +258,28 @@
 
 </section>
 
-<section id="experiance">
+<section id="experience">
     <h2>Experience</h2>
-    <h3>Postdoc at <a href="https://www.psi.ch/en">Paul Scherrer Institute</a></h3>
+    <h3>Postdoc at Paul Scherrer Institute, ETH domain
     <p>Scientific Computing, Theory and Data</p>
-    <p>Switzerland, Jul. 2023 - present.</p>
+    <p>Switzerland, Jul. 2023 - present</p>
     
-    <h3>Postdoc at <a href="https://www.mit.edu">Massachusetts Institute of Technology</a> </h3>
+    <h3>Fellow at Massachusetts Institute of Technology
     <p>Department of Mechanical Engineering</p>
-    <p>USA, Dec. 2021 - Jun. 2023.</p>
+    <p>USA, Dec. 2021 - Jun. 2023</p>
 
-    <h3>Postdoc at <a href="https://www.epfl.ch/en/">EPFL</a> </h3>
-    <p><a href="https://www.epfl.ch/research/domains/swiss-plasma-center/">Swiss Plasma Center</a></p>
-    <p>Switzerland, Oct. 2020 - Nov. 2021.</p>
+    <h3>Scientific collaborator at EPFL
+    Swiss Plasma Center
+    <p>Switzerland, Oct. 2020 - Nov. 2021</p>
 </section>
 
 <section id="education">
     <h2>Education</h2>
     <h3>Ph.D. in Applied and Computational Mathematics</h3>
-    <p>RWTH Aachen University, Germany, 2020.</p>
+    <p>RWTH Aachen University, Germany, 2020</p>
     
     <h3>Master's in Simulation Sciences</h3>
-    <p>RWTH Aachen University, Germany, 2017.</p>
+    <p>RWTH Aachen University, Germany, 2017</p>
 </section>
 
 <section id="publications">
