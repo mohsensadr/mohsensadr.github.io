@@ -402,22 +402,34 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         &copy; 2024 Mohsen Sadr. All rights reserved.
     </footer>
 
-   <script>
+<script>
     let lastScrollY = window.scrollY; // Tracks the last scroll position
     const nav = document.querySelector('nav');
     const scrollUpThreshold = 100; // Amount of upward scroll needed to show the nav
     let accumulatedScrollUp = 0; // Tracks how much we've scrolled up
+    const mouseThreshold = 50; // Distance from the top of the page to detect mouse movement
 
+    // Function to show the navigation bar
+    function showNav() {
+        nav.style.transform = 'translateY(0)';
+        accumulatedScrollUp = 0; // Reset accumulated scroll up
+    }
+
+    // Function to hide the navigation bar
+    function hideNav() {
+        nav.style.transform = 'translateY(-100%)';
+    }
+
+    // Scroll event listener
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY === 0) {
             // User is at the top of the page, always show the navigation bar
-            nav.style.transform = 'translateY(0)';
-            accumulatedScrollUp = 0; // Reset accumulated scroll up
+            showNav();
         } else if (currentScrollY > lastScrollY) {
             // User is scrolling down, hide the navigation bar
-            nav.style.transform = 'translateY(-100%)';
+            hideNav();
             accumulatedScrollUp = 0; // Reset accumulated scroll up when scrolling down
         } else {
             // User is scrolling up
@@ -425,14 +437,22 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 
             if (accumulatedScrollUp >= scrollUpThreshold) {
                 // Show the navigation bar only if the threshold is met
-                nav.style.transform = 'translateY(0)';
-                accumulatedScrollUp = 0; // Reset accumulated scroll up after showing the nav
+                showNav();
             }
         }
 
         lastScrollY = currentScrollY; // Update the last scroll position
     });
+
+    // Mouse movement event listener
+    window.addEventListener('mousemove', (event) => {
+        if (event.clientY <= mouseThreshold) {
+            // If the mouse is within the top threshold of the page, show the navigation bar
+            showNav();
+        }
+    });
 </script>
+
 
 
     <script>
