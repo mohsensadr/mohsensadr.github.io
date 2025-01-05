@@ -260,16 +260,16 @@
 
 <section id="experience">
     <h2>Experience</h2>
-    <h3>Postdoc at Paul Scherrer Institute, ETH domain
+    <h3>Postdoc at Paul Scherrer Institute, ETH domain</h3>
     <p>Scientific Computing, Theory and Data</p>
     <p>Switzerland, Jul. 2023 - present</p>
     
-    <h3>Fellow at Massachusetts Institute of Technology
+    <h3>Fellow at Massachusetts Institute of Technology</h3>
     <p>Department of Mechanical Engineering</p>
     <p>USA, Dec. 2021 - Jun. 2023</p>
 
-    <h3>Scientific collaborator at EPFL
-    Swiss Plasma Center
+    <h3>Scientific collaborator at EPFL</h3>
+    <p>Swiss Plasma Center</p>
     <p>Switzerland, Oct. 2020 - Nov. 2021</p>
 </section>
 
