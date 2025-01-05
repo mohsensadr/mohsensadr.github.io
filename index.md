@@ -402,24 +402,38 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         &copy; 2024 Mohsen Sadr. All rights reserved.
     </footer>
 
-    <script>
-        let lastScrollY = window.scrollY;
-        const nav = document.querySelector('nav');
-    
-        window.addEventListener('scroll', () => {
-            if (window.scrollY === 0) {
-                // User is at the top of the page, always show the navigation bar
+   <script>
+    let lastScrollY = window.scrollY; // Tracks the last scroll position
+    const nav = document.querySelector('nav');
+    const scrollUpThreshold = 100; // Amount of upward scroll needed to show the nav
+    let accumulatedScrollUp = 0; // Tracks how much we've scrolled up
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY === 0) {
+            // User is at the top of the page, always show the navigation bar
+            nav.style.transform = 'translateY(0)';
+            accumulatedScrollUp = 0; // Reset accumulated scroll up
+        } else if (currentScrollY > lastScrollY) {
+            // User is scrolling down, hide the navigation bar
+            nav.style.transform = 'translateY(-100%)';
+            accumulatedScrollUp = 0; // Reset accumulated scroll up when scrolling down
+        } else {
+            // User is scrolling up
+            accumulatedScrollUp += lastScrollY - currentScrollY; // Add the scroll-up distance
+
+            if (accumulatedScrollUp >= scrollUpThreshold) {
+                // Show the navigation bar only if the threshold is met
                 nav.style.transform = 'translateY(0)';
-            } else if (window.scrollY > lastScrollY) {
-                // User is scrolling down, hide the navigation bar
-                nav.style.transform = 'translateY(-100%)';
-            } else {
-                // User is scrolling up, show the navigation bar
-                nav.style.transform = 'translateY(0)';
+                accumulatedScrollUp = 0; // Reset accumulated scroll up after showing the nav
             }
-            lastScrollY = window.scrollY;
-        });
-    </script>
+        }
+
+        lastScrollY = currentScrollY; // Update the last scroll position
+    });
+</script>
+
 
     <script>
         // Prevent the page from scrolling to a hash on load
