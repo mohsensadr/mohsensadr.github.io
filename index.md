@@ -402,56 +402,69 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         &copy; 2024 Mohsen Sadr. All rights reserved.
     </footer>
 
-<script>
-    let lastScrollY = window.scrollY; // Tracks the last scroll position
-    const nav = document.querySelector('nav');
-    const scrollUpThreshold = 100; // Amount of upward scroll needed to show the nav
-    let accumulatedScrollUp = 0; // Tracks how much we've scrolled up
-    const mouseThreshold = 50; // Distance from the top of the page to detect mouse movement
-
-    // Function to show the navigation bar
-    function showNav() {
-        nav.style.transform = 'translateY(0)';
-        accumulatedScrollUp = 0; // Reset accumulated scroll up
-    }
-
-    // Function to hide the navigation bar
-    function hideNav() {
-        nav.style.transform = 'translateY(-100%)';
-    }
-
-    // Scroll event listener
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY === 0) {
-            // User is at the top of the page, always show the navigation bar
-            showNav();
-        } else if (currentScrollY > lastScrollY) {
-            // User is scrolling down, hide the navigation bar
-            hideNav();
-            accumulatedScrollUp = 0; // Reset accumulated scroll up when scrolling down
-        } else {
-            // User is scrolling up
-            accumulatedScrollUp += lastScrollY - currentScrollY; // Add the scroll-up distance
-
-            if (accumulatedScrollUp >= scrollUpThreshold) {
-                // Show the navigation bar only if the threshold is met
-                showNav();
+    <script>
+        let lastScrollY = window.scrollY; // Tracks the last scroll position
+        const nav = document.querySelector('nav');
+        const scrollUpThreshold = 100; // Amount of upward scroll needed to show the nav
+        let accumulatedScrollUp = 0; // Tracks how much we've scrolled up
+        const mouseThreshold = 50; // Distance from the top of the page to detect mouse movement
+        let clickOverride = false; // Prevents mouse movement from showing the nav after a click
+        const clickOverrideDuration = 1000; // How long to suppress the mouse-triggered show (in ms)
+    
+        // Function to show the navigation bar
+        function showNav() {
+            if (!clickOverride) {
+                nav.style.transform = 'translateY(0)';
+                accumulatedScrollUp = 0; // Reset accumulated scroll up
             }
         }
-
-        lastScrollY = currentScrollY; // Update the last scroll position
-    });
-
-    // Mouse movement event listener
-    window.addEventListener('mousemove', (event) => {
-        if (event.clientY <= mouseThreshold) {
-            // If the mouse is within the top threshold of the page, show the navigation bar
-            showNav();
+    
+        // Function to hide the navigation bar
+        function hideNav() {
+            nav.style.transform = 'translateY(-100%)';
         }
-    });
-</script>
+    
+        // Scroll event listener
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+    
+            if (currentScrollY === 0) {
+                // User is at the top of the page, always show the navigation bar
+                showNav();
+            } else if (currentScrollY > lastScrollY) {
+                // User is scrolling down, hide the navigation bar
+                hideNav();
+                accumulatedScrollUp = 0; // Reset accumulated scroll up when scrolling down
+            } else {
+                // User is scrolling up
+                accumulatedScrollUp += lastScrollY - currentScrollY; // Add the scroll-up distance
+    
+                if (accumulatedScrollUp >= scrollUpThreshold) {
+                    // Show the navigation bar only if the threshold is met
+                    showNav();
+                }
+            }
+    
+            lastScrollY = currentScrollY; // Update the last scroll position
+        });
+    
+        // Mouse movement event listener
+        window.addEventListener('mousemove', (event) => {
+            if (event.clientY <= mouseThreshold) {
+                // If the mouse is within the top threshold of the page, show the navigation bar
+                showNav();
+            }
+        });
+    
+        // Click event listener on the navigation bar
+        nav.addEventListener('click', () => {
+            hideNav(); // Hide the navigation bar when it is clicked
+            clickOverride = true; // Activate click override
+            setTimeout(() => {
+                clickOverride = false; // Reset override after a delay
+            }, clickOverrideDuration);
+        });
+    </script>
 
 
 
