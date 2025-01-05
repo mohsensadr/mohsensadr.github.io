@@ -268,7 +268,7 @@
     <p>Department of Mechanical Engineering</p>
     <p>USA, Dec. 2021 - Jun. 2023</p>
 
-    <h3>Scientific collaborator at EPFL</h3>
+    <h3>Scientific Collaborator at EPFL</h3>
     <p>Swiss Plasma Center</p>
     <p>Switzerland, Oct. 2020 - Nov. 2021</p>
 </section>
