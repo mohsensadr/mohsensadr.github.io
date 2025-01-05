@@ -246,15 +246,15 @@
     </div>
 </div>
 
- <h3>Modelling for Confined Plasma</h3>
+ <h3>Excitation of Confined Plasma</h3>
     
-    <p> Stabilizing a confined plasma in a fusion device is one of the main challenges in designing such a system. Often, it is worthwhile to study the growth/dissipation rates of modes of the system. I have worked on linear/non-linear excitation of Alfven modes in a confined plasma using a well-established particle-in-cell gyrokinetic code called ORB5. As a showcase, electrostatic and magnetic potential fields are shown where the mode of interest is successfully excited using a so-called antenna. For more details, see [<a href="#orb5">14</a>]. </p>
+    <p> Stabilizing a confined plasma in a fusion device is one of the main challenges in designing such a system. Often, it is worthwhile to study the growth/dissipation rates of modes of the system. I have worked on linear/non-linear excitation of Alfven modes in a confined plasma using a well-established particle-in-cell and gyrokinetic code called ORB5. As a showcase, electrostatic and magnetic potential fields are shown here where the mode of interest is successfully excited using a so-called antenna. For more details, see [<a href="#orb5">14</a>].</p>
      
      <img src="excitation_alfven_mode_confined_plasma.png" alt="Visualization of excited Alfven modes" class="responsive-img">
 
-    <h3>Monte Carlo Solution to Phase Transition</h3>
+    <h3>Statistical Modelling with Monte Carlo Solution for Molecular Interactions</h3>
     
-    <p> In this line of research, we designed a stochastic process for modeling the phase transition of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented </p>
+    <p> In this line of research, we designed a stochastic process for modeling short and long-range interactions of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. These methods have been implemented in a particle-in-cell code called <a href="https://github.com/piclas-framework/piclas">PICLas</a>. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented.</p>
 
 <div class="video-container">
     <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
