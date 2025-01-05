@@ -246,7 +246,11 @@
     </div>
 </div>
 
-
+ <h3>Modelling for Confined Plasma</h3>
+    
+    <p> Stabilizing a confined plasma in a fusion device is one of the main challenges in designing such a system. Often, it is worthwhile to study the growth/dissipation rates of modes of the system. I have worked on linear/non-linear excitation of Alfven modes in a confined plasma using a well-established particle-in-cell gyrokinetic code called ORB5. As a showcase, electrostatic and magnetic potential fields are shown where the mode of interest is successfully excited using a so-called antenna. For more details, see [<a href="#orb5">14</a>]. </p>
+     
+     <img src="excitation_alfven_mode_confined_plasma.png" alt="Visualization of excited Alfven modes" class="responsive-img">
 
     <h3>Monte Carlo Solution to Phase Transition</h3>
     
@@ -351,7 +355,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 
         <strong>Simulation of Plasma/Fluid:</strong>
         
-        <li>
+        <li id="orb5">
         14. Mohsen Sadr, Alexey Mishchenko, Thomas Hayward-Schneider, Axel Koenies, Alberto Bottino, Alessandro Biancalani, Peter Donnel, Emmanuel Lanti, and Laurent Villard. "Linear and nonlinear excitation of TAE modes by external electromagnetic perturbations using ORB5" <em>Plasma Physics and Controlled Fusion</em>, 64, 085010, 2022 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing Ltd (open access)</a>].
         </li>
 
