@@ -64,7 +64,7 @@
             text-align: center; /* Centers the text */
             padding: 1em 0; /* Padding for spacing */
             height: 50vh; /* Sets the header's height to 50% of the viewport height */
-            margin-bottom: var(--nav-height);
+            flex-grow: 1;
         }
         
         nav a {
