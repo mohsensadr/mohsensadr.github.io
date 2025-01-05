@@ -183,22 +183,22 @@
 </header>
 
     <nav>
-        <a href="CV.pdf" download>
-            <span class="material-icons" style="vertical-align: middle; margin-right: 5px;">description</span>
-            Download CV
-        </a>
         <a href="https://www.linkedin.com/in/mohsensadr/" target="_blank" title="LinkedIn">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
              alt="LinkedIn Logo" 
-             style="width:24px; height:24px; vertical-align:middle; margin-right:8px;">
+             style="width:24px; height:24px; vertical-align:middle;">
         </a>
         <a href="https://github.com/mohsensadr" target="_blank" title="GitHub">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width:24px; height:24px; vertical-align:middle; margin-right:8px;">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width:24px; height:24px; vertical-align:middle;">
         </a>
         <a href="https://scholar.google.de/citations?user=YWJ0prAAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" 
          alt="Google Scholar Logo" 
-         style="width:24px; height:24px; vertical-align:middle; margin-right:8px;"> 
+         style="width:24px; height:24px; vertical-align:middle;"> 
+        </a>
+        <a href="CV.pdf" download>
+            <span class="material-icons" style="vertical-align: middle; margin-right: 5px;">description</span>
+            Download CV
         </a>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
