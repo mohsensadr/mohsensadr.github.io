@@ -36,6 +36,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            padding-top: calc(var(--nav-height)); /* Dynamic adjustment */
         }
 
         header {
@@ -47,7 +48,6 @@
             text-align: center; /* Centers the text */
             padding: 1em 0; /* Padding for spacing */
             height: 50vh; /* Sets the header's height to 50% of the viewport height */
-            margin-top: 60px;
         }
 
         nav {
