@@ -264,7 +264,7 @@
 
 <section id="experience">
     <h2>Experience</h2>
-    <h3>Postdoc at Paul Scherrer Institute, ETH domain</h3>
+    <h3>Postdoc at Paul Scherrer Institute (ETH domain)</h3>
     <p>Scientific Computing, Theory and Data</p>
     <p>Switzerland, Jul. 2023 - present</p>
     
