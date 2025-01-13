@@ -439,6 +439,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
             if (currentScrollY === 0) {
                 // User is at the top of the page, always show the navigation bar
                 showNav();
+                accumulatedScrollUp = 0; // Reset accumulated scroll up at the top
             } else if (currentScrollY > lastScrollY) {
                 // User is scrolling down, hide the navigation bar
                 hideNav();
