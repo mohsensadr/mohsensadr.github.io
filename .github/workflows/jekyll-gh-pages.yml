@@ -43,7 +43,7 @@ jobs:
     needs: build
     steps:
       - name: Download artifact
-        uses: actions/download-pages-artifact@v1
+        uses: actions/download-artifact@v3
         with:
           path: ./_site
       - name: Deploy to GitHub Pages
