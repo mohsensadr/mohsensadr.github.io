@@ -196,6 +196,11 @@
          alt="Google Scholar Logo" 
          style="width:24px; height:24px; vertical-align:middle;"> 
         </a>
+        <a href="https://orcid.org/0000-0003-0241-8163" target="_blank" title="ORCID">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" 
+         alt="ORCID Logo" 
+         style="width:24px; height:24px; vertical-align:middle;">
+        </a>
         <a href="CV.pdf" download>
             <span class="material-icons" style="vertical-align: middle; margin-right: 5px;">description</span>
             Download CV
