@@ -264,7 +264,7 @@
 
 <section id="experience">
     <h2>Experience</h2>
-    <h3>Postdoc at ETH, Paul Scherrer Institute</h3>
+    <h3>Scientist at ETH, Paul Scherrer Institute</h3>
     <p>Scientific Computing, Theory and Data</p>
     <p>Switzerland, Jul. 2023 - present</p>
     
@@ -392,6 +392,10 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         
         <li>
              <a href="https://link.springer.com/journal/11012">Meccanica</a>
+        </li>
+
+        <li> 
+             <a href="https://www.sciencedirect.com/journal/advanced-powder-technology">Advanced Powder Technology</a>
         </li>
         
         <li>
