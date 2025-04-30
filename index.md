@@ -232,6 +232,7 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
         <a href="#publications">Publications</a>
         <a href="#conferences">Conferences</a>
         <a href="#referee">Review</a>
@@ -317,6 +318,25 @@
     <h3>Master's in Simulation Sciences</h3>
     <p>RWTH Aachen University, Germany, 2017</p>
 </section>
+
+<section id="awards">
+    <h2>Awards & Honors</h2>
+
+    <li>
+    - Member of the team that won EUROfusion and SNSF project grant (consortium of national fusion research institutes, EU)
+in 2021.
+    </li>
+    
+    <li>
+    - Won the national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
+    </li>
+    
+    <li>
+    - Won the international grant from German academic exchange service (DAAD) in 2019.
+    </li>
+    
+</section>
+
 
 <section id="publications">
     <h2>Publications</h2>
