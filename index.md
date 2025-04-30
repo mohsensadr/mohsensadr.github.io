@@ -136,28 +136,6 @@
         section#publications li {
             margin-bottom: 1em;
         }
-
-        section#conferences {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section#conferences h2 {
-            color: #333;
-        }
-
-        section#conferences ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        section#conferences li {
-            margin-bottom: 1em;
-        }
         
         #projects {
             /* Add any styling for the projects section here */
@@ -323,16 +301,16 @@
     <h2>Awards & Honors</h2>
 
     <li>
-    - Member of the team that won EUROfusion and SNSF project grant (consortium of national fusion research institutes, EU)
+    Member of the team that won EUROfusion and SNSF project grant (consortium of national fusion research institutes, EU)
 in 2021.
     </li>
     
     <li>
-    - Won the national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
+    Won the national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
     </li>
     
     <li>
-    - Won the international grant from German academic exchange service (DAAD) in 2019.
+    Won the international grant from German academic exchange service (DAAD) in 2019.
     </li>
     
 </section>
@@ -429,31 +407,31 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
     <ul>
 
         <li>
-        - 5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025.
+        5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025.
         </li>
 
         <li>
-        - 30th Biennial Numerical Analysis Conference, Glasgow, UK, June, 2025.
+        30th Biennial Numerical Analysis Conference, Glasgow, UK, June, 2025.
         </li>
 
         <li>
-        - 4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023.
+        4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023.
         </li>
 
         <li>
-        - 19th European Fusion Theory Conference, virtual, October 2021.
+        19th European Fusion Theory Conference, virtual, October 2021.
         </li>
 
         <li>
-        - 9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019.
+        9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019.
         </li>
 
         <li>
-        - 10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019.
+        10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019.
         </li>
 
         <li>
-        - 3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018.
+        3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018.
         </li>
         
     </ul>
