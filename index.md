@@ -221,7 +221,7 @@
         <h2>About Me</h2>
         <p> My name is Mohsen. I am an applied mathematician with experience in data-driven/statistical modeling, Monte Carlo methods, density estimation, particle method, variance reduction, and optimal transport, with applications in rarefied gas and plasma dynamics as well as generative AI.</p>
 
-             <p> Since July of 2023, I have been working on the optimal transport problem as a researcher at ETH, the Paul Scherrer Institute, in Switzerland. Here, I am also involved in upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable for simulating particle accelerators. In Dec. 2021, I joined MIT, USA, and worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on developing a general-purpose variance-reduced Monte Carlo method for kinetic equations. Before that, I worked with <strong>Prof. Laurent Villard</strong> at the Swiss Plasma Center (EPFL), Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I carried out my doctoral studies at RWTH Aachen University, Germany, under the supervision of <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>. My <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition descriptions in kinetic theory.
+             <p> I am currently a Research Affiliate at MIT. During 2023-2025, I worked on the optimal transport problem as a researcher at ETH, the Paul Scherrer Institute, in Switzerland. There, in collaboration with <strong>Dr. Andreas Adelmann</strong> and hist team, I was involved in upgrading <a href="https://gitlab.psi.ch/OPAL">OPAL</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable (HPC) for simulation of particle accelerators. Before that in Dec. 2021, I joined MIT, USA, and worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on developing a general-purpose variance-reduced Monte Carlo method for kinetic equations. Before that, I worked with <strong>Prof. Laurent Villard</strong> at the Swiss Plasma Center (EPFL), Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I carried out my doctoral studies at RWTH Aachen University, Germany, under the supervision of <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>. My <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition descriptions in kinetic theory.
         </p>
         
     </section>
@@ -453,6 +453,10 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         </li>
 
         <li>
+             <a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer physics communications</a>
+        </li>
+
+        <li>
              <a href="https://iclr.cc">International Conference on Learning Representations (ICLR)</a>
         </li>
         
@@ -472,7 +476,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
     <section id="contact">
         <h2>Contact</h2>
         <p>
-            You can reach me at <a href="mailto:mohsen.sadr@psi.ch">mohsen.sadr@psi.ch</a> or <a href="mailto:mohsen.sadr91@gmail.com">mohsen.sadr91@gmail.com</a>.
+            You can reach me at <a href="mailto:msadr@mit.edu">msadr@mit.edu</a> or <a href="mailto:mohsen.sadr91@gmail.com">mohsen.sadr91@gmail.com</a>.
         </p>
     </section>
 
