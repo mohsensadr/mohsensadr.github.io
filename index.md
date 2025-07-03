@@ -274,10 +274,16 @@
 </section>
 
 <section id="experience">
+    
     <h2>Experience</h2>
+
+    <h3>Research Affiliate at Massachusetts Institute of Technology</h3>
+    <p>Department of Mechanical Engineering</p>
+    <p>USA, July. 2025 - present</p>
+    
     <h3>Scientist at ETH, Paul Scherrer Institute</h3>
     <p>Scientific Computing, Theory and Data</p>
-    <p>Switzerland, Jul. 2023 - present</p>
+    <p>Switzerland, Jul. 2023 - June 2025</p>
     
     <h3>Fellow at Massachusetts Institute of Technology</h3>
     <p>Department of Mechanical Engineering</p>
