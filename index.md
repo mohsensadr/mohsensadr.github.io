@@ -459,7 +459,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         </li>
 
         <li>
-             <a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer physics communications</a>
+             <a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer Physics Communications</a>
         </li>
 
         <li>
