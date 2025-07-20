@@ -305,7 +305,7 @@
 
 <section id="awards">
     <h2>Awards & Honors</h2>
-
+<ul>
     <li>
     Member of the team that won EUROfusion and SNSF project grant (consortium of national fusion research institutes, EU)
 in 2021.
@@ -318,7 +318,7 @@ in 2021.
     <li>
     Won the international grant from German academic exchange service (DAAD) in 2019.
     </li>
-    
+</ul>
 </section>
 
 
