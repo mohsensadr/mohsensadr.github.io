@@ -445,7 +445,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 
 <section id="referee">
         <h2>Review</h2>
-
+        <ul>
         <p>
         I am an active referee of the following peer-reviewed journals/conferences:
         </p>
@@ -477,6 +477,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         <li>
             <a href="https://www.mdpi.com/journal/photonics">Photonics</a>
         </li>
+        </ul>
     </section>
     
     <section id="contact">
