@@ -489,7 +489,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
     <footer>
         &copy; 2024 Mohsen Sadr. All rights reserved.
     </footer>
-
+<!--
     <script>
         let lastScrollY = window.scrollY; // Tracks the last scroll position
         const nav = document.querySelector('nav');
@@ -565,7 +565,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
             }
         });
     </script>
-
+-->
 
 </body>
 </html>
