@@ -413,27 +413,27 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
     <ul>
 
         <li>
-        5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025, <a href="presentations/MSML2025_Naples_poster.pdf" target="_blank">poster</a>.
+        5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025 [<a href="presentations/MSML2025_Naples_poster.pdf" target="_blank">poster</a>].
         </li>
 
         <li>
-        30th Biennial Numerical Analysis Conference, Glasgow, UK, June, 2025.
+        30th Biennial Numerical Analysis Conference, Glasgow, UK, June, 2025, [<a href="presentations/30th_Biennial_Numerical_Analysis_Conference_talk.pdf" target="_blank">talk</a>].
         </li>
 
         <li>
-        4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023.
+        4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023 [<a href="presentations/MLML2023_ICERM_poster.pdf" target="_blank">poster</a>].
         </li>
 
         <li>
-        19th European Fusion Theory Conference, virtual, October 2021.
+        19th European Fusion Theory Conference, virtual, October 2021 [<a href="presentations/EFTC_antenna_poster.pdf" target="_blank">poster</a>].
         </li>
 
         <li>
-        9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019.
+        9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019 [<a href="presentations/ICIAM_poster.pdf" target="_blank">poster</a>].
         </li>
 
         <li>
-        10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019.
+        10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019 [<a href="presentations/MultiphaseFlows_talk.pdf.pdf" target="_blank">talk</a>].
         </li>
 
         <li>
