@@ -433,7 +433,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         </li>
 
         <li>
-        10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019 [<a href="presentations/MultiphaseFlows_talk.pdf.pdf" target="_blank">talk</a>].
+        10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019 [<a href="presentations/MultiphaseFlows_talk.pdf" target="_blank">talk</a>].
         </li>
 
         <li>
