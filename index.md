@@ -437,7 +437,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         </li>
 
         <li>
-        3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018.
+        3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018 [<a href="presentations/NEGF_2018_talk.pdf" target="_blank">talk</a>].
         </li>
         
     </ul>
