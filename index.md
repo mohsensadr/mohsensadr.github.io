@@ -413,7 +413,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
     <ul>
 
         <li>
-        5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025.
+        5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025, <a href="presentations/MSML2025_Naples_poster.pdf" target="_blank">poster</a>.
         </li>
 
         <li>
