@@ -445,35 +445,35 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 <h3>Invited Talks</h3>
 
 <li>
-Swiss Plasma Center, EPFL, April, 2025
+Swiss Plasma Center, EPFL, April, 2025.
 </li>
 
 <li>
-PSI, CSD Scientific Retreat, March, 2024
+PSI, CSD Scientific Retreat, March, 2024.
 </li>
 
 <li>
-PSI, Machine Learning Seminar Series, April, 2024
+PSI, Machine Learning Seminar Series, April, 2024.
 </li>
 
 <li>
-MIT, Symposium of Center for Computational Science & Technology, March, 2023
+MIT, Symposium of Center for Computational Science & Technology, March, 2023.
 </li>
 
 <li>
-Swiss Plasma Center, EPFL, April, 2020
+Swiss Plasma Center, EPFL, April, 2020.
 </li>
 
 <li>
-EPFL, Mathematics Institute of Computational Science and Engineering (MATHICSE), July, 2019
+EPFL, Mathematics Institute of Computational Science and Engineering (MATHICSE), July, 2019.
 </li>
 
 <li>
-ETH Zurich, Institute of Fluid Dynamics, May, 2018
+ETH Zurich, Institute of Fluid Dynamics, May, 2018,
 </li>
 
 <li>
-ETH Zurich, Institute of Fluid Dynamics, August, 2017
+ETH Zurich, Institute of Fluid Dynamics, August, 2017.
 </li>
     </ul>
 </section>
