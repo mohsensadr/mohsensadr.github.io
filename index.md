@@ -212,7 +212,7 @@
         <a href="#education">Education</a>
         <a href="#awards">Awards</a>
         <a href="#publications">Publications</a>
-        <a href="#conferences">Conferences</a>
+        <a href="#presentations">Presentations</a>
         <a href="#referee">Review</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -408,10 +408,12 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 </section>
 
 
-<section id="conferences">
-    <h2>Conferences</h2>
+<section id="presentations">
+    <h2>Presentations</h2>
     <ul>
 
+ <h3>Conferences</h3>
+ 
         <li>
         5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025 [<a href="presentations/MSML2025_Naples_poster.pdf" target="_blank">poster</a>].
         </li>
@@ -439,7 +441,40 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         <li>
         3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018 [<a href="presentations/NEGF_2018_talk.pdf" target="_blank">talk</a>].
         </li>
-        
+
+<h3>Invited Talks</h3>
+
+<li>
+Swiss Plasma Center, EPFL, April, 2025
+</li>
+
+<li>
+PSI, CSD Scientific Retreat, March, 2024
+</li>
+
+<li>
+PSI, Machine Learning Seminar Series, April, 2024
+</li>
+
+<li>
+MIT, Symposium of Center for Computational Science & Technology, March, 2023
+</li>
+
+<li>
+Swiss Plasma Center, EPFL, April, 2020
+</li>
+
+<li>
+EPFL, Mathematics Institute of Computational Science and Engineering (MATHICSE), July, 2019
+</li>
+
+<li>
+ETH Zurich, Institute of Fluid Dynamics, May, 2018
+</li>
+
+<li>
+ETH Zurich, Institute of Fluid Dynamics, August, 2017
+</li>
     </ul>
 </section>
 
