@@ -497,6 +497,10 @@ ETH Zurich, Institute of Fluid Dynamics, August, 2017.
              <a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer Physics Communications</a>
         </li>
 
+         <li>
+          <a href="https://www.sciencedirect.com/journal/communications-in-nonlinear-science-and-numerical-simulation">Communications in nonlinear science & numerical simulation</a>
+        </li>
+        
         <li>
              <a href="https://iclr.cc">International Conference on Learning Representations (ICLR)</a>
         </li>
