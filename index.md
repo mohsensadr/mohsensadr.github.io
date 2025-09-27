@@ -351,7 +351,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         5. Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>].
         </li>
 
-        <strong>Modelling Phase Transition:</strong>
+        <strong>Modelling in Kinetic Theory:</strong>
         
         <li id="FPmultiphase">
         6. Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>].
@@ -368,11 +368,11 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         <strong>Data-Driven Modelling:</strong>
         
         <li>
-        9. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method", 2024 [<a href="https://doi.org/10.48550/arXiv.2401.17177">Preprint</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>].
+        9. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method", 2024 [<a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>].
         </li>
 
         <li>
-        10. Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research</em>, 2023 [<a href="https://arxiv.org/abs/2306.04120">Preprint</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>].
+        10. Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research</em>, 2023 [<a href="https://openreview.net/forum?id=Y2ru0LuQeS">OpenReview</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>].
         </li>
 
         <li>
