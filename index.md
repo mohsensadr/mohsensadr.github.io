@@ -494,6 +494,10 @@ ETH Zurich, Institute of Fluid Dynamics, August, 2017.
         </li>
 
         <li>
+             <a href="https://www.nature.com/srep/">Nature: Scientific Reports</a>
+        </li>
+        
+        <li>
              <a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer Physics Communications</a>
         </li>
 
@@ -503,6 +507,10 @@ ETH Zurich, Institute of Fluid Dynamics, August, 2017.
         
         <li>
              <a href="https://iclr.cc">International Conference on Learning Representations (ICLR)</a>
+        </li>
+
+        <li>
+             <a href="https://www.mdpi.com/journal/applsci">Applied Sciences</a>
         </li>
         
         <li>
