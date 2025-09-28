@@ -368,7 +368,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
         <strong>Data-Driven Modelling:</strong>
         
         <li>
-        9. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method", 2024 [<a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>].
+        9. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method" <em>Transactions on Machine Learning Research</em>, 2025 [<a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>].
         </li>
 
         <li>
