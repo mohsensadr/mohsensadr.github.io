@@ -304,7 +304,7 @@
     <p>RWTH Aachen University, Germany, 2017.</p>
 
     <h3>BSc in Mechanical Engineering</h3>
-    <p>KNTU, Iran, 2013.</p>
+    <p>KN Toosi University of Technology, Iran, 2013.</p>
 </section>
 
 <section id="awards">
