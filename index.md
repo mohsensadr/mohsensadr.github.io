@@ -496,7 +496,7 @@ ETH Zurich, Institute of Fluid Dynamics, August, 2017.
         Computational Statistical Physics: rarefied gas and plasma dynamics, (2024)  [<a href="teaching_slides/CSP.pdf" target="_blank">lecture</a>].
     </li>
 
-    <h3>EFPL</h3>
+    <h3>EPFL</h3>
     <li>
         Computational Physics 1 and 2: advection-diffusion equation, nonlinear dynamics, chaotic systems, (2020 and 2021).
     </li>
