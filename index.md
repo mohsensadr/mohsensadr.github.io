@@ -481,26 +481,26 @@ ETH Zurich, Institute of Fluid Dynamics, August, 2017.
 
 
 <section id="teaching">
-    <h2>teaching</h2>
+    <h2>Teaching</h2>
     <ul>
 
     <h3>ETH Zurich</h3>
     <li>
-        Introduction to Computational Physics: Monte Carlo methods, 2023 and 2024  [<a href="teaching_slides/ICP.pdf" target="_blank">lecture</a>].
+        Introduction to Computational Physics: Monte Carlo methods (2023 and 2024)  [<a href="teaching_slides/ICP.pdf" target="_blank">lecture</a>].
     </li>
     
     <li>
-        Computational Statistical Physics: rarefied gas and plasma dynamics, 2024  [<a href="teaching_slides/CSP.pdf" target="_blank">lecture</a>].
+        Computational Statistical Physics: rarefied gas and plasma dynamics (2024)  [<a href="teaching_slides/CSP.pdf" target="_blank">lecture</a>].
     </li>
 
     <h3>EFPL</h3>
     <li>
-        Computational Physics 1 and 2: advection-diffusion equation, nonlinear dynamics, chaotic systems. 2020 and 2021.
+        Computational Physics 1 and 2: advection-diffusion equation, nonlinear dynamics, chaotic systems, (2020 and 2021).
     </li>
 
      <h3>RWTH Aachen</h3>
     <li>
-        Mathematical Foundations 1-5: numerical methods for PDEs, iteraitve solvers, Fourier transformation, Linear Algebra.  2017 to 2019.
+        Mathematical Foundations 1-5: numerical methods for PDEs, iteraitve solvers, Fourier transformation, linear algebra, (2017 to 2019).
     </li>
     
     </ul>
