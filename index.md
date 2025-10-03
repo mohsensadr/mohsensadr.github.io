@@ -298,13 +298,13 @@
 <section id="education">
     <h2>Education</h2>
     <h3>PhD in Applied and Computational Mathematics</h3>
-    <p>RWTH Aachen University, Germany, 2020</p>
+    <p>RWTH Aachen University, Germany, 2020.</p>
     
     <h3>MSc in Simulation Sciences</h3>
-    <p>RWTH Aachen University, Germany, 2017</p>
+    <p>RWTH Aachen University, Germany, 2017.</p>
 
     <h3>BSc in Mechanical Engineering</h3>
-    <p>KNTU, Iran, 2017</p>
+    <p>KNTU, Iran, 2013.</p>
 </section>
 
 <section id="awards">
