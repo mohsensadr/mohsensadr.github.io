@@ -280,19 +280,19 @@
 
     <h3>Research Affiliate at Massachusetts Institute of Technology</h3>
     <p>Department of Mechanical Engineering</p>
-    <p>USA, July. 2025 - present</p>
+    <p>USA, July 2025 - present.</p>
     
     <h3>Scientist at ETH, Paul Scherrer Institute</h3>
     <p>Scientific Computing, Theory and Data</p>
-    <p>Switzerland, Jul. 2023 - June 2025</p>
+    <p>Switzerland, July 2023 - June 2025.</p>
     
     <h3>Fellow at Massachusetts Institute of Technology</h3>
     <p>Department of Mechanical Engineering</p>
-    <p>USA, Dec. 2021 - Jun. 2023</p>
+    <p>USA, December 2021 - June 2023.</p>
 
     <h3>Scientific Collaborator at EPFL</h3>
     <p>Swiss Plasma Center</p>
-    <p>Switzerland, Oct. 2020 - Nov. 2021</p>
+    <p>Switzerland, October 2020 - November 2021.</p>
 </section>
 
 <section id="education">
