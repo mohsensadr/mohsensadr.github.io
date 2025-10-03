@@ -486,11 +486,11 @@ ETH Zurich, Institute of Fluid Dynamics, August, 2017.
 
     <h3>ETH Zurich</h3>
     <li>
-        Introduction to Computational Physics: Monte Carlo methods (2023 and 2024)  [<a href="teaching_slides/ICP.pdf" target="_blank">lecture</a>].
+        Introduction to Computational Physics: Monte Carlo methods, (2023 and 2024)  [<a href="teaching_slides/ICP.pdf" target="_blank">lecture</a>].
     </li>
     
     <li>
-        Computational Statistical Physics: rarefied gas and plasma dynamics (2024)  [<a href="teaching_slides/CSP.pdf" target="_blank">lecture</a>].
+        Computational Statistical Physics: rarefied gas and plasma dynamics, (2024)  [<a href="teaching_slides/CSP.pdf" target="_blank">lecture</a>].
     </li>
 
     <h3>EFPL</h3>
