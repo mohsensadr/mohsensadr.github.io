@@ -204,7 +204,7 @@
         </a>
         <a href="CV.pdf" download>
             <span class="material-icons" style="vertical-align: middle; margin-right: 5px;">description</span>
-            Download CV
+            CV
         </a>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
