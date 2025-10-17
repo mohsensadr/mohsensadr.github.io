@@ -420,7 +420,7 @@ coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Pre
 
   
         <li>
-        Particles, Flows \& Maps for Sampling Complex Distributions, Lausanne, Switzerland, November 2025.
+        Particles, Flows & Maps for Sampling Complex Distributions, Lausanne, Switzerland, November 2025.
         </li>
         
         <li>
