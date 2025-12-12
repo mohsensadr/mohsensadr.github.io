@@ -230,7 +230,7 @@
 <section id="projects">
     <h2>Projects</h2>
 
-        <h3>Statistical Modelling for Molecular Dynamics</h3>
+        <h3>Statistical Modelling of Non-equilibrium Multiphase Flows</h3>
     
     <p> In this line of research, we designed a stochastic process for modeling short and long-range interactions of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">6</a>, <a href="#LongRange">7</a>, <a href="#DFP">8</a>]. These methods have been implemented in a particle-in-cell code called <a href="https://github.com/piclas-framework/piclas">PICLas</a>. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented.</p>
 
@@ -310,17 +310,21 @@
 <section id="awards">
     <h2>Awards & Honors</h2>
 <ul>
+
     <li>
-    Member of the team that won EUROfusion and SNSF project grant (consortium of national fusion research institutes, EU)
-in 2021.
+    100k CHF via Founder Fellowship grant from Paul Scherrer institute and QBIT Captial in 2025.
+    </li>
+
+    <li>
+    1.2m Euro for a project from EUROfusion and SNSF (consortium of national fusion research institutes) in 2021 (associated).
     </li>
     
     <li>
-    Won the national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
+    100k Euro via national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
     </li>
     
     <li>
-    Won the international grant from German academic exchange service (DAAD) in 2019.
+    4k Euro travel grant from German academic exchange service (DAAD) in 2019.
     </li>
 </ul>
 </section>
