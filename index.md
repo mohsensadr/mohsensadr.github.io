@@ -312,7 +312,7 @@
 <ul>
 
     <li>
-    100k CHF via Founder Fellowship grant from Paul Scherrer institute and QBIT Captial in 2025.
+    100k CHF with Founder Fellowship grant from Paul Scherrer institute and QBIT Captial in 2025.
     </li>
 
     <li>
@@ -320,7 +320,7 @@
     </li>
     
     <li>
-    100k Euro via national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
+    100k Euro with national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
     </li>
     
     <li>
