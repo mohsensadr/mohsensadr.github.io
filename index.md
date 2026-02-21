@@ -815,7 +815,7 @@
                 <span class="year">2026</span>
             </div>
             <div class="news-content">
-                <h3><a href="https://www.psi.ch/en/news/media-releases/psi-founder-fellowship-for-ai-platform-and-solid-state-batteries" target="_blank">PSI Founder Fellowship for AI Platform and Solid-State Batteries</a></h3>
+                <h3><a href="https://www.psi.ch/en/news/media-releases/psi-founder-fellowship-for-ai-platform-and-solid-state-batteries" target="_blank">PSI Founder Fellowship for Physics-based AI Platform</a></h3>
                 <p>Awarded a PSI Founder Fellowship (up to 150,000 CHF) to develop an AI-based platform that accelerates and reduces the cost of physical simulations for fusion energy, aerospace, and semiconductor technologies. The fellowship includes coaching and advisory services from PSI's technology transfer team and external experts.</p>
                 <div class="news-source">
                     <a href="https://www.psi.ch/en/news/media-releases/psi-founder-fellowship-for-ai-platform-and-solid-state-batteries" target="_blank">PSI Media Release</a>
