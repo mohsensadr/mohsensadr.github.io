@@ -585,20 +585,27 @@
     }
 
     .news-source {
-      display: inline-block;
-      font-size: 0.775rem;
-      font-weight: 500;
-      color: var(--color-text-muted);
-      margin-top: 0.4rem;
+      display: inline-flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
     }
 
     .news-source a {
+      font-size: 0.825rem;
+      font-weight: 500;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      background: var(--color-accent-bg);
       color: var(--color-accent);
       text-decoration: none;
+      transition: background 0.2s, color 0.2s;
     }
 
     .news-source a:hover {
-      text-decoration: underline;
+      background: var(--color-accent);
+      color: #fff;
+      text-decoration: none;
     }
 
     @media (max-width: 480px) {
@@ -856,7 +863,6 @@
                 <p>Awarded a PSI Founder Fellowship (up to 150,000 CHF) to develop an AI-based platform that accelerates and reduces the cost of physical simulations for fusion energy, aerospace, and semiconductor technologies. The fellowship includes coaching and advisory services from PSI's technology transfer team and external experts.</p>
                 <div class="news-source">
                     <a href="https://www.psi.ch/en/news/media-releases/psi-founder-fellowship-for-ai-platform-and-solid-state-batteries" target="_blank">PSI Media Release</a>
-                    &nbsp;&middot;&nbsp;
                     <a href="https://www.news.admin.ch/fr/newnsb/HKgkaTivg50VFiCnQbqXn" target="_blank">Swiss Federal Government</a>
                 </div>
             </div>
@@ -871,7 +877,6 @@
                 <p>Our paper &ldquo;VR-PIC: An entropic variance-reduction method for particle-in-cell solutions of the Vlasov&ndash;Poisson equation&rdquo; is now on arXiv. We extend the entropic variance reduction framework to the PIC method, achieving 1&ndash;4 orders of magnitude computational speedup in the low-signal regime while maintaining high accuracy.</p>
                 <div class="news-source">
                     <a href="https://arxiv.org/abs/2602.15041" target="_blank">arXiv</a>
-                    &nbsp;&middot;&nbsp;
                     <a href="https://github.com/mohsensadr/VRPIC" target="_blank">Code</a>
                 </div>
             </div>
@@ -886,7 +891,6 @@
                 <p>Our paper &ldquo;Data-Driven Discovery of PDEs via the Adjoint Method&rdquo; has been accepted in TMLR. We present an adjoint-based method for discovering governing PDEs from data, formulated as a PDE-constrained optimization problem with analytically derived gradients.</p>
                 <div class="news-source">
                     <a href="https://openreview.net/forum?id=Az3mJ4d1eT" target="_blank">OpenReview</a>
-                    &nbsp;&middot;&nbsp;
                     <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint" target="_blank">Code</a>
                 </div>
             </div>
