@@ -146,7 +146,7 @@
     }
 
     .hero h1 {
-      font-family: var(--font-serif);
+      font-family: var(--font-sans);
       font-size: 2.25rem;
       font-weight: 600;
       color: var(--color-text);
@@ -185,7 +185,7 @@
     }
 
     h2 {
-      font-family: var(--font-serif);
+      font-family: var(--font-sans);
       font-size: 1.5rem;
       font-weight: 600;
       color: var(--color-text);
@@ -379,7 +379,10 @@
     }
 
     .pub-links {
-      display: inline;
+      display: inline-flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      vertical-align: baseline;
     }
 
     .pub-links a {
@@ -406,15 +409,20 @@
     }
 
     section#presentations li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 0.65rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: var(--color-bg);
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
       font-size: 0.925rem;
       color: var(--color-text-secondary);
       line-height: 1.6;
     }
 
-    section#presentations li:last-child {
-      border-bottom: none;
+    section#presentations li:hover {
+      border-color: var(--color-border);
+      background: var(--color-accent-bg);
     }
 
     section#presentations h3 {
@@ -475,15 +483,20 @@
     }
 
     section#teaching li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 0.65rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: var(--color-bg);
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
       font-size: 0.925rem;
       color: var(--color-text-secondary);
       line-height: 1.6;
     }
 
-    section#teaching li:last-child {
-      border-bottom: none;
+    section#teaching li:hover {
+      border-color: var(--color-border);
+      background: var(--color-accent-bg);
     }
 
     section#teaching h3 {
@@ -821,14 +834,13 @@
     <div class="hero">
         <img src="profile2_circle2.png" alt="Mohsen Sadr" class="hero-avatar">
         <h1>Mohsen Sadr</h1>
-        <p class="subtitle">Applied Mathematician &mdash; Statistical Modeling, Monte Carlo Methods, Optimal Transport &amp; Computational Physics</p>
     </div>
 
     <div class="content-wrapper">
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am an applied mathematician working at the intersection of computational physics, statistical modeling, and machine learning. My research spans Monte Carlo methods, density estimation, variance reduction, optimal transport, and particle methods, with applications in rarefied gas dynamics, plasma physics, and generative AI.</p>
+        <p>I am an applied mathematician working at the intersection of computational physics, statistical modeling, and machine learning. I am passionate about bringing AI-based solutions from physics-aware agents to data-driven surrogate models into the fusion energy and space travel industries, with the goal of dramatically accelerating engineering design cycles.</p>
         <p>Currently, I am a Founder Fellow at the Paul Scherrer Institute (PSI) and a Research Affiliate at MIT. At PSI (2023&ndash;2025), I worked on optimal transport and collaborated with <strong>Dr. Andreas Adelmann</strong> on scaling <a href="https://github.com/OPALX-project/OPALX">OPALX</a>&mdash;a particle accelerator simulation library&mdash;for exascale HPC platforms. At MIT (2021&ndash;2023), I worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on general-purpose variance-reduced Monte Carlo methods for kinetic equations. Prior to that, I was a postdoc with <strong>Prof. Laurent Villard</strong> at the Swiss Plasma Center (EPFL), contributing to <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>, a gyrokinetic particle-in-cell code for confined plasma simulations. I received my PhD in Applied Mathematics from RWTH Aachen University, advised by <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>, where my <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> focused on efficient Monte Carlo methods for dense gas, liquid, and phase-transition kinetics.</p>
     </section>
 
@@ -970,15 +982,15 @@
         <ul>
             <li id="colOT">
                 <span class="pub-number">1.</span> Mohsen Sadr and M. Hossein Gorji. &ldquo;Collision-based dynamics for multi-marginal optimal transport&rdquo; 2024
-                <span class="pub-links">[<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> <a href="https://github.com/mohsensadr/collisional_ot">Code</a></span>
             </li>
             <li id="OCD">
                 <span class="pub-number">2.</span> Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. &ldquo;Optimal transportation by orthogonal coupling dynamics&rdquo; 2024
-                <span class="pub-links">[<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a> | <a href="https://github.com/mohsensadr/OCD">Code</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a> <a href="https://github.com/mohsensadr/OCD">Code</a></span>
             </li>
             <li id="WE">
                 <span class="pub-number">3.</span> Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. &ldquo;Wasserstein-penalized Entropy closure: A use case for stochastic particle methods&rdquo; <em>Journal of Computational Physics</em>, 2024
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a> | <a href="https://github.com/mohsensadr/WE">Code</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> <a href="https://arxiv.org/abs/2306.04120">Preprint</a> <a href="https://github.com/mohsensadr/WE">Code</a></span>
             </li>
         </ul>
 
@@ -986,15 +998,15 @@
         <ul>
             <li id="VRPIC">
                 <span class="pub-number">4.</span> Victor Windhab, Andreas Adelmann, Mohsen Sadr. &ldquo;VR-PIC: An entropic variance-reduction method for particle-in-cell solutions of the Vlasov-Poisson equation&rdquo; 2026
-                <span class="pub-links">[<a href="https://doi.org/10.48550/arXiv.2602.15041">Preprint</a> | <a href="https://github.com/mohsensadr/VRPIC">Code</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.48550/arXiv.2602.15041">Preprint</a> <a href="https://github.com/mohsensadr/VRPIC">Code</a></span>
             </li>
             <li id="VRDSMC">
                 <span class="pub-number">5.</span> Mohsen Sadr, and Nicolas G. Hadjiconstantinou. &ldquo;A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction&rdquo; <em>Journal of Computational Physics</em>, 472, 111677, 2023
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a></span>
             </li>
             <li id="VRFP">
                 <span class="pub-number">6.</span> Mohsen Sadr, and Nicolas G. Hadjiconstantinou. &ldquo;Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics&rdquo; <em>Journal of Computational Physics</em>, 492, 112402, 2023
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a></span>
             </li>
         </ul>
 
@@ -1002,15 +1014,15 @@
         <ul>
             <li id="FPmultiphase">
                 <span class="pub-number">7.</span> Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. &ldquo;Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium&rdquo; <em>Journal of Fluid Mechanics</em>, 920, A46, 2021
-                <span class="pub-links">[<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> <a href="https://arxiv.org/abs/2308.05580">Preprint</a></span>
             </li>
             <li id="LongRange">
                 <span class="pub-number">8.</span> Mohsen Sadr, and M. Hossein Gorji. &ldquo;Treatment of long-range interactions arising in the Enskog&ndash;Vlasov description of dense fluids&rdquo; <em>Journal of Computational Physics</em>, 378, 129&ndash;142, 2019
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05845">Preprint</a> | <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> <a href="https://arxiv.org/abs/2308.05845">Preprint</a> <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a></span>
             </li>
             <li id="DFP">
                 <span class="pub-number">9.</span> Mohsen Sadr, and M. Hossein Gorji. &ldquo;A continuous stochastic model for non-equilibrium dense gases&rdquo; <em>Journal of Physics of Fluids</em>, 29, 122007, 2017
-                <span class="pub-links">[<a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> | <a href="https://arxiv.org/abs/2308.05117">Preprint</a> | <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> <a href="https://arxiv.org/abs/2308.05117">Preprint</a> <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a></span>
             </li>
         </ul>
 
@@ -1018,15 +1030,15 @@
         <ul>
             <li>
                 <span class="pub-number">10.</span> Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. &ldquo;Data-driven discovery of PDEs via the adjoint method&rdquo; <em>Transactions on Machine Learning Research</em>, 2025
-                <span class="pub-links">[<a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>]</span>
+                <span class="pub-links"><a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a></span>
             </li>
             <li>
                 <span class="pub-number">11.</span> Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. &ldquo;MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation&rdquo; <em>Transactions on Machine Learning Research</em>, 2023
-                <span class="pub-links">[<a href="https://openreview.net/forum?id=Y2ru0LuQeS">OpenReview</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>]</span>
+                <span class="pub-links"><a href="https://openreview.net/forum?id=Y2ru0LuQeS">OpenReview</a> <a href="https://github.com/mohsensadr/MESSY">Code</a></span>
             </li>
             <li>
                 <span class="pub-number">12.</span> Mohsen Sadr, Manuel Torrilhon, and M. Hossein Gorji. &ldquo;Gaussian Process Regression for Maximum Entropy Distribution&rdquo; <em>Journal of Computational Physics</em>, 418, 109644, 2020
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2020.109644">Elsevier</a> | <a href="https://arxiv.org/abs/2308.06149">Preprint</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2020.109644">Elsevier</a> <a href="https://arxiv.org/abs/2308.06149">Preprint</a></span>
             </li>
         </ul>
 
@@ -1034,11 +1046,11 @@
         <ul>
             <li>
                 <span class="pub-number">13.</span> Fabian Mies, Mohsen Sadr, and Manuel Torrilhon. &ldquo;An efficient jump-diffusion approximation of the Boltzmann equation&rdquo; <em>Journal of Computational Physics</em>, 490, 112308, 2023
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2023.112308">Elsevier</a> | <a href="https://arxiv.org/abs/2112.08362">Preprint</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2023.112308">Elsevier</a> <a href="https://arxiv.org/abs/2112.08362">Preprint</a></span>
             </li>
             <li>
                 <span class="pub-number">14.</span> Mohsen Sadr, Qian Wang, and M. Hossein Gorji. &ldquo;Coupling kinetic and continuum using data-driven maximum entropy distribution&rdquo; <em>Journal of Computational Physics</em>, 444, 110542, 2021
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2021.110542">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05672">Preprint</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2021.110542">Elsevier</a> <a href="https://arxiv.org/abs/2308.05672">Preprint</a></span>
             </li>
         </ul>
 
@@ -1046,15 +1058,15 @@
         <ul>
             <li id="orb5">
                 <span class="pub-number">15.</span> Mohsen Sadr, Alexey Mishchenko, Thomas Hayward-Schneider, Axel Koenies, Alberto Bottino, Alessandro Biancalani, Peter Donnel, Emmanuel Lanti, and Laurent Villard. &ldquo;Linear and nonlinear excitation of TAE modes by external electromagnetic perturbations using ORB5&rdquo; <em>Plasma Physics and Controlled Fusion</em>, 64, 085010, 2022
-                <span class="pub-links">[<a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing (open access)</a>]</span>
+                <span class="pub-links"><a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing (open access)</a></span>
             </li>
             <li>
                 <span class="pub-number">16.</span> P Donnel, J Cazabonne, L Villard, S Brunner, S Coda, J Decker, M Murugappan, and M Sadr. &ldquo;Quasilinear treatment of wave&ndash;particle interactions in the electron cyclotron range and its implementation in a gyrokinetic code&rdquo; <em>Plasma Physics and Controlled Fusion</em>, 63, 064001, 2021
-                <span class="pub-links">[<a href="https://iopscience.iop.org/article/10.1088/1361-6587/abf53f">IOP Publishing (open access)</a>]</span>
+                <span class="pub-links"><a href="https://iopscience.iop.org/article/10.1088/1361-6587/abf53f">IOP Publishing (open access)</a></span>
             </li>
             <li>
                 <span class="pub-number">17.</span> Sima Farazi, Mohsen Sadr, Seongwon Kang, Martin Schiemann, Nikita Vorobiev, Viktor Scherer, Heinz Pitsch. &ldquo;Resolved simulations of single char particle combustion in a laminar flow field&rdquo; <em>Fuel</em>, 201, 15&ndash;28, 2017
-                <span class="pub-links">[<a href="https://doi.org/10.1016/j.fuel.2016.11.011">Elsevier</a>]</span>
+                <span class="pub-links"><a href="https://doi.org/10.1016/j.fuel.2016.11.011">Elsevier</a></span>
             </li>
         </ul>
     </section>
