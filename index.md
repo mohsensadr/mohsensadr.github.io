@@ -403,35 +403,13 @@
     }
 
     /* ── Presentations ── */
-    section#presentations ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    section#presentations li {
-      margin-bottom: 0.65rem;
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      background: var(--color-bg);
-      border: 1px solid transparent;
-      transition: border-color 0.2s, background 0.2s;
-      font-size: 0.925rem;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-
-    section#presentations li:hover {
-      border-color: var(--color-border);
-      background: var(--color-accent-bg);
-    }
-
     section#presentations h3 {
       font-size: 0.95rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: var(--color-accent);
-      margin-top: 1.25rem;
-      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
       border: none;
     }
 
@@ -477,35 +455,13 @@
     }
 
     /* ── Teaching ── */
-    section#teaching ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    section#teaching li {
-      margin-bottom: 0.65rem;
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      background: var(--color-bg);
-      border: 1px solid transparent;
-      transition: border-color 0.2s, background 0.2s;
-      font-size: 0.925rem;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-
-    section#teaching li:hover {
-      border-color: var(--color-border);
-      background: var(--color-accent-bg);
-    }
-
     section#teaching h3 {
       font-size: 0.95rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: var(--color-accent);
-      margin-top: 1.25rem;
-      margin-bottom: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
     }
 
     section#teaching h3:first-of-type {
@@ -1094,47 +1050,117 @@
         <h2>Presentations</h2>
 
         <h3>Conferences</h3>
-        <ul>
-            <li>Particles, Flows &amp; Maps for Sampling Complex Distributions, Lausanne, Switzerland, November 2025 <a href="presentations/EPFL_Poster_2025_Collisional_OT.pdf" target="_blank" class="badge badge-poster">poster</a></li>
-            <li>5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025 <a href="presentations/MSML2025_Naples_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
-            <li>30th Biennial Numerical Analysis Conference, Glasgow, UK, June 2025 <a href="presentations/30th_Biennial_Numerical_Analysis_Conference_talk.pdf" target="_blank" class="badge badge-talk">talk</a></li>
-            <li>4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023 <a href="presentations/MLML2023_ICERM_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
-            <li>19th European Fusion Theory Conference, virtual, October 2021 <a href="presentations/EFTC_antenna_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
-            <li>9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019 <a href="presentations/ICIAM_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
-            <li>10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019 <a href="presentations/MultiphaseFlows_talk.pdf" target="_blank" class="badge badge-talk">talk</a></li>
-            <li>3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018 <a href="presentations/NEGF_2018_talk.pdf" target="_blank" class="badge badge-talk">talk</a></li>
+        <ul class="timeline">
+            <li>
+                <div class="role">Particles, Flows &amp; Maps for Sampling Complex Distributions</div>
+                <div class="org">Lausanne, Switzerland</div>
+                <div class="date">November 2025 <a href="presentations/EPFL_Poster_2025_Collisional_OT.pdf" target="_blank" class="badge badge-poster">poster</a></div>
+            </li>
+            <li>
+                <div class="role">5th Mathematical and Scientific Machine Learning</div>
+                <div class="org">Naples, Italy</div>
+                <div class="date">August 2025 <a href="presentations/MSML2025_Naples_poster.pdf" target="_blank" class="badge badge-poster">poster</a></div>
+            </li>
+            <li>
+                <div class="role">30th Biennial Numerical Analysis Conference</div>
+                <div class="org">Glasgow, UK</div>
+                <div class="date">June 2025 <a href="presentations/30th_Biennial_Numerical_Analysis_Conference_talk.pdf" target="_blank" class="badge badge-talk">talk</a></div>
+            </li>
+            <li>
+                <div class="role">4th Mathematical and Scientific Machine Learning</div>
+                <div class="org">Providence, USA</div>
+                <div class="date">June 2023 <a href="presentations/MLML2023_ICERM_poster.pdf" target="_blank" class="badge badge-poster">poster</a></div>
+            </li>
+            <li>
+                <div class="role">19th European Fusion Theory Conference</div>
+                <div class="org">Virtual</div>
+                <div class="date">October 2021 <a href="presentations/EFTC_antenna_poster.pdf" target="_blank" class="badge badge-poster">poster</a></div>
+            </li>
+            <li>
+                <div class="role">9th International Congress on Industrial and Applied Mathematics</div>
+                <div class="org">Valencia, Spain</div>
+                <div class="date">July 2019 <a href="presentations/ICIAM_poster.pdf" target="_blank" class="badge badge-poster">poster</a></div>
+            </li>
+            <li>
+                <div class="role">10th International Conference on Multiphase Flow</div>
+                <div class="org">Rio de Janeiro, Brazil</div>
+                <div class="date">May 2019 <a href="presentations/MultiphaseFlows_talk.pdf" target="_blank" class="badge badge-talk">talk</a></div>
+            </li>
+            <li>
+                <div class="role">3rd European Conference on Non-Equilibrium Gas Flows</div>
+                <div class="org">Strasbourg, France</div>
+                <div class="date">February 2018 <a href="presentations/NEGF_2018_talk.pdf" target="_blank" class="badge badge-talk">talk</a></div>
+            </li>
         </ul>
 
         <h3>Invited Talks</h3>
-        <ul>
-            <li>Swiss Plasma Center, EPFL, April 2025</li>
-            <li>PSI, CSD Scientific Retreat, March 2024</li>
-            <li>PSI, Machine Learning Seminar Series, April 2024</li>
-            <li>MIT, Symposium of Center for Computational Science &amp; Technology, March 2023</li>
-            <li>Swiss Plasma Center, EPFL, April 2020</li>
-            <li>EPFL, Mathematics Institute of Computational Science and Engineering (MATHICSE), July 2019</li>
-            <li>ETH Zurich, Institute of Fluid Dynamics, May 2018</li>
-            <li>ETH Zurich, Institute of Fluid Dynamics, August 2017</li>
+        <ul class="timeline">
+            <li>
+                <div class="role">Swiss Plasma Center</div>
+                <div class="org">EPFL</div>
+                <div class="date">April 2025</div>
+            </li>
+            <li>
+                <div class="role">CSD Scientific Retreat</div>
+                <div class="org">Paul Scherrer Institute</div>
+                <div class="date">March 2024</div>
+            </li>
+            <li>
+                <div class="role">Machine Learning Seminar Series</div>
+                <div class="org">Paul Scherrer Institute</div>
+                <div class="date">April 2024</div>
+            </li>
+            <li>
+                <div class="role">Symposium of Center for Computational Science &amp; Technology</div>
+                <div class="org">MIT</div>
+                <div class="date">March 2023</div>
+            </li>
+            <li>
+                <div class="role">Swiss Plasma Center</div>
+                <div class="org">EPFL</div>
+                <div class="date">April 2020</div>
+            </li>
+            <li>
+                <div class="role">Mathematics Institute of Computational Science and Engineering (MATHICSE)</div>
+                <div class="org">EPFL</div>
+                <div class="date">July 2019</div>
+            </li>
+            <li>
+                <div class="role">Institute of Fluid Dynamics</div>
+                <div class="org">ETH Zurich</div>
+                <div class="date">May 2018</div>
+            </li>
+            <li>
+                <div class="role">Institute of Fluid Dynamics</div>
+                <div class="org">ETH Zurich</div>
+                <div class="date">August 2017</div>
+            </li>
         </ul>
     </section>
 
     <section id="teaching">
         <h2>Teaching</h2>
-
-        <h3>ETH Zurich</h3>
-        <ul>
-            <li>Introduction to Computational Physics: Monte Carlo methods (2023 and 2024) <a href="teaching_slides/ICP.pdf" target="_blank">[slides]</a></li>
-            <li>Computational Statistical Physics: rarefied gas and plasma dynamics (2024) <a href="teaching_slides/CSP.pdf" target="_blank">[slides]</a></li>
-        </ul>
-
-        <h3>EPFL</h3>
-        <ul>
-            <li>Computational Physics 1 and 2: advection-diffusion equation, nonlinear dynamics, chaotic systems (2020 and 2021)</li>
-        </ul>
-
-        <h3>RWTH Aachen</h3>
-        <ul>
-            <li>Mathematical Foundations 1&ndash;5: numerical methods for PDEs, iterative solvers, Fourier transformation, linear algebra (2017 to 2019)</li>
+        <ul class="timeline">
+            <li>
+                <div class="role">Introduction to Computational Physics</div>
+                <div class="org">ETH Zurich &mdash; Monte Carlo methods <span class="pub-links"><a href="teaching_slides/ICP.pdf" target="_blank">Slides</a></span></div>
+                <div class="date">2023 and 2024</div>
+            </li>
+            <li>
+                <div class="role">Computational Statistical Physics</div>
+                <div class="org">ETH Zurich &mdash; Rarefied gas and plasma dynamics <span class="pub-links"><a href="teaching_slides/CSP.pdf" target="_blank">Slides</a></span></div>
+                <div class="date">2024</div>
+            </li>
+            <li>
+                <div class="role">Computational Physics 1 and 2</div>
+                <div class="org">EPFL &mdash; Advection-diffusion equation, nonlinear dynamics, chaotic systems</div>
+                <div class="date">2020 and 2021</div>
+            </li>
+            <li>
+                <div class="role">Mathematical Foundations 1&ndash;5</div>
+                <div class="org">RWTH Aachen &mdash; Numerical methods for PDEs, iterative solvers, Fourier transformation, linear algebra</div>
+                <div class="date">2017 to 2019</div>
+            </li>
         </ul>
     </section>
 
