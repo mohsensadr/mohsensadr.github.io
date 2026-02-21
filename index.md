@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohsen Sadr - Welcome</title>
-    <!-- MathJax Configuration -->
+    <title>Mohsen Sadr</title>
+
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
@@ -14,651 +14,1187 @@
             }
         });
     </script>
-
-    <!-- MathJax Script -->
     <script type="text/javascript" async
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.13/katex.min.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.13/katex.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-       <style>
-    * {
+    <style>
+    :root {
+      --color-bg: #fafafa;
+      --color-surface: #ffffff;
+      --color-text: #1e293b;
+      --color-text-secondary: #475569;
+      --color-text-muted: #94a3b8;
+      --color-accent: #1e40af;
+      --color-accent-light: #3b82f6;
+      --color-accent-bg: #eff6ff;
+      --color-border: #e2e8f0;
+      --color-nav-bg: rgba(255, 255, 255, 0.85);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+      --max-width: 820px;
+      --nav-height: 56px;
+      --section-gap: 2rem;
+    }
+
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            padding-top: calc(var(--nav-height)); /* Dynamic adjustment */
-        }
 
-        nav {
-            background-color: #fff;
-            padding: 1em 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%; /* Full-width spanning the entire page */
-            display: flex; /* Use flexbox for alignment */
-            justify-content: center; /* Center the content horizontally */
-            flex-wrap: wrap; /* Ensure items wrap to the next line if needed */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            transform: translateY(0); /* Initial position */
-            transition: transform 0.3s ease-in-out; /* Smooth transition */
-        }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
 
-        header {
-            background-image: url('profile2_circle2.png'); /* Replace 'IMG_0006.jpg' with the actual path to your image */
-            background-size: contains; /* Adjusts the height of the background image to 50% of its container */
-            background-position: center; /* Centers the image within the header */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            color: #fff; /* Text color */
-            text-align: center; /* Centers the text */
-            padding: 1em 0; /* Padding for spacing */
-            height: 105vh; /* Sets the header's height to 50% of the viewport height */
-            margin-top: 90px;
-        }
-        
-        nav a {
-            color: #333;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            margin: 0 0.5em;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-            font-weight: bold;
-        }
-        
-        nav a:hover {
-            background-color: #eee;
-        }
-        
-        nav img {
-            vertical-align: middle;
-            margin-right: 8px;
-            width: 24px;
-            height: 24px;
-        }
+    body {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      padding-top: var(--nav-height);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-        section {
-            max-width: 800px;
-            margin: 6em auto 2em; /* Adds spacing below the fixed nav */
-            padding: 1em;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 50px; 
-        }
+    /* ── Navigation ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      background: var(--color-nav-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.15rem;
+      padding: 0 1rem;
+      transform: translateY(0);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                  box-shadow 0.3s ease;
+    }
 
-        h2 {
-            color: #333;
-        }
+    nav.scrolled {
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+    }
 
-        p {
-            color: #555;
-            margin-bottom: 1em;
-        }
+    nav a {
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      font-size: 0.825rem;
+      font-weight: 500;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: color 0.2s, background-color 0.2s;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #fff;
-            color: #333;
-        }
+    nav a:hover {
+      color: var(--color-accent);
+      background-color: var(--color-accent-bg);
+    }
 
-        section#publications {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
+    nav a img {
+      width: 18px;
+      height: 18px;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
 
-        section#publications h2 {
-            color: #333;
-        }
+    nav a:hover img {
+      opacity: 1;
+    }
 
-        section#publications ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    nav .nav-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--color-border);
+      margin: 0 0.25rem;
+    }
 
-        section#publications li {
-            margin-bottom: 1em;
-        }
-        
-        #projects {
-            /* Add any styling for the projects section here */
-        }
+    /* ── Hero / Header ── */
+    .hero {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
 
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
-        }
+    .hero-avatar {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-border);
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
 
-        .video-container iframe {
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             border: 1px solid black; /* You can add a border or other styling if desired */
-        }
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: 2.25rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
 
-        .pdf-container {
-            width: 100%; /* Adjust the width as needed */
-            height: 100%; /* Adjust the width as needed */
-        }
+    .hero .subtitle {
+      font-size: 1.05rem;
+      color: var(--color-text-secondary);
+      font-weight: 400;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
 
-        .pdf-container embed {
-            width: 100%;
-            height: 100%;
-        }
+    /* ── Sections ── */
+    .content-wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
 
-        .equation-container {
-            white-space: nowrap; /* Prevent line breaks */
-            overflow-x: auto; /* Allow horizontal scrolling if needed */
-            overflow-wrap: break-word; /* Enable word wrapping */
-            width: 100%; /* Adjust width as needed */
-            margin: 20px 0; /* Add margin for better readability */
-        }
-        
+    section {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      margin-bottom: var(--section-gap);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--color-accent);
+      display: inline-block;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    /* ── Project cards ── */
+    .project {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .project:first-of-type {
+      padding-top: 0.5rem;
+    }
+
+    .project:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--color-text-secondary);
+      margin-bottom: 0.75rem;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--color-accent-light);
+      text-decoration: underline;
+    }
+
+    /* ── About ── */
+    section#about p {
+      font-size: 0.975rem;
+    }
+
+    /* ── Experience / Education timeline ── */
+    .timeline {
+      list-style: none;
+      padding: 0;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: var(--color-border);
+    }
+
+    .timeline li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline li:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      border: 2px solid var(--color-surface);
+      box-shadow: 0 0 0 2px var(--color-accent);
+    }
+
+    .timeline .role {
+      font-weight: 600;
+      color: var(--color-text);
+      font-size: 1rem;
+    }
+
+    .timeline .org {
+      color: var(--color-text-secondary);
+      font-size: 0.925rem;
+    }
+
+    .timeline .date {
+      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* ── Awards ── */
+    section#awards ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section#awards li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.85rem;
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    section#awards li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      background: var(--color-accent);
+      border-radius: 2px;
+      transform: rotate(45deg);
+    }
+
+    /* ── Publications ── */
+    .pub-category {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      padding-top: 0.5rem;
+    }
+
+    .pub-category:first-of-type {
+      margin-top: 0.25rem;
+    }
+
+    section#publications ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section#publications li {
+      margin-bottom: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: var(--color-bg);
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+      font-size: 0.925rem;
+      line-height: 1.65;
+      color: var(--color-text-secondary);
+    }
+
+    section#publications li:hover {
+      border-color: var(--color-border);
+      background: var(--color-accent-bg);
+    }
+
+    .pub-number {
+      display: inline-block;
+      min-width: 1.75rem;
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+
+    .pub-links {
+      display: inline;
+    }
+
+    .pub-links a {
+      font-size: 0.825rem;
+      font-weight: 500;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      background: var(--color-accent-bg);
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .pub-links a:hover {
+      background: var(--color-accent);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ── Presentations ── */
+    section#presentations ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section#presentations li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.925rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    section#presentations li:last-child {
+      border-bottom: none;
+    }
+
+    section#presentations h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--color-accent);
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      border: none;
+    }
+
+    section#presentations h3:first-of-type {
+      margin-top: 0.25rem;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+
+    .badge:hover {
+      text-decoration: none;
+    }
+
+    .badge-talk {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .badge-talk:hover {
+      background: #1e40af;
+      color: #fff;
+    }
+
+    .badge-poster {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .badge-poster:hover {
+      background: #3730a3;
+      color: #fff;
+    }
+
+    /* ── Teaching ── */
+    section#teaching ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section#teaching li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.925rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    section#teaching li:last-child {
+      border-bottom: none;
+    }
+
+    section#teaching h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--color-accent);
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section#teaching h3:first-of-type {
+      margin-top: 0.25rem;
+    }
+
+    /* ── News ── */
+    .news-item {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.25rem;
+      border-radius: 8px;
+      background: var(--color-bg);
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+      margin-bottom: 0.75rem;
+    }
+
+    .news-item:hover {
+      border-color: var(--color-border);
+      background: var(--color-accent-bg);
+    }
+
+    .news-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .news-date {
+      flex-shrink: 0;
+      width: 4.5rem;
+      text-align: center;
+      padding-top: 0.15rem;
+    }
+
+    .news-date .month {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-accent);
+    }
+
+    .news-date .year {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    .news-content {
+      flex: 1;
+    }
+
+    .news-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem 0;
+      line-height: 1.4;
+    }
+
+    .news-content h3 a {
+      color: var(--color-text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .news-content h3 a:hover {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .news-content p {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .news-source {
+      display: inline-block;
+      font-size: 0.775rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      margin-top: 0.4rem;
+    }
+
+    .news-source a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .news-source a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .news-item {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .news-date {
+        width: auto;
+        text-align: left;
+        display: flex;
+        gap: 0.35rem;
+      }
+    }
+
+    /* ── Review ── */
+    section#referee ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    section#referee p {
+      margin-bottom: 0.5rem;
+    }
+
+    section#referee li {
+      display: inline-block;
+    }
+
+    section#referee li a {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.35rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+      background: var(--color-surface);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    section#referee li a:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: var(--color-accent-bg);
+      text-decoration: none;
+    }
+
+    /* ── Contact ── */
+    section#contact {
+      text-align: center;
+      padding: 2.5rem;
+    }
+
+    section#contact h2 {
+      display: block;
+      text-align: center;
+    }
+
+    section#contact a {
+      font-weight: 500;
+    }
+
+    /* ── Video / Media ── */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      margin: 1rem 0;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .responsive-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+
+    .img-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s;
+    }
+
+    .img-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--color-text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--color-border);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      :root {
+        --nav-height: auto;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0.5rem 0.75rem;
+        gap: 0.1rem;
+      }
+
+      nav a {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.45rem;
+      }
+
+      nav .nav-divider {
+        display: none;
+      }
+
+      .hero {
+        padding: 2.5rem 1rem 2rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero-avatar {
+        width: 200px;
+        height: 200px;
+      }
+
+      section {
+        padding: 1.5rem 1.25rem;
+        border-radius: 8px;
+      }
+
+      .content-wrapper {
+        padding: 0 1rem 3rem;
+      }
+
+      .img-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      section#referee ul {
+        gap: 0.35rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.35rem;
+      }
+
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 1.25rem 1rem;
+      }
+    }
     </style>
-
 </head>
 <body>
 
-<header>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</header>
-
-    <nav>
+    <nav id="navbar">
         <a href="https://www.linkedin.com/in/mohsensadr/" target="_blank" title="LinkedIn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
-             alt="LinkedIn Logo" 
-             style="width:24px; height:24px; vertical-align:middle;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
         </a>
         <a href="https://github.com/mohsensadr" target="_blank" title="GitHub">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width:24px; height:24px; vertical-align:middle;">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
         </a>
         <a href="https://scholar.google.de/citations?user=YWJ0prAAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" 
-         alt="Google Scholar Logo" 
-         style="width:24px; height:24px; vertical-align:middle;"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar">
         </a>
         <a href="https://orcid.org/0000-0003-0241-8163" target="_blank" title="ORCID">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" 
-         alt="ORCID Logo" 
-         style="width:24px; height:24px; vertical-align:middle;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID">
         </a>
-        <a href="CV.pdf" download>
-            <span class="material-icons" style="vertical-align: middle; margin-right: 5px;">description</span>
-            CV
+        <a href="CV.pdf" download title="Download CV">
+            <span class="material-icons" style="font-size: 18px;">description</span> CV
         </a>
-        <a href="#about">About Me</a>
+        <span class="nav-divider"></span>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#awards">Awards</a>
         <a href="#publications">Publications</a>
-        <a href="#presentations">Presentations</a>
+        <a href="#presentations">Talks</a>
         <a href="#teaching">Teaching</a>
         <a href="#referee">Review</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <div class="hero">
+        <img src="profile2_circle2.png" alt="Mohsen Sadr" class="hero-avatar">
+        <h1>Mohsen Sadr</h1>
+        <p class="subtitle">Applied Mathematician &mdash; Statistical Modeling, Monte Carlo Methods, Optimal Transport &amp; Computational Physics</p>
+    </div>
+
+    <div class="content-wrapper">
+
     <section id="about">
         <h2>About Me</h2>
-        <p> My name is Mohsen. I am an applied mathematician with experience in data-driven/statistical modeling, Monte Carlo methods, density estimation, particle method, variance reduction, and optimal transport, with applications in rarefied gas and plasma dynamics as well as generative AI.</p>
-
-             <p> I am currently a Founder Fellow at PSI and a Research Affiliate at MIT. During 2023-2025, I worked on the optimal transport problem as a researcher at ETH/PSI in Switzerland. There, in collaboration with <strong>Dr. Andreas Adelmann</strong> and his team, I was involved in upgrading <a href="https://github.com/OPALX-project/OPALX">OPALX</a>  (Object Oriented Particle Accelerator Library) to be exa-scalable and portable (HPC) for simulation of particle accelerators. Before that in Dec. 2021, I joined MIT, USA, and worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on developing a general-purpose variance-reduced Monte Carlo method for kinetic equations. Before that, I worked with <strong>Prof. Laurent Villard</strong> at the Swiss Plasma Center (EPFL), Switzerland, as a postdoc on a particle-in-cell code for simulating plasma in confined geometry called <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>. I obtained my PhD in applied mathematics at RWTH Aachen University, Germany, under the supervision of <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>. My <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> was about developing efficient Monte Carlo methods for simulating dense gas, liquid, and phase transition descriptions in kinetic theory.
-        </p>
-        
+        <p>I am an applied mathematician working at the intersection of computational physics, statistical modeling, and machine learning. My research spans Monte Carlo methods, density estimation, variance reduction, optimal transport, and particle methods, with applications in rarefied gas dynamics, plasma physics, and generative AI.</p>
+        <p>Currently, I am a Founder Fellow at the Paul Scherrer Institute (PSI) and a Research Affiliate at MIT. At PSI (2023&ndash;2025), I worked on optimal transport and collaborated with <strong>Dr. Andreas Adelmann</strong> on scaling <a href="https://github.com/OPALX-project/OPALX">OPALX</a>&mdash;a particle accelerator simulation library&mdash;for exascale HPC platforms. At MIT (2021&ndash;2023), I worked with <strong>Prof. Nicolas Hadjiconstantinou</strong> on general-purpose variance-reduced Monte Carlo methods for kinetic equations. Prior to that, I was a postdoc with <strong>Prof. Laurent Villard</strong> at the Swiss Plasma Center (EPFL), contributing to <a href="https://www.epfl.ch/research/domains/swiss-plasma-center/research/theory/codes/research_theory_codes_orb5/">ORB5</a>, a gyrokinetic particle-in-cell code for confined plasma simulations. I received my PhD in Applied Mathematics from RWTH Aachen University, advised by <strong>Prof. Manuel Torrilhon</strong> and <strong>Prof. Hossein Gorji</strong>, where my <a href="https://doi.org/10.18154/RWTH-2020-07249">dissertation</a> focused on efficient Monte Carlo methods for dense gas, liquid, and phase-transition kinetics.</p>
     </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+            <div class="news-date">
+                <span class="month">Feb</span>
+                <span class="year">2026</span>
+            </div>
+            <div class="news-content">
+                <h3><a href="https://www.psi.ch/en/news/media-releases/psi-founder-fellowship-for-ai-platform-and-solid-state-batteries" target="_blank">PSI Founder Fellowship for AI Platform and Solid-State Batteries</a></h3>
+                <p>Awarded a PSI Founder Fellowship (up to 150,000 CHF) to develop an AI-based platform that accelerates and reduces the cost of physical simulations for fusion energy, aerospace, and semiconductor technologies. The fellowship includes coaching and advisory services from PSI's technology transfer team and external experts.</p>
+                <div class="news-source">
+                    <a href="https://www.psi.ch/en/news/media-releases/psi-founder-fellowship-for-ai-platform-and-solid-state-batteries" target="_blank">PSI Media Release</a>
+                    &nbsp;&middot;&nbsp;
+                    <a href="https://www.news.admin.ch/fr/newnsb/HKgkaTivg50VFiCnQbqXn" target="_blank">Swiss Federal Government</a>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-date">
+                <span class="month">Oct</span>
+                <span class="year">2025</span>
+            </div>
+            <div class="news-content">
+                <h3><a href="https://openreview.net/forum?id=Az3mJ4d1eT" target="_blank">Paper accepted in Transactions on Machine Learning Research (TMLR)</a></h3>
+                <p>Our paper &ldquo;Data-Driven Discovery of PDEs via the Adjoint Method&rdquo; has been accepted in TMLR. We present an adjoint-based method for discovering governing PDEs from data, formulated as a PDE-constrained optimization problem with analytically derived gradients.</p>
+                <div class="news-source">
+                    <a href="https://openreview.net/forum?id=Az3mJ4d1eT" target="_blank">OpenReview</a>
+                    &nbsp;&middot;&nbsp;
+                    <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Non-equilibrium Multiphase Flows</h3>
-    
-    <p> In this line of research, I designed a stochastic process for modeling short and long-range interactions of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">7</a>, <a href="#LongRange">8</a>, <a href="#DFP">9</a>]. These methods have been implemented in a particle-in-cell code called <a href="https://github.com/piclas-framework/piclas">PICLas</a>. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented.</p>
+    <section id="projects">
+        <h2>Projects</h2>
 
-<div class="video-container">
-    <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
-</div>
-      
-    
- <h3>Excitation of Confined Plasma</h3>
-    
-    <p> Stabilizing a confined plasma in a fusion device is one of the main challenges in designing such a system. Often, it is worthwhile to study the growth/dissipation rates of modes of the system to better control the plasma. I have worked on excitation of Alfven modes in a confined plasma using a well-established particle-in-cell and gyrokinetic code called ORB5. As a showcase, electrostatic and magnetic potential fields are shown here where the mode of interest is successfully excited using a so-called antenna. For more details, see [<a href="#orb5">15</a>].</p>
-     
-     <img src="excitation_alfven_mode_confined_plasma.png" alt="Visualization of excited Alfven modes" class="responsive-img">
+        <div class="project">
+            <h3>Non-equilibrium Multiphase Flows</h3>
+            <p>In this line of research, I designed a stochastic process for modeling short and long-range interactions of monatomic particles that follows the exact kinetic equation up to desired moments with a feasible computational complexity that scales linearly with the number of particles. For details on the developed method, see [<a href="#FPmultiphase">7</a>, <a href="#LongRange">8</a>, <a href="#DFP">9</a>]. These methods have been implemented in a particle-in-cell code called <a href="https://github.com/piclas-framework/piclas">PICLas</a>. As a showcase, here a simulation of Argon's density experiencing the spinodal decomposition is presented.</p>
+            <div class="video-container">
+                <iframe src="spinodal_4.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
 
-<h3>Variance Reduction Method</h3>
+        <div class="project">
+            <h3>Excitation of Confined Plasma</h3>
+            <p>Stabilizing a confined plasma in a fusion device is one of the main challenges in designing such a system. Often, it is worthwhile to study the growth/dissipation rates of modes of the system to better control the plasma. I have worked on excitation of Alfven modes in a confined plasma using a well-established particle-in-cell and gyrokinetic code called ORB5. As a showcase, electrostatic and magnetic potential fields are shown here where the mode of interest is successfully excited using a so-called antenna. For more details, see [<a href="#orb5">15</a>].</p>
+            <img src="excitation_alfven_mode_confined_plasma.png" alt="Visualization of excited Alfven modes" class="responsive-img">
+        </div>
 
-<p>One of the main challenges in interpreting the solution of statistical models is noise. I have developed a general-purpose and entropy-based variance reduction method for stochastic processes where the target density is around an equilibrium/control-variate density. In this project, I devised a consistent and least-biased evolution equation for the importance weights of the Boltzmann and Fokker-Planck equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRPIC">4</a>], [<a href="#VRDSMC">5</a>] and [<a href="#VRFP">6</a>]. </p>
+        <div class="project">
+            <h3>Variance Reduction Method</h3>
+            <p>One of the main challenges in interpreting the solution of statistical models is noise. I have developed a general-purpose and entropy-based variance reduction method for stochastic processes where the target density is around an equilibrium/control-variate density. In this project, I devised a consistent and least-biased evolution equation for the importance weights of the Boltzmann and Fokker-Planck equation. The following figures show the snapshot estimate of number density, bulk velocity, and temperature for the Sod-Shock tube test case. We also show how the noise varies with respect to the signal for the standard Monte Carlo and the introduced variance reduction method. For details, see [<a href="#VRPIC">4</a>], [<a href="#VRDSMC">5</a>] and [<a href="#VRFP">6</a>].</p>
+            <div class="img-grid">
+                <img src="n_nv10_shock3.png" alt="Number density for Sod-Shock tube test case">
+                <img src="U_nv10_shock3.png" alt="Bulk velocity for Sod-Shock tube test case">
+                <img src="T_nv10_shock3.png" alt="Temperature for Sod-Shock tube test case">
+                <img src="var_shock.png" alt="Noise variation vs signal for variance reduction">
+            </div>
+        </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
-        <img src="n_nv10_shock3.png" alt="Number density for Sod-Shock tube test case" style="width: 100%; height: auto; display: block;">
-    </div>
-    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
-        <img src="U_nv10_shock3.png" alt="Bulk velocity for Sod-Shock tube test case" style="width: 100%; height: auto; display: block;">
-    </div>
-    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
-        <img src="T_nv10_shock3.png" alt="Temperature for Sod-Shock tube test case" style="width: 100%; height: auto; display: block;">
-    </div>
-    <div style="flex: 0 0 40%; max-width: 40%; box-sizing: border-box;">
-        <img src="var_shock.png" alt="Noise variation vs signal for variance reduction" style="width: 100%; height: auto; display: block;">
-    </div>
-</div>
+        <div class="project">
+            <h3>Optimal Transport Problem</h3>
+            <p>Finding the optimal map/plan between marginals is one of the most attractive problems in applied mathematics with applications in data-driven modeling and Machine Learning. I am interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], and moment-based methods [<a href="#WE">3</a>]. As a showcase, here I show the output of a generative model trained using the optimal map between the normal and four other marginals.</p>
+            <img src="5marginals.png" alt="Visualization of optimal transport for 5 marginals" class="responsive-img">
+        </div>
+    </section>
 
-
-<h3>Optimal Transport Problem</h3>
-    
-    <p> Finding the optimal map/plan between marginals is one of the most attractive problems in applied mathematics with applications in data-driven modeling and Machine Learning. I am interested in devising new dynamical systems to solve this problem more efficiently than standard methods. This includes collision-based dynamics [<a href="#colOT">1</a>], orthogonal coupling dynamics [<a href="#OCD">2</a>], and moment-based methods [<a href="#WE">3</a>]. As a showcase, here I show the output of a generative model trained using the optimal map between the normal and four other marginals. </p>
-     
-     <img src="5marginals.png" alt="Visualization of optimal transport for 5 marginals" class="responsive-img">
-
-
-</section>
-
-<section id="experience">
-    
-    <h2>Experience</h2>
-
-    <h3>Founder Fellow at Paul Scherrer Institute (ETH-domain)</h3>
-    <p>Scientific Computing, Theory and Data</p>
-    <p>USA, February 2026 - present.</p>
-    
-    <h3>Research Affiliate at Massachusetts Institute of Technology</h3>
-    <p>Department of Mechanical Engineering</p>
-    <p>USA, July 2025 - present.</p>
-    
-    <h3>Scientist at Paul Scherrer Institute  (ETH-domain)</h3>
-    <p>Scientific Computing, Theory and Data</p>
-    <p>Switzerland, July 2023 - June 2025.</p>
-    
-    <h3>Fellow at Massachusetts Institute of Technology</h3>
-    <p>Department of Mechanical Engineering</p>
-    <p>USA, December 2021 - June 2023.</p>
-
-    <h3>Scientific Collaborator at EPFL</h3>
-    <p>Swiss Plasma Center</p>
-    <p>Switzerland, October 2020 - November 2021.</p>
-</section>
-
-<section id="education">
-    <h2>Education</h2>
-    <h3>PhD in Applied and Computational Mathematics</h3>
-    <p>RWTH Aachen University, Germany, 2020.</p>
-    
-    <h3>MSc in Simulation Sciences</h3>
-    <p>RWTH Aachen University, Germany, 2017.</p>
-
-    <h3>BSc in Mechanical Engineering</h3>
-    <p>KN Toosi University of Technology, Iran, 2013.</p>
-</section>
-
-<section id="awards">
-    <h2>Awards & Honors</h2>
-<ul>
-
-    <li>
-    100k CHF for Founder Fellowship grant from Paul Scherrer institute and QBIT Captial in 2026.
-    </li>
-
-    <li>
-    1.2m Euro for a project from EUROfusion and SNSF (consortium of national fusion research institutes) in 2021 (associated).
-    </li>
-    
-    <li>
-    100k Euro with national Walter Benjamin scholarship offered by German research foundation (DFG) in 2020.
-    </li>
-    
-    <li>
-    4k Euro travel grant from German academic exchange service (DAAD) in 2019.
-    </li>
-</ul>
-</section>
-
-
-<section id="publications">
-    <h2>Publications</h2>
-    <ul>
-
-        <strong>Optimal Transport:</strong>
-
-        <li id="colOT">
-        1. Mohsen Sadr and M. Hossein Gorji. "Collision-based dynamics for multi-marginal optimal transport" 2024 [<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>].
-        </li>
-
-        <li id="OCD">
-        2. Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. "Optimal transportation by orthogonal
-coupling dynamics" 2024 [<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a> | <a href="https://github.com/mohsensadr/OCD">Code</a>].
-        </li>
-
-         <li id="WE">
-        3. Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. "Wasserstein-penalized Entropy closure: A use case for stochastic particle methods" <em>Journal of Computational Physics </em>, 2024 [<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a> | <a href="https://github.com/mohsensadr/WE">Code</a>].
-        </li>
-        
-        <strong>Variance Reduction:</strong>
-
-        <li id="VRPIC">
-        4. Victor Windhab, Andreas Adelmann, Mohsen Sadr. "VR-PIC: An entropic variance-reduction method for particle-in-cell solutions of the Vlasov-Poisson equation", 2026 [<a href="https://doi.org/10.48550/arXiv.2602.15041">Preprint</a> | <a href="https://github.com/mohsensadr/VRPIC">Code</a>].
-        </li>
-        
-        <li id="VRDSMC">
-        5. Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction" <em>Journal of Computational Physics</em>, 472, 111677, 2023 [<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a>].
-        </li>
-
-        <li id="VRFP">
-        6. Mohsen Sadr, and Nicolas G. Hadjiconstantinou. "Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics" <em>Journal of Computational Physics</em>, 492, 112402, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>].
-        </li>
-
-        <strong>Modelling in Kinetic Theory:</strong>
-        
-        <li id="FPmultiphase">
-        7. Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. "Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium" <em>Journal of Fluid Mechanics</em>, 920, A46, 2021 [<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>].
-        </li>
-
-        <li id="LongRange">
-        8. Mohsen Sadr, and M. Hossein Gorji. "Treatment of long-range interactions arising in the Enskog–Vlasov description of dense fluids" <em>Journal of Computational Physics</em>, 378, 129-142, 2019 [<a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05845">Preprint</a> | <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a>].
-        </li>
-
-        <li id="DFP">
-        9. Mohsen Sadr, and M. Hossein Gorji. "A continuous stochastic model for non-equilibrium dense gases" <em>Journal of Physics of Fluids</em>, 29, 122007, 2017 [<a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> | <a href="https://arxiv.org/abs/2308.05117">Preprint</a> | <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a>].
-        </li>
-        
-        <strong>Data-Driven Modelling:</strong>
-        
-        <li>
-        10. Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. "Data-driven discovery of PDEs via the adjoint method" <em>Transactions on Machine Learning Research</em>, 2025 [<a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>].
-        </li>
-
-        <li>
-        11. Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. "MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation" <em>Transactions on Machine Learning Research</em>, 2023 [<a href="https://openreview.net/forum?id=Y2ru0LuQeS">OpenReview</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>].
-        </li>
-
-        <li>
-        12. Mohsen Sadr,  Manuel Torrilhon, and M. Hossein Gorji. "Gaussian Process Regression for Maximum Entropy Distribution" <em>Journal of Computational Physics</em>, 418, 109644, 2020 [<a href="https://doi.org/10.1016/j.jcp.2020.109644">Elsevier</a> | <a href="https://arxiv.org/abs/2308.06149">Preprint</a>].
-        </li>
-
-        <strong>Approximating Collision Operator:</strong>
-
-        <li>
-        13. Fabian Mies, Mohsen Sadr, and Manuel Torrilhon. "An efficient jump-diffusion approximation of the Boltzmann equation" <em>Journal of Computational Physics</em>, 490, 112308, 2023 [<a href="https://doi.org/10.1016/j.jcp.2023.112308">Elsevier</a> | <a href="https://arxiv.org/abs/2112.08362">Preprint</a>].
-        </li>
-
-        <li>
-        14. Mohsen Sadr, Qian Wang, and M. Hossein Gorji. "Coupling kinetic and continuum using data-driven maximum entropy distribution" <em>Journal of Computational Physics</em>, 444, 110542, 2021 [<a href="https://doi.org/10.1016/j.jcp.2021.110542">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05672">Preprint</a>].
-        </li>
-
-        <strong>Simulation of Plasma/Fluid:</strong>
-        
-        <li id="orb5">
-        15. Mohsen Sadr, Alexey Mishchenko, Thomas Hayward-Schneider, Axel Koenies, Alberto Bottino, Alessandro Biancalani, Peter Donnel, Emmanuel Lanti, and Laurent Villard. "Linear and nonlinear excitation of TAE modes by external electromagnetic perturbations using ORB5" <em>Plasma Physics and Controlled Fusion</em>, 64, 085010, 2022 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing Ltd (open access)</a>].
-        </li>
-
-        <li>
-        16. P Donnel, J Cazabonne, L Villard, S Brunner, S Coda, J Decker, M Murugappan, and M Sadr. "Quasilinear treatment of wave–particle interactions in the electron cyclotron range and its implementation in a gyrokinetic code" <em>Plasma Physics and Controlled Fusion</em>, 63, 064001, 2021 [<a href="https://iopscience.iop.org/article/10.1088/1361-6587/abf53f">IOP Publishing Ltd (open access)</a>].
-        </li>
-        
-        <li>
-        17. Sima Farazi, Mohsen Sadr, Seongwon Kang, Martin Schiemann, Nikita Vorobiev, Viktor Scherer, Heinz Pitsch. "Resolved simulations of single char particle combustion in a laminar flow field" <em>Fuel</em>, 201, 15-28, 2017 [<a href="https://doi.org/10.1016/j.fuel.2016.11.011">Elsevier</a>].
-        </li>
-        
-        
-    </ul>
-</section>
-
-
-<section id="presentations">
-    <h2>Presentations</h2>
-    <ul>
-
- <h3>Conferences</h3>
-  
-        <li>
-        Particles, Flows & Maps for Sampling Complex Distributions, Lausanne, Switzerland, November 2025  [<a href="presentations/EPFL_Poster_2025_Collisional_OT.pdf" target="_blank">poster</a>].
-        </li>
-        
-        <li>
-        5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025 [<a href="presentations/MSML2025_Naples_poster.pdf" target="_blank">poster</a>].
-        </li>
-
-        <li>
-        30th Biennial Numerical Analysis Conference, Glasgow, UK, June, 2025, [<a href="presentations/30th_Biennial_Numerical_Analysis_Conference_talk.pdf" target="_blank">talk</a>].
-        </li>
-
-        <li>
-        4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023 [<a href="presentations/MLML2023_ICERM_poster.pdf" target="_blank">poster</a>].
-        </li>
-
-        <li>
-        19th European Fusion Theory Conference, virtual, October 2021 [<a href="presentations/EFTC_antenna_poster.pdf" target="_blank">poster</a>].
-        </li>
-
-        <li>
-        9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019 [<a href="presentations/ICIAM_poster.pdf" target="_blank">poster</a>].
-        </li>
-
-        <li>
-        10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019 [<a href="presentations/MultiphaseFlows_talk.pdf" target="_blank">talk</a>].
-        </li>
-
-        <li>
-        3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018 [<a href="presentations/NEGF_2018_talk.pdf" target="_blank">talk</a>].
-        </li>
-
-<h3>Invited Talks</h3>
-
-<li>
-Swiss Plasma Center, EPFL, April, 2025.
-</li>
-
-<li>
-PSI, CSD Scientific Retreat, March, 2024.
-</li>
-
-<li>
-PSI, Machine Learning Seminar Series, April, 2024.
-</li>
-
-<li>
-MIT, Symposium of Center for Computational Science & Technology, March, 2023.
-</li>
-
-<li>
-Swiss Plasma Center, EPFL, April, 2020.
-</li>
-
-<li>
-EPFL, Mathematics Institute of Computational Science and Engineering (MATHICSE), July, 2019.
-</li>
-
-<li>
-ETH Zurich, Institute of Fluid Dynamics, May, 2018,
-</li>
-
-<li>
-ETH Zurich, Institute of Fluid Dynamics, August, 2017.
-</li>
-    </ul>
-</section>
-
-
-<section id="teaching">
-    <h2>Teaching</h2>
-    <ul>
-
-    <h3>ETH Zurich</h3>
-    <li>
-        Introduction to Computational Physics: Monte Carlo methods, (2023 and 2024)  [<a href="teaching_slides/ICP.pdf" target="_blank">lecture</a>].
-    </li>
-    
-    <li>
-        Computational Statistical Physics: rarefied gas and plasma dynamics, (2024)  [<a href="teaching_slides/CSP.pdf" target="_blank">lecture</a>].
-    </li>
-
-    <h3>EPFL</h3>
-    <li>
-        Computational Physics 1 and 2: advection-diffusion equation, nonlinear dynamics, chaotic systems, (2020 and 2021).
-    </li>
-
-     <h3>RWTH Aachen</h3>
-    <li>
-        Mathematical Foundations 1-5: numerical methods for PDEs, iteraitve solvers, Fourier transformation, linear algebra, (2017 to 2019).
-    </li>
-    
-    </ul>
- </section>
- 
-<section id="referee">
-        <h2>Review</h2>
-        <ul>
-        <p>
-        I am an active referee of the following peer-reviewed journals/conferences:
-        </p>
-        
-        <li>
-             <a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a>
-        </li>
-
-        <li>
-             <a href="https://pubs.aip.org/aip/pof?gad_source=1&gbraid=0AAAAADgwGbzh-SiC9i39ahsUKgozB8sDJ&gclid=Cj0KCQjw1Yy5BhD-ARIsAI0RbXaaBDmB03R1ixhcDVy_1zWYKVKB8Ik_sG-5GmENfxe75-kplx7P0z8aAgYUEALw_wcB">Physics of Fluids (POF)</a>
-        </li>
-
-        <li>
-             <a href="https://www.nature.com/srep/">Nature: Scientific Reports</a>
-        </li>
-        
-        <li>
-             <a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer Physics Communications</a>
-        </li>
-
-         <li>
-          <a href="https://www.sciencedirect.com/journal/communications-in-nonlinear-science-and-numerical-simulation">Communications in nonlinear science & numerical simulation</a>
-        </li>
-        
-        <li>
-             <a href="https://iclr.cc">International Conference on Learning Representations (ICLR)</a>
-        </li>
-
-        <li>
-             <a href="https://www.mdpi.com/journal/applsci">Applied Sciences</a>
-        </li>
-        
-        <li>
-             <a href="https://link.springer.com/journal/11012">Meccanica</a>
-        </li>
-
-        <li> 
-             <a href="https://www.sciencedirect.com/journal/advanced-powder-technology">Advanced Powder Technology</a>
-        </li>
-        
-        <li>
-            <a href="https://www.mdpi.com/journal/photonics">Photonics</a>
-        </li>
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul class="timeline">
+            <li>
+                <div class="role">Founder Fellow</div>
+                <div class="org">Paul Scherrer Institute (ETH-domain) &mdash; Scientific Computing, Theory and Data</div>
+                <div class="date">February 2026 &ndash; present</div>
+            </li>
+            <li>
+                <div class="role">Research Affiliate</div>
+                <div class="org">Massachusetts Institute of Technology &mdash; Department of Mechanical Engineering</div>
+                <div class="date">July 2025 &ndash; present</div>
+            </li>
+            <li>
+                <div class="role">Scientist</div>
+                <div class="org">Paul Scherrer Institute (ETH-domain) &mdash; Scientific Computing, Theory and Data</div>
+                <div class="date">July 2023 &ndash; June 2025</div>
+            </li>
+            <li>
+                <div class="role">Fellow</div>
+                <div class="org">Massachusetts Institute of Technology &mdash; Department of Mechanical Engineering</div>
+                <div class="date">December 2021 &ndash; June 2023</div>
+            </li>
+            <li>
+                <div class="role">Scientific Collaborator</div>
+                <div class="org">EPFL &mdash; Swiss Plasma Center</div>
+                <div class="date">October 2020 &ndash; November 2021</div>
+            </li>
         </ul>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            You can reach me at <a href="mailto:mohsen.sadr@icloud.com">mohsen.sadr@icloud.com</a>.
-        </p>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="timeline">
+            <li>
+                <div class="role">PhD in Applied and Computational Mathematics</div>
+                <div class="org">RWTH Aachen University, Germany</div>
+                <div class="date">2020</div>
+            </li>
+            <li>
+                <div class="role">MSc in Simulation Sciences</div>
+                <div class="org">RWTH Aachen University, Germany</div>
+                <div class="date">2017</div>
+            </li>
+            <li>
+                <div class="role">BSc in Mechanical Engineering</div>
+                <div class="org">KN Toosi University of Technology, Iran</div>
+                <div class="date">2013</div>
+            </li>
+        </ul>
     </section>
 
+    <section id="awards">
+        <h2>Awards &amp; Honors</h2>
+        <ul>
+            <li>100k CHF for Founder Fellowship grant from Paul Scherrer Institute and QBIT Capital in 2026.</li>
+            <li>1.2m Euro for a project from EUROfusion and SNSF (consortium of national fusion research institutes) in 2021 (associated).</li>
+            <li>100k Euro with national Walter Benjamin scholarship offered by German Research Foundation (DFG) in 2020.</li>
+            <li>4k Euro travel grant from German Academic Exchange Service (DAAD) in 2019.</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="pub-category">Optimal Transport</div>
+        <ul>
+            <li id="colOT">
+                <span class="pub-number">1.</span> Mohsen Sadr and M. Hossein Gorji. &ldquo;Collision-based dynamics for multi-marginal optimal transport&rdquo; 2024
+                <span class="pub-links">[<a href="https://doi.org/10.48550/arXiv.2412.16385">Preprint</a> | <a href="https://github.com/mohsensadr/collisional_ot">Code</a>]</span>
+            </li>
+            <li id="OCD">
+                <span class="pub-number">2.</span> Mohsen Sadr, Peyman Mohajerin Esfehani, and M. Hossein Gorji. &ldquo;Optimal transportation by orthogonal coupling dynamics&rdquo; 2024
+                <span class="pub-links">[<a href="https://doi.org/10.48550/arXiv.2410.08060">Preprint</a> | <a href="https://github.com/mohsensadr/OCD">Code</a>]</span>
+            </li>
+            <li id="WE">
+                <span class="pub-number">3.</span> Mohsen Sadr, Nicolas G. Hadjiconstantinou, and M. Hossein Gorji. &ldquo;Wasserstein-penalized Entropy closure: A use case for stochastic particle methods&rdquo; <em>Journal of Computational Physics</em>, 2024
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2024.113066">Elsevier</a> | <a href="https://arxiv.org/abs/2306.04120">Preprint</a> | <a href="https://github.com/mohsensadr/WE">Code</a>]</span>
+            </li>
+        </ul>
+
+        <div class="pub-category">Variance Reduction</div>
+        <ul>
+            <li id="VRPIC">
+                <span class="pub-number">4.</span> Victor Windhab, Andreas Adelmann, Mohsen Sadr. &ldquo;VR-PIC: An entropic variance-reduction method for particle-in-cell solutions of the Vlasov-Poisson equation&rdquo; 2026
+                <span class="pub-links">[<a href="https://doi.org/10.48550/arXiv.2602.15041">Preprint</a> | <a href="https://github.com/mohsensadr/VRPIC">Code</a>]</span>
+            </li>
+            <li id="VRDSMC">
+                <span class="pub-number">5.</span> Mohsen Sadr, and Nicolas G. Hadjiconstantinou. &ldquo;A variance-reduced direct Monte Carlo simulation method for solving the Boltzmann equation over a wide range of rarefaction&rdquo; <em>Journal of Computational Physics</em>, 472, 111677, 2023
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2022.111677">Elsevier</a> | <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4148310">Preprint</a>]</span>
+            </li>
+            <li id="VRFP">
+                <span class="pub-number">6.</span> Mohsen Sadr, and Nicolas G. Hadjiconstantinou. &ldquo;Variance reduced particle solution of the Fokker-Planck equation with application to rarefied gas and plasma dynamics&rdquo; <em>Journal of Computational Physics</em>, 492, 112402, 2023
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2023.112402">Elsevier</a> | <a href="https://dx.doi.org/10.2139/ssrn.4353547">Preprint</a>]</span>
+            </li>
+        </ul>
+
+        <div class="pub-category">Modelling in Kinetic Theory</div>
+        <ul>
+            <li id="FPmultiphase">
+                <span class="pub-number">7.</span> Mohsen Sadr, Marcel Pfeiffer, and M. Hossein Gorji. &ldquo;Fokker-Planck-Poisson kinetics: multi-phase flow beyond equilibrium&rdquo; <em>Journal of Fluid Mechanics</em>, 920, A46, 2021
+                <span class="pub-links">[<a href="https://doi.org/10.1017/jfm.2021.461">Cambridge University Press</a> | <a href="https://arxiv.org/abs/2308.05580">Preprint</a>]</span>
+            </li>
+            <li id="LongRange">
+                <span class="pub-number">8.</span> Mohsen Sadr, and M. Hossein Gorji. &ldquo;Treatment of long-range interactions arising in the Enskog&ndash;Vlasov description of dense fluids&rdquo; <em>Journal of Computational Physics</em>, 378, 129&ndash;142, 2019
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2018.11.005">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05845">Preprint</a> | <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a>]</span>
+            </li>
+            <li id="DFP">
+                <span class="pub-number">9.</span> Mohsen Sadr, and M. Hossein Gorji. &ldquo;A continuous stochastic model for non-equilibrium dense gases&rdquo; <em>Journal of Physics of Fluids</em>, 29, 122007, 2017
+                <span class="pub-links">[<a href="https://doi.org/10.1063/1.5004409">American Institute of Physics</a> | <a href="https://arxiv.org/abs/2308.05117">Preprint</a> | <a href="https://github.com/mohsensadr/Monte-Carlo-Particle-Method">Code</a>]</span>
+            </li>
+        </ul>
+
+        <div class="pub-category">Data-Driven Modelling</div>
+        <ul>
+            <li>
+                <span class="pub-number">10.</span> Mohsen Sadr, Tony Tohme, and Kamal Youcef-Toumi. &ldquo;Data-driven discovery of PDEs via the adjoint method&rdquo; <em>Transactions on Machine Learning Research</em>, 2025
+                <span class="pub-links">[<a href="https://openreview.net/forum?id=Az3mJ4d1eT">OpenReview</a> | <a href="https://github.com/mohsensadr/DiscoverPDEAdjoint">Code</a>]</span>
+            </li>
+            <li>
+                <span class="pub-number">11.</span> Tony Tohme, Mohsen Sadr, Kamal Youcef-Toumi, and Nicolas G. Hadjiconstantinou. &ldquo;MESSY Estimation: Maximum-Entropy based Stochastic and Symbolic densitY Estimation&rdquo; <em>Transactions on Machine Learning Research</em>, 2023
+                <span class="pub-links">[<a href="https://openreview.net/forum?id=Y2ru0LuQeS">OpenReview</a> | <a href="https://github.com/mohsensadr/MESSY">Code</a>]</span>
+            </li>
+            <li>
+                <span class="pub-number">12.</span> Mohsen Sadr, Manuel Torrilhon, and M. Hossein Gorji. &ldquo;Gaussian Process Regression for Maximum Entropy Distribution&rdquo; <em>Journal of Computational Physics</em>, 418, 109644, 2020
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2020.109644">Elsevier</a> | <a href="https://arxiv.org/abs/2308.06149">Preprint</a>]</span>
+            </li>
+        </ul>
+
+        <div class="pub-category">Approximating Collision Operator</div>
+        <ul>
+            <li>
+                <span class="pub-number">13.</span> Fabian Mies, Mohsen Sadr, and Manuel Torrilhon. &ldquo;An efficient jump-diffusion approximation of the Boltzmann equation&rdquo; <em>Journal of Computational Physics</em>, 490, 112308, 2023
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2023.112308">Elsevier</a> | <a href="https://arxiv.org/abs/2112.08362">Preprint</a>]</span>
+            </li>
+            <li>
+                <span class="pub-number">14.</span> Mohsen Sadr, Qian Wang, and M. Hossein Gorji. &ldquo;Coupling kinetic and continuum using data-driven maximum entropy distribution&rdquo; <em>Journal of Computational Physics</em>, 444, 110542, 2021
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.jcp.2021.110542">Elsevier</a> | <a href="https://arxiv.org/abs/2308.05672">Preprint</a>]</span>
+            </li>
+        </ul>
+
+        <div class="pub-category">Simulation of Plasma / Fluid</div>
+        <ul>
+            <li id="orb5">
+                <span class="pub-number">15.</span> Mohsen Sadr, Alexey Mishchenko, Thomas Hayward-Schneider, Axel Koenies, Alberto Bottino, Alessandro Biancalani, Peter Donnel, Emmanuel Lanti, and Laurent Villard. &ldquo;Linear and nonlinear excitation of TAE modes by external electromagnetic perturbations using ORB5&rdquo; <em>Plasma Physics and Controlled Fusion</em>, 64, 085010, 2022
+                <span class="pub-links">[<a href="https://iopscience.iop.org/article/10.1088/1361-6587/ac73eb">IOP Publishing (open access)</a>]</span>
+            </li>
+            <li>
+                <span class="pub-number">16.</span> P Donnel, J Cazabonne, L Villard, S Brunner, S Coda, J Decker, M Murugappan, and M Sadr. &ldquo;Quasilinear treatment of wave&ndash;particle interactions in the electron cyclotron range and its implementation in a gyrokinetic code&rdquo; <em>Plasma Physics and Controlled Fusion</em>, 63, 064001, 2021
+                <span class="pub-links">[<a href="https://iopscience.iop.org/article/10.1088/1361-6587/abf53f">IOP Publishing (open access)</a>]</span>
+            </li>
+            <li>
+                <span class="pub-number">17.</span> Sima Farazi, Mohsen Sadr, Seongwon Kang, Martin Schiemann, Nikita Vorobiev, Viktor Scherer, Heinz Pitsch. &ldquo;Resolved simulations of single char particle combustion in a laminar flow field&rdquo; <em>Fuel</em>, 201, 15&ndash;28, 2017
+                <span class="pub-links">[<a href="https://doi.org/10.1016/j.fuel.2016.11.011">Elsevier</a>]</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="presentations">
+        <h2>Presentations</h2>
+
+        <h3>Conferences</h3>
+        <ul>
+            <li>Particles, Flows &amp; Maps for Sampling Complex Distributions, Lausanne, Switzerland, November 2025 <a href="presentations/EPFL_Poster_2025_Collisional_OT.pdf" target="_blank" class="badge badge-poster">poster</a></li>
+            <li>5th Mathematical and Scientific Machine Learning, Naples, Italy, August 2025 <a href="presentations/MSML2025_Naples_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
+            <li>30th Biennial Numerical Analysis Conference, Glasgow, UK, June 2025 <a href="presentations/30th_Biennial_Numerical_Analysis_Conference_talk.pdf" target="_blank" class="badge badge-talk">talk</a></li>
+            <li>4th Mathematical and Scientific Machine Learning, Providence, USA, June 2023 <a href="presentations/MLML2023_ICERM_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
+            <li>19th European Fusion Theory Conference, virtual, October 2021 <a href="presentations/EFTC_antenna_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
+            <li>9th International Congress on Industrial and Applied Mathematics, Valencia, Spain, July 2019 <a href="presentations/ICIAM_poster.pdf" target="_blank" class="badge badge-poster">poster</a></li>
+            <li>10th International Conference on Multiphase Flow, Rio de Janeiro, Brazil, May 2019 <a href="presentations/MultiphaseFlows_talk.pdf" target="_blank" class="badge badge-talk">talk</a></li>
+            <li>3rd European Conference on Non-Equilibrium Gas Flows, Strasbourg, France, February 2018 <a href="presentations/NEGF_2018_talk.pdf" target="_blank" class="badge badge-talk">talk</a></li>
+        </ul>
+
+        <h3>Invited Talks</h3>
+        <ul>
+            <li>Swiss Plasma Center, EPFL, April 2025</li>
+            <li>PSI, CSD Scientific Retreat, March 2024</li>
+            <li>PSI, Machine Learning Seminar Series, April 2024</li>
+            <li>MIT, Symposium of Center for Computational Science &amp; Technology, March 2023</li>
+            <li>Swiss Plasma Center, EPFL, April 2020</li>
+            <li>EPFL, Mathematics Institute of Computational Science and Engineering (MATHICSE), July 2019</li>
+            <li>ETH Zurich, Institute of Fluid Dynamics, May 2018</li>
+            <li>ETH Zurich, Institute of Fluid Dynamics, August 2017</li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+
+        <h3>ETH Zurich</h3>
+        <ul>
+            <li>Introduction to Computational Physics: Monte Carlo methods (2023 and 2024) <a href="teaching_slides/ICP.pdf" target="_blank">[slides]</a></li>
+            <li>Computational Statistical Physics: rarefied gas and plasma dynamics (2024) <a href="teaching_slides/CSP.pdf" target="_blank">[slides]</a></li>
+        </ul>
+
+        <h3>EPFL</h3>
+        <ul>
+            <li>Computational Physics 1 and 2: advection-diffusion equation, nonlinear dynamics, chaotic systems (2020 and 2021)</li>
+        </ul>
+
+        <h3>RWTH Aachen</h3>
+        <ul>
+            <li>Mathematical Foundations 1&ndash;5: numerical methods for PDEs, iterative solvers, Fourier transformation, linear algebra (2017 to 2019)</li>
+        </ul>
+    </section>
+
+    <section id="referee">
+        <h2>Review</h2>
+        <p>I am an active referee of the following peer-reviewed journals and conferences:</p>
+        <ul>
+            <li><a href="https://www.sciencedirect.com/journal/journal-of-computational-physics">Journal of Computational Physics</a></li>
+            <li><a href="https://pubs.aip.org/aip/pof">Physics of Fluids</a></li>
+            <li><a href="https://www.nature.com/srep/">Nature: Scientific Reports</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/computer-physics-communications">Computer Physics Communications</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/communications-in-nonlinear-science-and-numerical-simulation">Comm. in Nonlinear Science &amp; Numerical Simulation</a></li>
+            <li><a href="https://iclr.cc">ICLR</a></li>
+            <li><a href="https://www.mdpi.com/journal/applsci">Applied Sciences</a></li>
+            <li><a href="https://link.springer.com/journal/11012">Meccanica</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/advanced-powder-technology">Advanced Powder Technology</a></li>
+            <li><a href="https://www.mdpi.com/journal/photonics">Photonics</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:mohsen.sadr@icloud.com">mohsen.sadr@icloud.com</a></p>
+    </section>
+
+    </div>
+
     <footer>
-        &copy; 2024 Mohsen Sadr. All rights reserved.
+        &copy; 2026 Mohsen Sadr. All rights reserved.
     </footer>
 
     <script>
-        let lastScrollY = window.scrollY; // Tracks the last scroll position
-        const nav = document.querySelector('nav');
-        const scrollUpThreshold = 100; // Amount of upward scroll needed to show the nav
-        let accumulatedScrollUp = 0; // Tracks how much we've scrolled up
-        const mouseThreshold = 50; // Distance from the top of the page to detect mouse movement
-        let clickOverride = false; // Prevents mouse movement from showing the nav after a click
-        const clickOverrideDuration = 1000; // How long to suppress the mouse-triggered show (in ms)
-    
-        // Function to show the navigation bar
-        function showNav() {
-            if (!clickOverride) {
-                nav.style.transform = 'translateY(0)';
-                accumulatedScrollUp = 0; // Reset accumulated scroll up
-            }
+    (function() {
+      var lastScrollY = window.scrollY;
+      var nav = document.getElementById('navbar');
+      var scrollUpAccum = 0;
+      var scrollUpThreshold = 80;
+      var mouseThreshold = 50;
+      var clickLock = false;
+
+      function showNav() {
+        if (!clickLock) {
+          nav.style.transform = 'translateY(0)';
+          scrollUpAccum = 0;
         }
-    
-        // Function to hide the navigation bar
-        function hideNav() {
-            nav.style.transform = 'translateY(-100%)';
+      }
+
+      function hideNav() {
+        nav.style.transform = 'translateY(-100%)';
+      }
+
+      window.addEventListener('scroll', function() {
+        var y = window.scrollY;
+        if (y > 10) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
         }
-    
-        // Scroll event listener
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-    
-            if (currentScrollY === 0) {
-                // User is at the top of the page, always show the navigation bar
-                showNav();
-                accumulatedScrollUp = 0; // Reset accumulated scroll up at the top
-            } else if (currentScrollY > lastScrollY) {
-                // User is scrolling down, hide the navigation bar
-                hideNav();
-                accumulatedScrollUp = 0; // Reset accumulated scroll up when scrolling down
-            } else {
-                // User is scrolling up
-                accumulatedScrollUp += lastScrollY - currentScrollY; // Add the scroll-up distance
-    
-                if (accumulatedScrollUp >= scrollUpThreshold) {
-                    // Show the navigation bar only if the threshold is met
-                    showNav();
-                }
-            }
-    
-            lastScrollY = currentScrollY; // Update the last scroll position
-        });
-    
-        // Mouse movement event listener
-        window.addEventListener('mousemove', (event) => {
-            if (event.clientY <= mouseThreshold) {
-                // If the mouse is within the top threshold of the page, show the navigation bar
-                showNav();
-            }
-        });
-    
-        // Click event listener on the navigation bar
-        nav.addEventListener('click', () => {
-            hideNav(); // Hide the navigation bar when it is clicked
-            clickOverride = true; // Activate click override
-            setTimeout(() => {
-                clickOverride = false; // Reset override after a delay
-            }, clickOverrideDuration);
-        });
+
+        if (y === 0) {
+          showNav();
+          scrollUpAccum = 0;
+        } else if (y > lastScrollY) {
+          hideNav();
+          scrollUpAccum = 0;
+        } else {
+          scrollUpAccum += lastScrollY - y;
+          if (scrollUpAccum >= scrollUpThreshold) showNav();
+        }
+        lastScrollY = y;
+      });
+
+      window.addEventListener('mousemove', function(e) {
+        if (e.clientY <= mouseThreshold) showNav();
+      });
+
+      nav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' && e.target.getAttribute('href') &&
+            e.target.getAttribute('href').charAt(0) === '#') {
+          hideNav();
+          clickLock = true;
+          setTimeout(function() { clickLock = false; }, 800);
+        }
+      });
+    })();
     </script>
 
-
-
     <script>
-        // Prevent the page from scrolling to a hash on load
-        window.addEventListener("load", function() {
-            if (window.location.hash) {
-                window.location.hash = "";
-            }
-        });
+    window.addEventListener('load', function() {
+      if (window.location.hash) window.location.hash = '';
+    });
     </script>
 
 </body>
