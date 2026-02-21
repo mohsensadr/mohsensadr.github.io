@@ -863,6 +863,21 @@
         </div>
         <div class="news-item">
             <div class="news-date">
+                <span class="month">Feb</span>
+                <span class="year">2026</span>
+            </div>
+            <div class="news-content">
+                <h3><a href="https://arxiv.org/abs/2602.15041" target="_blank">New preprint: VR-PIC for Vlasov&ndash;Poisson equations</a></h3>
+                <p>Our paper &ldquo;VR-PIC: An entropic variance-reduction method for particle-in-cell solutions of the Vlasov&ndash;Poisson equation&rdquo; is now on arXiv. We extend the entropic variance reduction framework to the PIC method, achieving 1&ndash;4 orders of magnitude computational speedup in the low-signal regime while maintaining high accuracy.</p>
+                <div class="news-source">
+                    <a href="https://arxiv.org/abs/2602.15041" target="_blank">arXiv</a>
+                    &nbsp;&middot;&nbsp;
+                    <a href="https://github.com/mohsensadr/VRPIC" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-date">
                 <span class="month">Oct</span>
                 <span class="year">2025</span>
             </div>
